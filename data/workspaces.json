@@ -791,7 +791,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "Wij snappen je frustratie met het gedrag van de staff, maar gelieve, gezien de staff autisme heeft dit te vergeven en hier geduld mee te hebben.\n\n(It will happen again)"
+                    "text": "Wij snappen je frustratie met het gedrag van de staff, maar gelieve, gezien de staff autisme heeft, dit te vergeven en hier geduld mee te hebben.\n\n(It will happen again)"
                 },
                 "outputs": {
                     "text": [
