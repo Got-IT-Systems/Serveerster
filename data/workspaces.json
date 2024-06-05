@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.1.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.1.1"
                 },
                 "outputs": {
                     "text": [
@@ -713,7 +713,7 @@
         "id": "ISsPzkCeWb",
         "active": true,
         "info": {
-            "title": "Klacht",
+            "title": "meme commandos",
             "description": "",
             "thumbnail": ""
         },
@@ -804,6 +804,195 @@
                     "z": 0,
                     "width": 560,
                     "height": 240,
+                    "color": ""
+                }
+            },
+            {
+                "name": "command_event_with_text",
+                "inputs": {},
+                "options": {
+                    "command_name": "watislizzy",
+                    "custom_prefix": "",
+                    "command_restriction": "none",
+                    "required_member_permission": "none",
+                    "command_slowmode_restriction": "none"
+                },
+                "outputs": {
+                    "action1": [
+                        "rzqwzXqSS0"
+                    ],
+                    "action2": [],
+                    "message": [],
+                    "server": [],
+                    "channel": [
+                        "NZs0WSo6K0"
+                    ],
+                    "vc": [],
+                    "user": [],
+                    "member": [],
+                    "error_message": []
+                },
+                "info": {
+                    "x": 0,
+                    "y": 740,
+                    "z": 0,
+                    "width": 650,
+                    "height": 344,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "rzqwzXqSS0",
+                    "file_path": "0LqLBqO94T"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "Dya310CvzU"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "J2RbxANd7H"
+                    ]
+                },
+                "info": {
+                    "x": 720,
+                    "y": 780,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/memes/dictators.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "0LqLBqO94T"
+                    ]
+                },
+                "info": {
+                    "x": 180,
+                    "y": 1110,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "split_text",
+                "inputs": {
+                    "action": "Dya310CvzU",
+                    "text": "J2RbxANd7H",
+                    "separator": "kdF6sxgLfh",
+                    "limit": "OOcfbUmMUe"
+                },
+                "options": {
+                    "separator": ","
+                },
+                "outputs": {
+                    "action": [
+                        "fsoxsfmw2R"
+                    ],
+                    "list": [
+                        "WbGnkwvZc4"
+                    ]
+                },
+                "info": {
+                    "x": 760,
+                    "y": 940,
+                    "z": 0,
+                    "width": 386,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_item_from_list",
+                "inputs": {
+                    "action": "fsoxsfmw2R",
+                    "list": "WbGnkwvZc4",
+                    "custom_position": "IImDvidfL3"
+                },
+                "options": {
+                    "position_type": "random"
+                },
+                "outputs": {
+                    "action": [
+                        "2pSDgPKTd3"
+                    ],
+                    "value": [
+                        "Z6pDKHxQJY"
+                    ]
+                },
+                "info": {
+                    "x": 1250,
+                    "y": 870,
+                    "z": 0,
+                    "width": 412,
+                    "height": 150,
+                    "color": ""
+                }
+            },
+            {
+                "name": "send_message",
+                "inputs": {
+                    "action": "H4hIdJcYJE",
+                    "channel": "NZs0WSo6K0",
+                    "text": "jPFlgU71B1",
+                    "embed": "JoAAVEbMy8",
+                    "attachment": "WDijkxtUp0"
+                },
+                "options": {
+                    "silent": "undefined"
+                },
+                "outputs": {
+                    "action": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 2000,
+                    "y": 940,
+                    "z": 0,
+                    "width": 347,
+                    "height": 190,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "2pSDgPKTd3",
+                    "text1": "Z6pDKHxQJY",
+                    "text2": "Hoj0W1zytp",
+                    "text3": "7I93aIzBJb"
+                },
+                "options": {
+                    "text": "Lizzy is een dictator.\nLetterlijk erger dan ${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "H4hIdJcYJE"
+                    ],
+                    "text": [
+                        "jPFlgU71B1"
+                    ]
+                },
+                "info": {
+                    "x": 1300,
+                    "y": 1060,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
                     "color": ""
                 }
             }
