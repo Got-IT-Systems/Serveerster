@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.0.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.0.1"
                 },
                 "outputs": {
                     "text": [
@@ -18705,7 +18705,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "Xgg2ad6w2W"
+                        "H6Nro39AbN"
                     ],
                     "message": []
                 },
@@ -18931,31 +18931,11 @@
                     "message": []
                 },
                 "info": {
-                    "x": 2970,
-                    "y": 910,
+                    "x": 3000,
+                    "y": 1440,
                     "z": 17,
                     "width": 347,
                     "height": 206,
-                    "color": "#5a5a5a"
-                }
-            },
-            {
-                "name": "text",
-                "inputs": {},
-                "options": {
-                    "text": "Gefeliciteerd! Je bent verified. Je kunt nu de verified rollen pakken in ⁠<#616362429948887041> (support, nsfw) als je wilt.\n\nAls je wilt mag je ook je foto verwijderen. Deze wordt sowieso niet opgeslagen maar als je toch zeker wilt zijn mag je m verwijderen\n\nVerder nog vragen of mag de ticket dicht?"
-                },
-                "outputs": {
-                    "text": [
-                        "6ZtAaNIJ2p"
-                    ]
-                },
-                "info": {
-                    "x": 2000,
-                    "y": 1020,
-                    "z": 18,
-                    "width": 920,
-                    "height": 202,
                     "color": "#5a5a5a"
                 }
             },
@@ -19010,6 +18990,81 @@
                     "z": 0,
                     "width": 451,
                     "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "H6Nro39AbN",
+                    "file_path": "gwhmQU91bc"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "Ic89OJwI22"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "jLqXESZhd2"
+                    ]
+                },
+                "info": {
+                    "x": 2930,
+                    "y": 920,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/channels/roles.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "gwhmQU91bc"
+                    ]
+                },
+                "info": {
+                    "x": 2530,
+                    "y": 950,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "Ic89OJwI22",
+                    "text1": "jLqXESZhd2",
+                    "text2": "Os0b4oQBHk",
+                    "text3": "47NxoUUU1O"
+                },
+                "options": {
+                    "text": "Gefeliciteerd! Je bent verified. Je kunt nu de verified rollen pakken in ⁠<#${text1}> (support, nsfw) als je wilt.\n\nAls je wilt mag je ook je foto verwijderen. Deze wordt sowieso niet opgeslagen maar als je toch zeker wilt zijn mag je m verwijderen\n\nVerder nog vragen of mag de ticket dicht?"
+                },
+                "outputs": {
+                    "action": [
+                        "Xgg2ad6w2W"
+                    ],
+                    "text": [
+                        "6ZtAaNIJ2p"
+                    ]
+                },
+                "info": {
+                    "x": 2830,
+                    "y": 1110,
+                    "z": 0,
+                    "width": 1010,
+                    "height": 210,
                     "color": ""
                 }
             }
