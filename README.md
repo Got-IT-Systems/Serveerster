@@ -54,7 +54,10 @@ ALTER TABLE `bdays` ADD PRIMARY KEY( `ID`);
 ALTER TABLE `bdays` CHANGE `ID` `ID` INT NOT NULL AUTO_INCREMENT;
 CREATE TABLE `serveerster`.`messages` ( `id` INT(255) NOT NULL , `UserID` VARCHAR(255) NOT NULL , `datetime` INT(255) NOT NULL ) ENGINE = InnoDB;
 ALTER TABLE `messages` ADD PRIMARY KEY( `id`);
-ALTER TABLE `messages` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT; 
+ALTER TABLE `messages` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
+CREATE TABLE `serveerster`.`notities` ( `id` INT(255) NOT NULL , `UserID` VARCHAR(255) NOT NULL , `datetime` VARCHAR(255) NOT NULL , `notitie` TEXT NOT NULL , `staff` VARCHAR(255) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `notities` ADD PRIMARY KEY( `id`);
+ALTER TABLE `notities` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
 ```
 
 ## bdaybot
