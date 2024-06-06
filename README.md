@@ -56,8 +56,8 @@ CREATE TABLE `serveerster`.`messages` ( `id` INT(255) NOT NULL , `UserID` VARCHA
 ALTER TABLE `messages` ADD PRIMARY KEY( `id`);
 ALTER TABLE `messages` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
 CREATE TABLE `serveerster`.`notities` ( `id` INT(255) NOT NULL , `UserID` VARCHAR(255) NOT NULL , `datetime` VARCHAR(255) NOT NULL , `notitie` VARCHAR(10000) NOT NULL ) ENGINE = InnoDB;
-ALTER TABLE `notes` ADD PRIMARY KEY( `id`);
-ALTER TABLE `notes` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
+ALTER TABLE `notities` ADD PRIMARY KEY( `id`);
+ALTER TABLE `notities` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
 ```
 
 ## bdaybot
