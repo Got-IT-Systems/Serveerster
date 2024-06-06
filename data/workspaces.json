@@ -242,7 +242,7 @@
                 "name": "register_slash_commands",
                 "inputs": {},
                 "options": {
-                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n}\n"
+                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n},\n{\n    \"name\": \"maaknotitie\",\n    \"description\": \"Notite maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editnotitie\",\n    \"description\": \"Een notitie aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notities\",\n    \"description\": \"Haal notities op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de notities wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijdernotitie\",\n    \"description\": \"Verwijder een notitie\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idnotities\",\n    \"description\": \"Krijg notities van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n}\n"
                 },
                 "outputs": {},
                 "info": {
@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.1.2"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.2.0b1"
                 },
                 "outputs": {
                     "text": [
@@ -703,6 +703,1092 @@
                     "z": 0,
                     "width": 209,
                     "height": 138,
+                    "color": ""
+                }
+            }
+        ],
+        "notes": []
+    },
+    {
+        "id": "I9Zkb3PUKM",
+        "active": true,
+        "info": {
+            "title": "Notities",
+            "description": "",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "database_sql_file_option",
+                "inputs": {},
+                "options": {
+                    "host": "config/db/host.txt",
+                    "port": "config/db/port.txt",
+                    "user": "config/db/user.txt",
+                    "password": "config/db/pass.txt",
+                    "database": "config/db/db.txt"
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 30,
+                    "y": 960,
+                    "z": 0,
+                    "width": 289,
+                    "height": 377,
+                    "color": ""
+                }
+            },
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "slash",
+                    "id": "maaknotitie",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "9gLXHyuL6B"
+                    ],
+                    "user": [],
+                    "member": [
+                        "ISDBUMyzzP",
+                        "F1Q5LSxeq0",
+                        "rTp3Pows9t"
+                    ],
+                    "server": [
+                        "RgAQZzZ1Pj",
+                        "WT5xfZMfm6"
+                    ],
+                    "channel": [],
+                    "message": [],
+                    "interaction": [
+                        "QFcMNo0iWk",
+                        "4R9jRifb0q",
+                        "WhtQ5RJnyx",
+                        "rG2lo6CsDT"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 50,
+                    "y": 90,
+                    "z": 0,
+                    "width": 396,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_interaction_argument_by_name",
+                "inputs": {
+                    "action": "9gLXHyuL6B",
+                    "interaction": "QFcMNo0iWk",
+                    "name": "UOeh6NwHzw"
+                },
+                "options": {
+                    "name": "gebruiker",
+                    "get": "member"
+                },
+                "outputs": {
+                    "action": [
+                        "M74GIFKY4K"
+                    ],
+                    "output": [
+                        "zMRsd0ymnN"
+                    ]
+                },
+                "info": {
+                    "x": 570,
+                    "y": 90,
+                    "z": 0,
+                    "width": 469,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_interaction_argument_by_name",
+                "inputs": {
+                    "action": "M74GIFKY4K",
+                    "interaction": "4R9jRifb0q",
+                    "name": "hiIxSDeJMR"
+                },
+                "options": {
+                    "name": "notitie",
+                    "get": "string"
+                },
+                "outputs": {
+                    "action": [
+                        "e8PBeD92sb"
+                    ],
+                    "output": [
+                        "OvuE3uldY1",
+                        "5KOusvpMYN",
+                        "39oEe4uqJW"
+                    ]
+                },
+                "info": {
+                    "x": 570,
+                    "y": 300,
+                    "z": 0,
+                    "width": 469,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "e8PBeD92sb",
+                    "file_path": "HNqV6jlBu0"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "uZXoObAwOm"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "IA6Yu972RB"
+                    ]
+                },
+                "info": {
+                    "x": 1460,
+                    "y": 140,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/staff.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "HNqV6jlBu0"
+                    ]
+                },
+                "info": {
+                    "x": 1135,
+                    "y": 70,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "uZXoObAwOm",
+                    "file_path": "PaoakUklY8"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "XgVwF5B0nM"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "gDToTfKxlZ"
+                    ]
+                },
+                "info": {
+                    "x": 1470,
+                    "y": 320,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/it.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "PaoakUklY8"
+                    ]
+                },
+                "info": {
+                    "x": 1150,
+                    "y": 330,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "RgCPvomZf4",
+                    "interaction": "WhtQ5RJnyx",
+                    "message": "XMav5WV14V",
+                    "embeds": "v1eqt0CLkO",
+                    "row1": "Oe2uQeu2JF",
+                    "row2": "gFkirRrtWw",
+                    "row3": "M5z4SzT1lg",
+                    "row4": "K4n371YkUO",
+                    "row5": "vzsXnSRI4b",
+                    "attachment": "2Wo6mu8EDf"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 2960,
+                    "y": 160,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "XgVwF5B0nM",
+                    "server": "RgAQZzZ1Pj",
+                    "search_value": "IA6Yu972RB"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "ASWt8kKkCu"
+                    ],
+                    "role": [
+                        "Y9BaGjU9ho"
+                    ]
+                },
+                "info": {
+                    "x": 1980,
+                    "y": 120,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "ASWt8kKkCu",
+                    "server": "WT5xfZMfm6",
+                    "search_value": "gDToTfKxlZ"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "UXBiHx8Su0"
+                    ],
+                    "role": [
+                        "3XmsPCZ4ei"
+                    ]
+                },
+                "info": {
+                    "x": 1980,
+                    "y": 330,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "UXBiHx8Su0",
+                    "member": "ISDBUMyzzP",
+                    "role": "Y9BaGjU9ho"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "TKRZZk1JLm"
+                    ],
+                    "action2": [
+                        "uL3eOfGlmC"
+                    ]
+                },
+                "info": {
+                    "x": 2550,
+                    "y": 160,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "uL3eOfGlmC",
+                    "member": "F1Q5LSxeq0",
+                    "role": "3XmsPCZ4ei"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "9Uc5YM3Pmd"
+                    ],
+                    "action2": [
+                        "RgCPvomZf4"
+                    ]
+                },
+                "info": {
+                    "x": 2560,
+                    "y": 370,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Je hebt geen toestemming om dit commando te gebruiken"
+                },
+                "outputs": {
+                    "text": [
+                        "XMav5WV14V"
+                    ]
+                },
+                "info": {
+                    "x": 2950,
+                    "y": 0,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "TKRZZk1JLm",
+                    "action2": "9Uc5YM3Pmd"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "pToHKFAsZ5"
+                    ]
+                },
+                "info": {
+                    "x": 130,
+                    "y": 670,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_date",
+                "inputs": {
+                    "action": "v24dqsYIB8",
+                    "year": "gqEIIN2YD1",
+                    "month": "Qg6PRcIBDt",
+                    "day": "zEYqCWhfJf",
+                    "hours": "hzHYDV0K5z",
+                    "minutes": "UN7PqtDv6P",
+                    "seconds": "RPjZ7HQPT6",
+                    "milliseconds": "VorSzji805",
+                    "custom_date": "DHMySw11bp"
+                },
+                "options": {
+                    "start_date": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "PTn8AB6VZV"
+                    ],
+                    "date": [
+                        "9NnLWxLX45",
+                        "IcJBGeoMri",
+                        "NLxtZW7f7Y"
+                    ]
+                },
+                "info": {
+                    "x": 560,
+                    "y": 710,
+                    "z": 0,
+                    "width": 401,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_date_info",
+                "inputs": {
+                    "action": "PTn8AB6VZV",
+                    "date": "9NnLWxLX45"
+                },
+                "options": {
+                    "date_info": "3",
+                    "time_type": "local"
+                },
+                "outputs": {
+                    "action": [
+                        "NjqB1vtGSu"
+                    ],
+                    "result": [
+                        "ua7JUHcf8k"
+                    ]
+                },
+                "info": {
+                    "x": 1090,
+                    "y": 790,
+                    "z": 0,
+                    "width": 459,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_date_info",
+                "inputs": {
+                    "action": "NjqB1vtGSu",
+                    "date": "IcJBGeoMri"
+                },
+                "options": {
+                    "date_info": "4",
+                    "time_type": "local"
+                },
+                "outputs": {
+                    "action": [
+                        "sWj4umhDoe"
+                    ],
+                    "result": [
+                        "XlyThdbADS"
+                    ]
+                },
+                "info": {
+                    "x": 1090,
+                    "y": 970,
+                    "z": 0,
+                    "width": 459,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_date_info",
+                "inputs": {
+                    "action": "sWj4umhDoe",
+                    "date": "NLxtZW7f7Y"
+                },
+                "options": {
+                    "date_info": "6",
+                    "time_type": "local"
+                },
+                "outputs": {
+                    "action": [
+                        "HOtxa0PkcK"
+                    ],
+                    "result": [
+                        "bfi1DeOfek"
+                    ]
+                },
+                "info": {
+                    "x": 1090,
+                    "y": 1150,
+                    "z": 0,
+                    "width": 459,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "HOtxa0PkcK",
+                    "text1": "ua7JUHcf8k",
+                    "text2": "XlyThdbADS",
+                    "text3": "bfi1DeOfek"
+                },
+                "options": {
+                    "text": "${text1} ${text2} ${text3}"
+                },
+                "outputs": {
+                    "action": [
+                        "PyhcqOjyZ8"
+                    ],
+                    "text": [
+                        "Bm2JBJLCzb",
+                        "IZ15D4oU4Q",
+                        "qxQBrrdPFI"
+                    ]
+                },
+                "info": {
+                    "x": 1140,
+                    "y": 1340,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_member_info",
+                "inputs": {
+                    "action": "PyhcqOjyZ8",
+                    "member": "zMRsd0ymnN"
+                },
+                "options": {
+                    "member_info": "27"
+                },
+                "outputs": {
+                    "action": [
+                        "JbkOeKeOV5"
+                    ],
+                    "result": [
+                        "0DX4ftXEoN",
+                        "izE7fG6DNp"
+                    ]
+                },
+                "info": {
+                    "x": 1700,
+                    "y": 800,
+                    "z": 0,
+                    "width": 575,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "JbkOeKeOV5",
+                    "user": "0DX4ftXEoN"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "njMHkPNh7b"
+                    ],
+                    "result": [
+                        "zVfr05DWxI",
+                        "HLMaFHoSMz",
+                        "TmkUFdCV8r"
+                    ]
+                },
+                "info": {
+                    "x": 1710,
+                    "y": 1000,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_text_advanced_6x",
+                "inputs": {
+                    "action": "kU2m3bMXJW",
+                    "text1": "HLMaFHoSMz",
+                    "text2": "IZ15D4oU4Q",
+                    "text3": "OvuE3uldY1",
+                    "text4": "rfgOfHZZL4",
+                    "text5": "PESf9AXGRA",
+                    "text6": "feN2JEoczn"
+                },
+                "options": {
+                    "text": "INSERT INTO `notities` (`id`, `UserID`, `datetime`, `notitie`, `staff`) VALUES (NULL, '${text1}', '${text2}', '${text3}', '${text4}');"
+                },
+                "outputs": {
+                    "action": [
+                        "qLx3o9545j"
+                    ],
+                    "text": [
+                        "gngOEKoegI"
+                    ]
+                },
+                "info": {
+                    "x": 2420,
+                    "y": 1170,
+                    "z": 0,
+                    "width": 364,
+                    "height": 242,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_member_info",
+                "inputs": {
+                    "action": "njMHkPNh7b",
+                    "member": "rTp3Pows9t"
+                },
+                "options": {
+                    "member_info": "27"
+                },
+                "outputs": {
+                    "action": [
+                        "hMxKUDnM23"
+                    ],
+                    "result": [
+                        "v1G6nCwcC5",
+                        "bRGcaIaq7C"
+                    ]
+                },
+                "info": {
+                    "x": 1690,
+                    "y": 1190,
+                    "z": 0,
+                    "width": 575,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "hMxKUDnM23",
+                    "user": "v1G6nCwcC5"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "kU2m3bMXJW"
+                    ],
+                    "result": [
+                        "rfgOfHZZL4",
+                        "FAHL7zjdQY"
+                    ]
+                },
+                "info": {
+                    "x": 1690,
+                    "y": 1370,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "qLx3o9545j",
+                    "query": "gngOEKoegI"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "qHKrmluRkc"
+                    ],
+                    "erroraction": [],
+                    "response": [],
+                    "errormsg": []
+                },
+                "info": {
+                    "x": 2450,
+                    "y": 1460,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_embed_message",
+                "inputs": {
+                    "action": "FjIjhKvjM6",
+                    "color": "gjGczWLnw9",
+                    "thumbnail": "uV9HyVssOL",
+                    "author_icon": "56HYRyHCWB",
+                    "author_name": "Huix5WEPea",
+                    "author_url": "ducDQneLMm",
+                    "title": "YoBaptkLsR",
+                    "url": "uYxEdtMoRS",
+                    "description": "c0sOBWVC9o",
+                    "image": "F6APaRhNs5",
+                    "footer_icon": "8qNVMj0RRv",
+                    "footer_text": "qOD0SAMnpj",
+                    "timestamp": "S6VlnK7f6B"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "rkaiCkum6p"
+                    ],
+                    "message_embed": [
+                        "Ln6sVRMler"
+                    ]
+                },
+                "info": {
+                    "x": 5690,
+                    "y": 2040,
+                    "z": 0,
+                    "width": 319,
+                    "height": 434,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "JrasWZnVnW",
+                    "user": "izE7fG6DNp"
+                },
+                "options": {
+                    "user_info": "16"
+                },
+                "outputs": {
+                    "action": [
+                        "XHQX06Sgf3"
+                    ],
+                    "result": [
+                        "pFCNRuLWoS"
+                    ]
+                },
+                "info": {
+                    "x": 4240,
+                    "y": 1820,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "XHQX06Sgf3",
+                    "user": "bRGcaIaq7C"
+                },
+                "options": {
+                    "user_info": "16"
+                },
+                "outputs": {
+                    "action": [
+                        "KccbuPXgpy"
+                    ],
+                    "result": [
+                        "Huix5WEPea"
+                    ]
+                },
+                "info": {
+                    "x": 4230,
+                    "y": 2020,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "IGyfxu6Vy5",
+                    "query": "UghGMgrbHy"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "eVMCZh7xpt"
+                    ],
+                    "erroraction": [],
+                    "response": [
+                        "WGSrevJ5JR"
+                    ],
+                    "errormsg": []
+                },
+                "info": {
+                    "x": 2900,
+                    "y": 1750,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "wait_with_number",
+                "inputs": {
+                    "action": "qHKrmluRkc"
+                },
+                "options": {
+                    "time_type": "seconds",
+                    "time": 2
+                },
+                "outputs": {
+                    "action": [
+                        "gQWF7yzxKf"
+                    ]
+                },
+                "info": {
+                    "x": 2880,
+                    "y": 1470,
+                    "z": 0,
+                    "width": 376,
+                    "height": 156,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_text_advanced_6x",
+                "inputs": {
+                    "action": "gQWF7yzxKf",
+                    "text1": "TmkUFdCV8r",
+                    "text2": "qxQBrrdPFI",
+                    "text3": "5KOusvpMYN",
+                    "text4": "FAHL7zjdQY",
+                    "text5": "z2lDy2BLvF",
+                    "text6": "757dfO00y3"
+                },
+                "options": {
+                    "text": "SELECT * FROM `notities` WHERE `UserID` = '${text1}' AND `datetime` = '${text2}' AND `notitie` = '${text3}' AND `staff` = '${text4}';"
+                },
+                "outputs": {
+                    "action": [
+                        "IGyfxu6Vy5"
+                    ],
+                    "text": [
+                        "UghGMgrbHy"
+                    ]
+                },
+                "info": {
+                    "x": 2440,
+                    "y": 1680,
+                    "z": 0,
+                    "width": 364,
+                    "height": 242,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "pToHKFAsZ5",
+                    "interaction": "rG2lo6CsDT",
+                    "message": "7skBdG14ou",
+                    "embeds": "7mUNguYyBz",
+                    "row1": "BnR0qgmSkQ",
+                    "row2": "GHe7he4pcy",
+                    "row3": "5m9Rapzb4v",
+                    "row4": "5IRhH3BG7j",
+                    "row5": "QnzXnZ3cvh",
+                    "attachment": "O0Um1x4GdI"
+                },
+                "options": {
+                    "response": "defer",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [
+                        "v24dqsYIB8"
+                    ],
+                    "interaction": [
+                        "N5E3ACMqLS"
+                    ],
+                    "message": []
+                },
+                "info": {
+                    "x": 180,
+                    "y": 830,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_item_from_list",
+                "inputs": {
+                    "action": "eVMCZh7xpt",
+                    "list": "WGSrevJ5JR",
+                    "custom_position": "MMKg5Vlecv"
+                },
+                "options": {
+                    "position_type": "first"
+                },
+                "outputs": {
+                    "action": [
+                        "UpJzjweaNf"
+                    ],
+                    "value": [
+                        "eJODlbgI5A"
+                    ]
+                },
+                "info": {
+                    "x": 3230,
+                    "y": 1760,
+                    "z": 0,
+                    "width": 412,
+                    "height": 150,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_property_from_object_option",
+                "inputs": {
+                    "action": "UpJzjweaNf",
+                    "object": "eJODlbgI5A"
+                },
+                "options": {
+                    "key": "id"
+                },
+                "outputs": {
+                    "action": [
+                        "JrasWZnVnW"
+                    ],
+                    "value": [
+                        "ARTb3GyYVP"
+                    ]
+                },
+                "info": {
+                    "x": 3700,
+                    "y": 1800,
+                    "z": 0,
+                    "width": 365,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "KccbuPXgpy",
+                    "text1": "pFCNRuLWoS",
+                    "text2": "BBHVbYDFSH",
+                    "text3": "sAvjzTsVKC"
+                },
+                "options": {
+                    "text": "Notitie aangemaakt voor ${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "39UqaDbCNI"
+                    ],
+                    "text": [
+                        "YoBaptkLsR"
+                    ]
+                },
+                "info": {
+                    "x": 4980,
+                    "y": 1720,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "39UqaDbCNI",
+                    "text1": "39oEe4uqJW",
+                    "text2": "ARTb3GyYVP",
+                    "text3": "JuoAgEsrpu"
+                },
+                "options": {
+                    "text": "Notitie ID is ${text2}:\n**Notitie**\n${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "FjIjhKvjM6"
+                    ],
+                    "text": [
+                        "c0sOBWVC9o"
+                    ]
+                },
+                "info": {
+                    "x": 4980,
+                    "y": 1900,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "rkaiCkum6p",
+                    "interaction": "N5E3ACMqLS",
+                    "message": "uKVYN0KlFX",
+                    "embeds": "Ln6sVRMler",
+                    "row1": "QgnP54FBEy",
+                    "row2": "KQk1MfHuUb",
+                    "row3": "GgQbnNCfo9",
+                    "row4": "j5UJ4ZHtTF",
+                    "row5": "CaepCsjLmT",
+                    "attachment": "JDUrEoSj6j"
+                },
+                "options": {
+                    "response": "follow",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 6130,
+                    "y": 2200,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Geslaagd, notitie ingevoerd"
+                },
+                "outputs": {
+                    "text": [
+                        "uKVYN0KlFX"
+                    ]
+                },
+                "info": {
+                    "x": 6110,
+                    "y": 2010,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
                     "color": ""
                 }
             }
