@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.3.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.4.0"
                 },
                 "outputs": {
                     "text": [
@@ -703,6 +703,147 @@
                     "z": 0,
                     "width": 209,
                     "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_webhook",
+                "inputs": {
+                    "action": "ayzzGMGFwj",
+                    "text_channel": "Tp9jU2yZ1r",
+                    "webhook_name": "5CCfVSbUkm",
+                    "webhook_avatar": "jGiww4Ezn0",
+                    "reason": "gomGL61w3D"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "tOEbwr2aK8"
+                    ],
+                    "webhook": [
+                        "IVLECZfByx"
+                    ]
+                },
+                "info": {
+                    "x": 870,
+                    "y": 1690,
+                    "z": 0,
+                    "width": 278,
+                    "height": 214,
+                    "color": ""
+                }
+            },
+            {
+                "name": "send_webhook_message",
+                "inputs": {
+                    "action": "tOEbwr2aK8",
+                    "webhook": "IVLECZfByx",
+                    "webhook_username_override": "LquCDskpbK",
+                    "webhook_avatar_url_override": "VdfVsepyMz",
+                    "message": "gxYhPsiQTt",
+                    "embeds": "wQEUdkmyll",
+                    "menu": "0WZr07jJud",
+                    "button_row": "pIKornCEIF",
+                    "button": "MxeOzi74Se",
+                    "attachment": "yZsQVoqJU4"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 1230,
+                    "y": 1810,
+                    "z": 0,
+                    "width": 276,
+                    "height": 376,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_3x",
+                "inputs": {},
+                "options": {
+                    "text1": "gotitsystems",
+                    "text2": "",
+                    "text3": ""
+                },
+                "outputs": {
+                    "text1": [
+                        "5CCfVSbUkm"
+                    ],
+                    "text2": [],
+                    "text3": []
+                },
+                "info": {
+                    "x": 410,
+                    "y": 1840,
+                    "z": 0,
+                    "width": 287,
+                    "height": 247,
+                    "color": ""
+                }
+            },
+            {
+                "name": "command_event_with_text",
+                "inputs": {},
+                "options": {
+                    "command_name": "webhooktester",
+                    "custom_prefix": "",
+                    "command_restriction": "none",
+                    "required_member_permission": "none",
+                    "command_slowmode_restriction": "none"
+                },
+                "outputs": {
+                    "action1": [
+                        "ayzzGMGFwj"
+                    ],
+                    "action2": [],
+                    "message": [],
+                    "server": [],
+                    "channel": [
+                        "Tp9jU2yZ1r"
+                    ],
+                    "vc": [],
+                    "user": [],
+                    "member": [],
+                    "error_message": []
+                },
+                "info": {
+                    "x": 20,
+                    "y": 1480,
+                    "z": 0,
+                    "width": 650,
+                    "height": 344,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_3x",
+                "inputs": {},
+                "options": {
+                    "text1": "Got IT Systems",
+                    "text2": "https://gotitsystems.nl/wp-content/uploads/2024/02/cropped-GotITSystems-1.png",
+                    "text3": "Test"
+                },
+                "outputs": {
+                    "text1": [
+                        "LquCDskpbK"
+                    ],
+                    "text2": [
+                        "VdfVsepyMz"
+                    ],
+                    "text3": [
+                        "gxYhPsiQTt"
+                    ]
+                },
+                "info": {
+                    "x": 410,
+                    "y": 2140,
+                    "z": 0,
+                    "width": 287,
+                    "height": 247,
                     "color": ""
                 }
             }
@@ -15574,7 +15715,8 @@
                     "member": [],
                     "server": [],
                     "channel": [
-                        "HGFA0KM7F5"
+                        "HGFA0KM7F5",
+                        "gFKwhSQCnB"
                     ],
                     "message": [],
                     "interaction": [
@@ -15804,33 +15946,6 @@
                 }
             },
             {
-                "name": "send_message",
-                "inputs": {
-                    "action": "1PNlr8ONRG",
-                    "channel": "HGFA0KM7F5",
-                    "text": "SFysN8yVpY",
-                    "embed": "HpOa7Jaacf",
-                    "attachment": "mFxOycxIhK"
-                },
-                "options": {
-                    "silent": "undefined"
-                },
-                "outputs": {
-                    "action": [
-                        "8F1NMtJqgK"
-                    ],
-                    "message": []
-                },
-                "info": {
-                    "x": 2700,
-                    "y": 1590,
-                    "z": 25,
-                    "width": 347,
-                    "height": 206,
-                    "color": "#5a5a5a"
-                }
-            },
-            {
                 "name": "interaction_send_reply_fixed",
                 "inputs": {
                     "action": "8F1NMtJqgK",
@@ -15850,8 +15965,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 2670,
-                    "y": 1810,
+                    "x": 2750,
+                    "y": 2090,
                     "z": 28,
                     "width": 400,
                     "height": 299,
@@ -15870,8 +15985,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2200,
-                    "y": 1950,
+                    "x": 2170,
+                    "y": 2300,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -15911,10 +16026,11 @@
                 },
                 "outputs": {
                     "action": [
-                        "1PNlr8ONRG"
+                        "XdZYnoxxrW"
                     ],
                     "message_embed": [
-                        "HpOa7Jaacf"
+                        "HpOa7Jaacf",
+                        "9gKE6lXjrC"
                     ]
                 },
                 "info": {
@@ -15923,6 +16039,91 @@
                     "z": 0,
                     "width": 486,
                     "height": 808,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_webhook",
+                "inputs": {
+                    "action": "XdZYnoxxrW",
+                    "text_channel": "gFKwhSQCnB",
+                    "webhook_name": "h2u57yXkcB",
+                    "webhook_avatar": "0DnaCgUhZT",
+                    "reason": "tAzA8ztq2g"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "XQhWOtAapN"
+                    ],
+                    "webhook": [
+                        "OQ3tljwMUu"
+                    ]
+                },
+                "info": {
+                    "x": 2680,
+                    "y": 1330,
+                    "z": 0,
+                    "width": 278,
+                    "height": 214,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_3x",
+                "inputs": {},
+                "options": {
+                    "text1": "gotitsystems",
+                    "text2": "Got IT Systems",
+                    "text3": "https://gotitsystems.nl/wp-content/uploads/2024/02/cropped-GotITSystems-1.png"
+                },
+                "outputs": {
+                    "text1": [
+                        "h2u57yXkcB"
+                    ],
+                    "text2": [
+                        "13HOattSLh"
+                    ],
+                    "text3": [
+                        "KLtBKs31fv"
+                    ]
+                },
+                "info": {
+                    "x": 2280,
+                    "y": 1750,
+                    "z": 0,
+                    "width": 287,
+                    "height": 247,
+                    "color": ""
+                }
+            },
+            {
+                "name": "send_webhook_message",
+                "inputs": {
+                    "action": "XQhWOtAapN",
+                    "webhook": "OQ3tljwMUu",
+                    "webhook_username_override": "13HOattSLh",
+                    "webhook_avatar_url_override": "KLtBKs31fv",
+                    "message": "lcgugyiEcc",
+                    "embeds": "9gKE6lXjrC",
+                    "menu": "Az4XQ6Gbim",
+                    "button_row": "BdUQUAt68l",
+                    "button": "aDbzXgwtTE",
+                    "attachment": "JTpE2I1sUu"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "8F1NMtJqgK"
+                    ],
+                    "message": []
+                },
+                "info": {
+                    "x": 3040,
+                    "y": 1340,
+                    "z": 0,
+                    "width": 276,
+                    "height": 376,
                     "color": ""
                 }
             }
