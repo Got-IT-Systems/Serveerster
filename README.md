@@ -42,6 +42,7 @@
 - channels/log (ID van serveerster_log kanaal)
 - channels/roles (ID van self_roles kanaal)
 - channels/stats (ID van stats voice channel. Wordt automatisch aangemaakt met t!statssetup)
+- channels/mmod (ID van mod chat)
 
 ## SQL
 ```
