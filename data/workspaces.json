@@ -242,7 +242,7 @@
                 "name": "register_slash_commands",
                 "inputs": {},
                 "options": {
-                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n},\n{\n    \"name\": \"maaknotitie\",\n    \"description\": \"Notite maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidnotitie\",\n    \"description\": \"Notite maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editnotitie\",\n    \"description\": \"Een notitie aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notities\",\n    \"description\": \"Haal notities op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de notities wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijdernotitie\",\n    \"description\": \"Verwijder een notitie\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idnotities\",\n    \"description\": \"Krijg notities van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n}\n"
+                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"bdayrole\",\n  \"description\": \"Geef een persoon tijdelijk de gefelicitaart role\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"user\",\n      \"description\": \"De persoon die je de role wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n},\n{\n    \"name\": \"maaknotitie\",\n    \"description\": \"Notite maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidnotitie\",\n    \"description\": \"Notite maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editnotitie\",\n    \"description\": \"Een notitie aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notities\",\n    \"description\": \"Haal notities op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de notities wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijdernotitie\",\n    \"description\": \"Verwijder een notitie\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idnotities\",\n    \"description\": \"Krijg notities van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n}\n"
                 },
                 "outputs": {},
                 "info": {
@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.4.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 6.5.0"
                 },
                 "outputs": {
                     "text": [
@@ -19757,8 +19757,8 @@
                     ]
                 },
                 "info": {
-                    "x": 659,
-                    "y": 1638,
+                    "x": 850,
+                    "y": 1500,
                     "z": 65,
                     "width": 224,
                     "height": 113,
@@ -20468,6 +20468,597 @@
                     "z": 0,
                     "width": 451,
                     "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "slash",
+                    "id": "bdayrole",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "OloI7Ldo3N"
+                    ],
+                    "user": [],
+                    "member": [
+                        "OJxHMSJHmr"
+                    ],
+                    "server": [
+                        "VxKE4xEC3l",
+                        "YwohU4dBrk",
+                        "WSHwzDAMFp"
+                    ],
+                    "channel": [],
+                    "message": [],
+                    "interaction": [
+                        "ZJGmSGutI1",
+                        "2Xfyc3gmTp",
+                        "8MIG5IaER0",
+                        "gXMHAmhx3C"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 30,
+                    "y": 3860,
+                    "z": 0,
+                    "width": 396,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_interaction_argument_by_name",
+                "inputs": {
+                    "action": "OloI7Ldo3N",
+                    "interaction": "ZJGmSGutI1",
+                    "name": "mDS3byCypR"
+                },
+                "options": {
+                    "name": "user",
+                    "get": "member"
+                },
+                "outputs": {
+                    "action": [
+                        "VwtlLS3K7L"
+                    ],
+                    "output": [
+                        "eMUml7jqwo",
+                        "FuxQNuiAtb"
+                    ]
+                },
+                "info": {
+                    "x": 560,
+                    "y": 3850,
+                    "z": 0,
+                    "width": 469,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "VwtlLS3K7L",
+                    "file_path": "uJZ6QQ55pc"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "upQGq0xXeI"
+                    ],
+                    "action2": [
+                        "sB3fLfQ083"
+                    ],
+                    "content": [
+                        "Fj0QY2o0p5"
+                    ]
+                },
+                "info": {
+                    "x": 1240,
+                    "y": 3840,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "upQGq0xXeI",
+                    "file_path": "52vM4JDR4U"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "5uMD0lFkno"
+                    ],
+                    "action2": [
+                        "vE7j85ogza"
+                    ],
+                    "content": [
+                        "40DYmIQR3W"
+                    ]
+                },
+                "info": {
+                    "x": 1240,
+                    "y": 4000,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_3x",
+                "inputs": {},
+                "options": {
+                    "text1": "config/roles/staff.txt",
+                    "text2": "config/roles/bday.txt",
+                    "text3": "config/channels/log.txt"
+                },
+                "outputs": {
+                    "text1": [
+                        "uJZ6QQ55pc"
+                    ],
+                    "text2": [
+                        "52vM4JDR4U"
+                    ],
+                    "text3": [
+                        "t2psZnpLqY"
+                    ]
+                },
+                "info": {
+                    "x": 30,
+                    "y": 4290,
+                    "z": 0,
+                    "width": 287,
+                    "height": 247,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "5uMD0lFkno",
+                    "file_path": "t2psZnpLqY"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "AiX1flNEhX"
+                    ],
+                    "action2": [
+                        "ceMT9Nop8x"
+                    ],
+                    "content": [
+                        "7CafosbioY"
+                    ]
+                },
+                "info": {
+                    "x": 1240,
+                    "y": 4170,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions_3x",
+                "inputs": {
+                    "action1": "sB3fLfQ083",
+                    "action2": "vE7j85ogza",
+                    "action3": "ceMT9Nop8x"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "dnmpgVlCfa"
+                    ]
+                },
+                "info": {
+                    "x": 1820,
+                    "y": 3660,
+                    "z": 0,
+                    "width": 209,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "dnmpgVlCfa",
+                    "interaction": "2Xfyc3gmTp",
+                    "message": "bQBbUcJbCS",
+                    "embeds": "dH1mUCsN8w",
+                    "row1": "cOiiXwTppl",
+                    "row2": "QtydykgQif",
+                    "row3": "k4XIYETZtY",
+                    "row4": "TvRkKDofNl",
+                    "row5": "AuirvvcqSt",
+                    "attachment": "zSDUXFcyn1"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 2090,
+                    "y": 3560,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Config incompleet.\nNeem contact op met Got IT Systems."
+                },
+                "outputs": {
+                    "text": [
+                        "bQBbUcJbCS"
+                    ]
+                },
+                "info": {
+                    "x": 1580,
+                    "y": 3520,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "AiX1flNEhX",
+                    "server": "VxKE4xEC3l",
+                    "search_value": "Fj0QY2o0p5"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "rJJLWhd5HO"
+                    ],
+                    "role": [
+                        "90laJGPYzu"
+                    ]
+                },
+                "info": {
+                    "x": 1270,
+                    "y": 4350,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "rJJLWhd5HO",
+                    "server": "YwohU4dBrk",
+                    "search_value": "40DYmIQR3W"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "VKkWIOOCH7"
+                    ],
+                    "role": [
+                        "BrpID99gFU"
+                    ]
+                },
+                "info": {
+                    "x": 1270,
+                    "y": 4540,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_channel",
+                "inputs": {
+                    "action": "VKkWIOOCH7",
+                    "server": "WSHwzDAMFp",
+                    "search_value": "7CafosbioY"
+                },
+                "options": {
+                    "channel_type": "any",
+                    "find_channel_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "IAUMPR8ZbI"
+                    ],
+                    "channel": [
+                        "uqwSHSf5lm"
+                    ]
+                },
+                "info": {
+                    "x": 1280,
+                    "y": 4740,
+                    "z": 0,
+                    "width": 505,
+                    "height": 225,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "IAUMPR8ZbI",
+                    "member": "OJxHMSJHmr",
+                    "role": "90laJGPYzu"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "mjKEVCqNNX"
+                    ],
+                    "action2": [
+                        "tW4MAzvRXT"
+                    ]
+                },
+                "info": {
+                    "x": 2160,
+                    "y": 3930,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "tW4MAzvRXT",
+                    "interaction": "8MIG5IaER0",
+                    "message": "p7ALUFapOK",
+                    "embeds": "ivxiJTB5RN",
+                    "row1": "pHKZNbp55D",
+                    "row2": "gwtJ40AOhz",
+                    "row3": "tkv4dRH49d",
+                    "row4": "jmrNciybtA",
+                    "row5": "e4fN4dOcpP",
+                    "attachment": "vCSafLBXZg"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 2670,
+                    "y": 3870,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Jij hebt geen toestemming om dit commando to gebruiken."
+                },
+                "outputs": {
+                    "text": [
+                        "p7ALUFapOK"
+                    ]
+                },
+                "info": {
+                    "x": 2750,
+                    "y": 3710,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "add_member_role",
+                "inputs": {
+                    "action": "mjKEVCqNNX",
+                    "member": "eMUml7jqwo",
+                    "role": "BrpID99gFU",
+                    "time": "dINSrwHnoE",
+                    "reason1": "uDERx8t4Mj",
+                    "reason2": "sDmADvP3O8"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "XnwqXerNlH"
+                    ],
+                    "action1": []
+                },
+                "info": {
+                    "x": 2170,
+                    "y": 4180,
+                    "z": 0,
+                    "width": 319,
+                    "height": 268,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_member_info",
+                "inputs": {
+                    "action": "XnwqXerNlH",
+                    "member": "FuxQNuiAtb"
+                },
+                "options": {
+                    "member_info": "27"
+                },
+                "outputs": {
+                    "action": [
+                        "6yD2IgVBW7"
+                    ],
+                    "result": [
+                        "sOrHRhD0AY"
+                    ]
+                },
+                "info": {
+                    "x": 2110,
+                    "y": 4520,
+                    "z": 0,
+                    "width": 575,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "6yD2IgVBW7",
+                    "user": "sOrHRhD0AY"
+                },
+                "options": {
+                    "user_info": "16"
+                },
+                "outputs": {
+                    "action": [
+                        "aQ48aEQQkI"
+                    ],
+                    "result": [
+                        "DM25DEAoep"
+                    ]
+                },
+                "info": {
+                    "x": 2120,
+                    "y": 4710,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message_v14",
+                "inputs": {
+                    "action": "aQ48aEQQkI",
+                    "channel": "uqwSHSf5lm",
+                    "embed": "tYBLMBiKTv",
+                    "attachment": "QJ3MfwYghg",
+                    "text1": "DM25DEAoep",
+                    "text2": "hbsEe9HyDK",
+                    "text3": "56xzAYTTsy",
+                    "text4": "ICh2pYPHof",
+                    "text5": "mLKrKN9e3f",
+                    "menu": "dnQlPq0ORD",
+                    "button": "q9P8MJlhnx",
+                    "button_row": "tsbWUByJer"
+                },
+                "options": {
+                    "text": "Gefelicitaart role handmatig toegewezen aan ${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "aORY0tLEJC"
+                    ],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 2180,
+                    "y": 4900,
+                    "z": 0,
+                    "width": 415,
+                    "height": 372,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "aORY0tLEJC",
+                    "interaction": "gXMHAmhx3C",
+                    "message": "Uo7kCtB04V",
+                    "embeds": "w3XdNdstoR",
+                    "row1": "E1ay10zlsQ",
+                    "row2": "Hag8GO2vhx",
+                    "row3": "TR2jI43dGK",
+                    "row4": "dnd7hONFF6",
+                    "row5": "GjgoIXrYMn",
+                    "attachment": "PWpr0ItY17"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 2710,
+                    "y": 4940,
+                    "z": 0,
+                    "width": 444,
+                    "height": 350,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Rol toegekend!"
+                },
+                "outputs": {
+                    "text": [
+                        "Uo7kCtB04V"
+                    ]
+                },
+                "info": {
+                    "x": 2925,
+                    "y": 4741,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
                     "color": ""
                 }
             }
