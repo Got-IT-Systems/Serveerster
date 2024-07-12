@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 7.0.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 7.0.1"
                 },
                 "outputs": {
                     "text": [
@@ -6326,7 +6326,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "x5nIzHfqgc"
+                        "BrKZmXN6sd"
                     ],
                     "result": [
                         "MOAEqj8xMs",
@@ -6715,8 +6715,7 @@
                     "output": [
                         "PzNCrKgjlv",
                         "NbKrCTS1uh",
-                        "aMOXlWBrXh",
-                        "vaFIuYxMDa"
+                        "aMOXlWBrXh"
                     ]
                 },
                 "info": {
@@ -6745,7 +6744,8 @@
                     ],
                     "output": [
                         "vwKNMrVXks",
-                        "4fvQjpa8DG"
+                        "4fvQjpa8DG",
+                        "zh2TzrdhKD"
                     ]
                 },
                 "info": {
@@ -6799,6 +6799,59 @@
                     "z": 0,
                     "width": 396,
                     "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_user",
+                "inputs": {
+                    "action": "BrKZmXN6sd",
+                    "search_value": "zh2TzrdhKD"
+                },
+                "options": {
+                    "find_user_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "MZlgmsFv8y"
+                    ],
+                    "user": [
+                        "iaOuU6i9Vi"
+                    ]
+                },
+                "info": {
+                    "x": 1840,
+                    "y": 11500,
+                    "z": 0,
+                    "width": 518,
+                    "height": 163,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "MZlgmsFv8y",
+                    "user": "iaOuU6i9Vi"
+                },
+                "options": {
+                    "user_info": "16"
+                },
+                "outputs": {
+                    "action": [
+                        "x5nIzHfqgc"
+                    ],
+                    "result": [
+                        "vaFIuYxMDa"
+                    ]
+                },
+                "info": {
+                    "x": 1830,
+                    "y": 11690,
+                    "z": 0,
+                    "width": 552,
+                    "height": 160,
                     "color": ""
                 }
             }
