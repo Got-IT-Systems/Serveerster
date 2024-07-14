@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 7.1.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 7.1.1"
                 },
                 "outputs": {
                     "text": [
@@ -1320,10 +1320,10 @@
                     ],
                     "action2": [],
                     "message": [],
-                    "server": [],
-                    "channel": [
-                        "ZsRo7OPL1J"
+                    "server": [
+                        "6QzUo3QQZu"
                     ],
+                    "channel": [],
                     "vc": [],
                     "user": [],
                     "member": [],
@@ -1357,7 +1357,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "IOp6iOhwJX"
+                        "u6FuzhcvlF"
                     ],
                     "button": [
                         "z5W5zeYsln"
@@ -1397,11 +1397,40 @@
                     "error": []
                 },
                 "info": {
-                    "x": 1590,
-                    "y": 1040,
+                    "x": 1940,
+                    "y": 1080,
                     "z": 0,
                     "width": 415,
                     "height": 372,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_channel",
+                "inputs": {
+                    "action": "u6FuzhcvlF",
+                    "server": "6QzUo3QQZu",
+                    "search_value": "Qo7fWO2zqU"
+                },
+                "options": {
+                    "channel_type": "any",
+                    "find_channel_by": "id",
+                    "search_value": "616362429948887041"
+                },
+                "outputs": {
+                    "action": [
+                        "IOp6iOhwJX"
+                    ],
+                    "channel": [
+                        "ZsRo7OPL1J"
+                    ]
+                },
+                "info": {
+                    "x": 1390,
+                    "y": 1040,
+                    "z": 0,
+                    "width": 505,
+                    "height": 225,
                     "color": ""
                 }
             }
