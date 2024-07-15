@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.0.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.0.1"
                 },
                 "outputs": {
                     "text": [
@@ -37087,7 +37087,7 @@
                     "name": "hiIxSDeJMR"
                 },
                 "options": {
-                    "name": "warning",
+                    "name": "waarschuwing",
                     "get": "string"
                 },
                 "outputs": {
