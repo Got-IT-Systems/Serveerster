@@ -16,6 +16,10 @@
         "resolve-dependencies": "^6.0.9",
         "semver": "^7.6.0",
 	"node-fetch": "^3.3.2",
-	"express": "^4.19.2"
+	"express": "^4.19.2",
+	        "discord-html-transcripts": "^3.2.0",
+        "discord-banner": "^1.6.7",
+		        "esm": "^3.2.25",
+        "discord-badges": "^0.0.0"
     }
 }
