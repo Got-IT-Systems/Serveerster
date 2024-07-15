@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.0.1"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.0.2"
                 },
                 "outputs": {
                     "text": [
@@ -10433,7 +10433,8 @@
                         "TKv43KOBuY"
                     ],
                     "result": [
-                        "FUfKWH6Rbi"
+                        "FUfKWH6Rbi",
+                        "FL5Pz5NSeB"
                     ]
                 },
                 "info": {
@@ -10456,7 +10457,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "BJX1WyatbI"
+                        "6LLKaT30k0"
                     ],
                     "result": [
                         "c86LRXRZbb"
@@ -10485,7 +10486,8 @@
                         "yBmowAQFMn"
                     ],
                     "result": [
-                        "gfhnVgrDvR"
+                        "gfhnVgrDvR",
+                        "q2TOjWGfeK"
                     ]
                 },
                 "info": {
@@ -10508,7 +10510,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "4ZVYL5HZ19"
+                        "1bH4juihQt"
                     ],
                     "result": [
                         "rZg02OQJ9u"
@@ -11047,7 +11049,8 @@
                         "izQtdhqLzJ"
                     ],
                     "result": [
-                        "93vSknUaNV"
+                        "93vSknUaNV",
+                        "D3oi0jtICs"
                     ]
                 },
                 "info": {
@@ -11148,7 +11151,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "kRl2MHpchO"
+                        "FQollowLCZ"
                     ],
                     "result": [
                         "xKY60b0fhn"
@@ -11183,8 +11186,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1670,
-                    "y": 5430,
+                    "x": 1640,
+                    "y": 5540,
                     "z": 105,
                     "width": 418,
                     "height": 175,
@@ -11292,7 +11295,8 @@
                         "WRAXptk94G"
                     ],
                     "result": [
-                        "i5eg5xjR0w"
+                        "i5eg5xjR0w",
+                        "R5uJtYskd2"
                     ]
                 },
                 "info": {
@@ -11323,8 +11327,8 @@
                     ]
                 },
                 "info": {
-                    "x": 640,
-                    "y": 6000,
+                    "x": 630,
+                    "y": 6020,
                     "z": 110,
                     "width": 653,
                     "height": 160,
@@ -11421,7 +11425,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "FKvQmTVBCZ"
+                        "PM2Tc6WWsT"
                     ],
                     "result": [
                         "3lK6iTNgzA"
@@ -11456,8 +11460,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1730,
-                    "y": 6240,
+                    "x": 1690,
+                    "y": 6320,
                     "z": 115,
                     "width": 418,
                     "height": 175,
@@ -13743,6 +13747,110 @@
                     "z": 0,
                     "width": 276,
                     "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "6LLKaT30k0",
+                    "user": "FL5Pz5NSeB"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "BJX1WyatbI"
+                    ],
+                    "result": [
+                        "34gVFwUtKo"
+                    ]
+                },
+                "info": {
+                    "x": 1512,
+                    "y": 1381,
+                    "z": 0,
+                    "width": 556,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "1bH4juihQt",
+                    "user": "q2TOjWGfeK"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "4ZVYL5HZ19"
+                    ],
+                    "result": [
+                        "cNIrr6EER4"
+                    ]
+                },
+                "info": {
+                    "x": 1410,
+                    "y": 740,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "PM2Tc6WWsT",
+                    "user": "R5uJtYskd2"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "FKvQmTVBCZ"
+                    ],
+                    "result": [
+                        "op5NNDntwz"
+                    ]
+                },
+                "info": {
+                    "x": 1640,
+                    "y": 6190,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "FQollowLCZ",
+                    "user": "D3oi0jtICs"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "kRl2MHpchO"
+                    ],
+                    "result": [
+                        "FRkInrg4B9"
+                    ]
+                },
+                "info": {
+                    "x": 1580,
+                    "y": 5390,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
                     "color": ""
                 }
             }
