@@ -25366,8 +25366,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1020,
-                    "y": 50,
+                    "x": 1170,
+                    "y": 840,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -25535,8 +25535,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 980,
-                    "y": 180,
+                    "x": 1470,
+                    "y": 950,
                     "z": 0,
                     "width": 455,
                     "height": 358,
@@ -25555,18 +25555,22 @@
                 },
                 "outputs": {
                     "action": [
-                        "wg14mKtP7A"
+                        "U2xMZJBLXm"
                     ],
                     "user": [],
-                    "member": [],
+                    "member": [
+                        "EtoHp2leRS"
+                    ],
                     "server": [
-                        "rIdfJv8p5l"
+                        "rIdfJv8p5l",
+                        "nfngA3LHpS"
                     ],
                     "channel": [],
                     "message": [],
                     "interaction": [
                         "2KlEfnyXAP",
-                        "PTeC7oinSD"
+                        "PTeC7oinSD",
+                        "uKbBHsxJeD"
                     ],
                     "args": [],
                     "name": [],
@@ -25631,6 +25635,158 @@
                     "z": 0,
                     "width": 469,
                     "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "U2xMZJBLXm",
+                    "file_path": "SWcaspBlgT"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "EtrYZlsnI9"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "SpSm3sVmqd"
+                    ]
+                },
+                "info": {
+                    "x": 860,
+                    "y": 110,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/staff.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "SWcaspBlgT"
+                    ]
+                },
+                "info": {
+                    "x": 520,
+                    "y": 0,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "EtrYZlsnI9",
+                    "server": "nfngA3LHpS",
+                    "search_value": "SpSm3sVmqd"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "rVF4lLN01K"
+                    ],
+                    "role": [
+                        "ateAleQfu0"
+                    ]
+                },
+                "info": {
+                    "x": 900,
+                    "y": 270,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "rVF4lLN01K",
+                    "member": "EtoHp2leRS",
+                    "role": "ateAleQfu0"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "wg14mKtP7A"
+                    ],
+                    "action2": [
+                        "Z2pQ0iuvpm"
+                    ]
+                },
+                "info": {
+                    "x": 1000,
+                    "y": 470,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "Z2pQ0iuvpm",
+                    "interaction": "uKbBHsxJeD",
+                    "message": "LCoMDbZEiG",
+                    "embeds": "F5Cq1P6qWc",
+                    "row1": "9WOFii9Bvo",
+                    "row2": "643iDqDvZB",
+                    "row3": "9AxDxUMIpx",
+                    "row4": "2gXzAVLGfV",
+                    "row5": "15b1f2F8lO",
+                    "attachment": "9xEfEUeWiW"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 1600,
+                    "y": 490,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Hier heb je geen toestemming voor!"
+                },
+                "outputs": {
+                    "text": [
+                        "LCoMDbZEiG"
+                    ]
+                },
+                "info": {
+                    "x": 1550,
+                    "y": 330,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
                     "color": ""
                 }
             }
