@@ -10660,7 +10660,9 @@
                     ],
                     "user": [],
                     "guild": [],
-                    "invite": [],
+                    "invite": [
+                        "gvh5p9ePfq"
+                    ],
                     "isbot": []
                 },
                 "info": {
@@ -11210,7 +11212,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "MHH9pirNVx"
+                        "D45PrhuETm"
                     ],
                     "text": [
                         "p4rG1tXOWn"
@@ -14412,8 +14414,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1512,
-                    "y": 1381,
+                    "x": 1460,
+                    "y": 1510,
                     "z": 0,
                     "width": 556,
                     "height": 160,
@@ -14494,6 +14496,32 @@
                     "y": 5390,
                     "z": 0,
                     "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_invite_info",
+                "inputs": {
+                    "action": "D45PrhuETm",
+                    "invite": "gvh5p9ePfq"
+                },
+                "options": {
+                    "invite_info": "12"
+                },
+                "outputs": {
+                    "action": [
+                        "MHH9pirNVx"
+                    ],
+                    "result": [
+                        "TMaelAOlFm"
+                    ]
+                },
+                "info": {
+                    "x": 1470,
+                    "y": 1130,
+                    "z": 0,
+                    "width": 343,
                     "height": 160,
                     "color": ""
                 }
