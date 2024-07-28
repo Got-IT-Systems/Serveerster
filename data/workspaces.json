@@ -1070,7 +1070,9 @@
                 },
                 "options": {},
                 "outputs": {
-                    "action": []
+                    "action": [
+                        "AX7nk0EirD"
+                    ]
                 },
                 "info": {
                     "x": 2200,
@@ -1461,33 +1463,11 @@
                     "threadsave": []
                 },
                 "info": {
-                    "x": 1840,
-                    "y": 870,
+                    "x": 2680,
+                    "y": 990,
                     "z": 0,
                     "width": 319,
                     "height": 202,
-                    "color": ""
-                }
-            },
-            {
-                "name": "get_message_info",
-                "inputs": {
-                    "action": "z3vwTKmxyP",
-                    "message": "Wlvlesm9tf"
-                },
-                "options": {
-                    "message_info": "41"
-                },
-                "outputs": {
-                    "action": [],
-                    "result": []
-                },
-                "info": {
-                    "x": 1150,
-                    "y": 1270,
-                    "z": 0,
-                    "width": 687,
-                    "height": 160,
                     "color": ""
                 }
             }
@@ -11517,19 +11497,19 @@
                     "text3": "PBA4JfNVLz"
                 },
                 "options": {
-                    "text": "User ${text1} joined the server."
+                    "text": "User ${text1} joined the server.\n\nInvite ${text2}"
                 },
                 "outputs": {
                     "action": [
-                        "D45PrhuETm"
+                        "MHH9pirNVx"
                     ],
                     "text": [
                         "p4rG1tXOWn"
                     ]
                 },
                 "info": {
-                    "x": 1390,
-                    "y": 950,
+                    "x": 1450,
+                    "y": 1220,
                     "z": 74,
                     "width": 418,
                     "height": 175,
@@ -14742,7 +14722,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "4ZVYL5HZ19"
+                        "D45PrhuETm"
                     ],
                     "result": [
                         "cNIrr6EER4"
@@ -14820,15 +14800,15 @@
                 },
                 "outputs": {
                     "action": [
-                        "MHH9pirNVx"
+                        "4ZVYL5HZ19"
                     ],
                     "result": [
                         "TMaelAOlFm"
                     ]
                 },
                 "info": {
-                    "x": 1470,
-                    "y": 1130,
+                    "x": 1510,
+                    "y": 970,
                     "z": 0,
                     "width": 343,
                     "height": 160,
