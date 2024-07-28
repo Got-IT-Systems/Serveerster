@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.2.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.2.1"
                 },
                 "outputs": {
                     "text": [
@@ -24444,7 +24444,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "LezGNknpkk"
+                        "jMxPTJRGBw"
                     ],
                     "message_embed": [
                         "39LOG5uXAJ"
@@ -24606,7 +24606,7 @@
                     "button_row": "PCMJHXDQmR"
                 },
                 "options": {
-                    "text": ""
+                    "text": "Hallo ${text1},"
                 },
                 "outputs": {
                     "action": [
@@ -24637,7 +24637,8 @@
                     "value1": [
                         "3TKdki6GAQ",
                         "RRLICvQC1r",
-                        "wbyfwcU68b"
+                        "wbyfwcU68b",
+                        "XaHkDR0gxu"
                     ],
                     "value2": [
                         "jI9gK5WKkS",
@@ -25134,6 +25135,32 @@
                     "z": 0,
                     "width": 209,
                     "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_member_info",
+                "inputs": {
+                    "action": "jMxPTJRGBw",
+                    "member": "XaHkDR0gxu"
+                },
+                "options": {
+                    "member_info": "31"
+                },
+                "outputs": {
+                    "action": [
+                        "LezGNknpkk"
+                    ],
+                    "result": [
+                        "Jzm7LUmCAO"
+                    ]
+                },
+                "info": {
+                    "x": 2115,
+                    "y": 2173,
+                    "z": 0,
+                    "width": 355,
+                    "height": 160,
                     "color": ""
                 }
             }
@@ -25747,7 +25774,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "LezGNknpkk"
+                        "llXKuXvOv0"
                     ],
                     "message_embed": [
                         "39LOG5uXAJ"
@@ -25909,7 +25936,7 @@
                     "button_row": "PCMJHXDQmR"
                 },
                 "options": {
-                    "text": ""
+                    "text": "Hallo ${text1},"
                 },
                 "outputs": {
                     "action": [
@@ -25939,7 +25966,8 @@
                     ],
                     "value1": [
                         "3TKdki6GAQ",
-                        "RRLICvQC1r"
+                        "RRLICvQC1r",
+                        "czrO0m41te"
                     ],
                     "value2": [
                         "jI9gK5WKkS",
@@ -26360,6 +26388,32 @@
                     "z": 0,
                     "width": 955,
                     "height": 214,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_member_info",
+                "inputs": {
+                    "action": "llXKuXvOv0",
+                    "member": "czrO0m41te"
+                },
+                "options": {
+                    "member_info": "31"
+                },
+                "outputs": {
+                    "action": [
+                        "LezGNknpkk"
+                    ],
+                    "result": [
+                        "Jzm7LUmCAO"
+                    ]
+                },
+                "info": {
+                    "x": 1723,
+                    "y": 2161,
+                    "z": 0,
+                    "width": 355,
+                    "height": 160,
                     "color": ""
                 }
             }
