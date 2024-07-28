@@ -23899,12 +23899,12 @@
                 },
                 "outputs": {
                     "action": [
-                        "l2RfXNMcQa"
+                        "2FXzIxDA4b"
                     ]
                 },
                 "info": {
-                    "x": 4161,
-                    "y": 221,
+                    "x": 3530,
+                    "y": 200,
                     "z": 1,
                     "width": 884,
                     "height": 248,
@@ -23951,7 +23951,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "QuA2AqooZ4"
+                        "PoP8QDgOcJ"
                     ],
                     "permissions": [
                         "idkQVSSL4z",
@@ -23959,8 +23959,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3445,
-                    "y": 239,
+                    "x": 5650,
+                    "y": 220,
                     "z": 2,
                     "width": 631,
                     "height": 1762,
@@ -23994,7 +23994,7 @@
                     "attach_files": "none",
                     "read_message_history": "none",
                     "mention_everyone": "none",
-                    "use_external_emojis": "none",
+                    "use_external_emojis": "deny",
                     "add_reactions": "none",
                     "connect": "none",
                     "speak": "none",
@@ -24007,7 +24007,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "2FXzIxDA4b"
+                        "QuA2AqooZ4"
                     ],
                     "permissions": [
                         "TYunynJpGl"
@@ -24047,7 +24047,8 @@
                         "jon2bndTBA",
                         "vLpwFjRIIw",
                         "ZkBlGhRElm",
-                        "I5br24Km7p"
+                        "I5br24Km7p",
+                        "sXKw7J9Za7"
                     ]
                 },
                 "info": {
@@ -24074,12 +24075,12 @@
                 },
                 "outputs": {
                     "action": [
-                        "f7CvEoxabq"
+                        "gUTFgTWpzA"
                     ]
                 },
                 "info": {
-                    "x": 4171,
-                    "y": 497,
+                    "x": 4580,
+                    "y": 490,
                     "z": 5,
                     "width": 884,
                     "height": 248,
@@ -24635,7 +24636,8 @@
                     ],
                     "value1": [
                         "3TKdki6GAQ",
-                        "RRLICvQC1r"
+                        "RRLICvQC1r",
+                        "wbyfwcU68b"
                     ],
                     "value2": [
                         "jI9gK5WKkS",
@@ -24657,7 +24659,8 @@
                     ],
                     "value7": [
                         "BmhLZMiyxw",
-                        "HCVuiwzkGx"
+                        "HCVuiwzkGx",
+                        "uOojuq4kFO"
                     ],
                     "value8": [
                         "pwojqgL2tH",
@@ -25002,6 +25005,137 @@
                     "height": 160,
                     "color": ""
                 }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "PoP8QDgOcJ",
+                    "value1": "uOojuq4kFO",
+                    "value2": "U4bIZfIxAK"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": "confirm01"
+                },
+                "outputs": {
+                    "action1": [
+                        "dJYVGb1X3x"
+                    ],
+                    "action2": [
+                        "l2RfXNMcQa"
+                    ]
+                },
+                "info": {
+                    "x": 5730,
+                    "y": 2010,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_permissions",
+                "inputs": {
+                    "action": "dJYVGb1X3x"
+                },
+                "options": {
+                    "administrator": "none",
+                    "view_audit_log": "none",
+                    "view_guild_insights": "none",
+                    "manage_guild": "none",
+                    "manage_roles": "none",
+                    "manage_channels": "none",
+                    "kick_members": "none",
+                    "ban_members": "none",
+                    "create_instant_invite": "none",
+                    "change_nickname": "none",
+                    "manage_nicknames": "none",
+                    "manage_emojis_and_stickers": "none",
+                    "manage_webhooks": "none",
+                    "view_channel": "allow",
+                    "send_messages": "allow",
+                    "send_tts_messages": "none",
+                    "manage_messages": "none",
+                    "embed_links": "deny",
+                    "attach_files": "deny",
+                    "read_message_history": "allow",
+                    "mention_everyone": "none",
+                    "use_external_emojis": "none",
+                    "add_reactions": "none",
+                    "connect": "none",
+                    "speak": "none",
+                    "stream": "none",
+                    "mute_members": "none",
+                    "deafen_members": "none",
+                    "move_members": "none",
+                    "use_vad": "none",
+                    "priority_speaker": "none"
+                },
+                "outputs": {
+                    "action": [
+                        "jILuXyujlw"
+                    ],
+                    "permissions": [
+                        "02dAVKK4wu"
+                    ]
+                },
+                "info": {
+                    "x": 6460,
+                    "y": 190,
+                    "z": 2,
+                    "width": 631,
+                    "height": 1762,
+                    "color": "#5a5a5a"
+                }
+            },
+            {
+                "name": "apply_permissions",
+                "inputs": {
+                    "action": "jILuXyujlw",
+                    "target1": "sXKw7J9Za7",
+                    "target2": "wbyfwcU68b",
+                    "permissions": "02dAVKK4wu",
+                    "reason": "OwPfpf1rNP"
+                },
+                "options": {
+                    "application_type": "set",
+                    "target_type": "channel_target"
+                },
+                "outputs": {
+                    "action": [
+                        "OD6h4JZTZc"
+                    ]
+                },
+                "info": {
+                    "x": 7200,
+                    "y": 1690,
+                    "z": 5,
+                    "width": 884,
+                    "height": 248,
+                    "color": "#5a5a5a"
+                }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "gUTFgTWpzA",
+                    "action2": "OD6h4JZTZc"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "f7CvEoxabq"
+                    ]
+                },
+                "info": {
+                    "x": 3850,
+                    "y": 730,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
             }
         ],
         "notes": [
@@ -25102,8 +25236,8 @@
                     "send_messages": "allow",
                     "send_tts_messages": "none",
                     "manage_messages": "none",
-                    "embed_links": "none",
-                    "attach_files": "none",
+                    "embed_links": "deny",
+                    "attach_files": "deny",
                     "read_message_history": "allow",
                     "mention_everyone": "none",
                     "use_external_emojis": "none",
@@ -25128,8 +25262,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3445,
-                    "y": 239,
+                    "x": 3460,
+                    "y": 240,
                     "z": 2,
                     "width": 631,
                     "height": 1762,
