@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.3Build24073102"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.3Build24073103"
                 },
                 "outputs": {
                     "text": [
@@ -17957,7 +17957,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "j9sGoiQL65"
+                        "am6M2iKEuG"
                     ],
                     "button": [
                         "iwmw159rWD"
@@ -18143,40 +18143,6 @@
             {
                 "name": "create_button",
                 "inputs": {
-                    "action": "j9sGoiQL65",
-                    "styles": "BxFnook0JU",
-                    "label": "mdtAUzgN38",
-                    "emoji": "1EMRdWI3VH",
-                    "id": "AsEZsFOgie",
-                    "enable": "hgxQQVOF7T"
-                },
-                "options": {
-                    "styles": "primary",
-                    "label": "Transcript",
-                    "emoji": "",
-                    "id": "transcriptnow",
-                    "enable": "enabled"
-                },
-                "outputs": {
-                    "action": [
-                        "am6M2iKEuG"
-                    ],
-                    "button": [
-                        "HlOYrpqYkQ"
-                    ]
-                },
-                "info": {
-                    "x": 3650,
-                    "y": 1100,
-                    "z": 0,
-                    "width": 426,
-                    "height": 355,
-                    "color": ""
-                }
-            },
-            {
-                "name": "create_button",
-                "inputs": {
                     "action": "am6M2iKEuG",
                     "styles": "JWuxYQWU2S",
                     "label": "7PbK8Opjmy",
@@ -18196,7 +18162,7 @@
                         "mmIFiZOZ2L"
                     ],
                     "button": [
-                        "ZAg3ln5OAu"
+                        "HlOYrpqYkQ"
                     ]
                 },
                 "info": {
@@ -18309,7 +18275,9 @@
                 },
                 "options": {},
                 "outputs": {
-                    "action": []
+                    "action": [
+                        "SH7reC2pHX"
+                    ]
                 },
                 "info": {
                     "x": 5750,
@@ -18925,19 +18893,22 @@
                     "value1": [],
                     "value2": [
                         "CabyjzBL5n",
-                        "WCQTlu4iKn"
+                        "WCQTlu4iKn",
+                        "MOxJHrzWZ5"
                     ],
                     "value3": [
                         "ApkSn6RmDa",
                         "7lVVdYYp1o",
-                        "gjGieRBDvd"
+                        "gjGieRBDvd",
+                        "xrGMI4wqkr"
                     ],
                     "value4": [
                         "TfBFjsaxQP",
                         "QdQvsKoQNF",
                         "bwGeuz8M4V",
                         "ciIuKeVaKx",
-                        "RdTgSgOneb"
+                        "RdTgSgOneb",
+                        "UcYSXi8Fhy"
                     ],
                     "value5": [],
                     "value6": [],
@@ -19706,6 +19677,77 @@
                     "height": 112,
                     "color": ""
                 }
+            },
+            {
+                "name": "emitter 8x",
+                "inputs": {
+                    "action": "SH7reC2pHX",
+                    "id": "Vf9GShV1Gm",
+                    "search_value": "MPWFFFoyFg",
+                    "value1": "BrNjCCDTME",
+                    "value2": "MOxJHrzWZ5",
+                    "value3": "xrGMI4wqkr",
+                    "value4": "UcYSXi8Fhy",
+                    "value5": "FWIqhTzGRT",
+                    "value6": "55Mw6YUnGG",
+                    "value7": "fWGZCIOZBU",
+                    "value8": "2iOIU3ccY3"
+                },
+                "options": {
+                    "restriction_type": "all",
+                    "search_type": "number"
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 6080,
+                    "y": 400,
+                    "z": 0,
+                    "width": 455,
+                    "height": 358,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "transcriptnow"
+                },
+                "outputs": {
+                    "text": [
+                        "Vf9GShV1Gm"
+                    ]
+                },
+                "info": {
+                    "x": 6410,
+                    "y": 140,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "close"
+                },
+                "outputs": {
+                    "text": [
+                        "fWGZCIOZBU"
+                    ]
+                },
+                "info": {
+                    "x": 6170,
+                    "y": 790,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
             }
         ],
         "notes": []
@@ -19906,8 +19948,8 @@
                     ]
                 },
                 "info": {
-                    "x": 810,
-                    "y": 1880,
+                    "x": 530,
+                    "y": 3850,
                     "z": 0,
                     "width": 719,
                     "height": 160,
@@ -19938,8 +19980,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1780,
-                    "y": 1810,
+                    "x": 1490,
+                    "y": 3780,
                     "z": 0,
                     "width": 460,
                     "height": 279,
@@ -19960,7 +20002,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "iTSBvI8A1Z"
+                        "ZVX5A9TsXi"
                     ],
                     "channel": [
                         "jShLjlkAXZ",
@@ -19968,8 +20010,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2360,
-                    "y": 2730,
+                    "x": 1710,
+                    "y": 4670,
                     "z": 0,
                     "width": 505,
                     "height": 225,
@@ -19987,16 +20029,16 @@
                 },
                 "outputs": {
                     "action": [
-                        "XTZahBSESc"
+                        "qV7YUkZYj0"
                     ],
                     "action2": [],
                     "content": [
-                        "NOIQGKOhzp"
+                        "pfeyk1qQmy"
                     ]
                 },
                 "info": {
-                    "x": 2120,
-                    "y": 3060,
+                    "x": 1660,
+                    "y": 5330,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -20023,8 +20065,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3070,
-                    "y": 2730,
+                    "x": 1250,
+                    "y": 5310,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -20050,8 +20092,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2610,
-                    "y": 3030,
+                    "x": 2190,
+                    "y": 5450,
                     "z": 0,
                     "width": 522,
                     "height": 171,
@@ -20084,11 +20126,11 @@
                     ]
                 },
                 "info": {
-                    "x": 3180,
-                    "y": 3000,
+                    "x": 2860,
+                    "y": 5440,
                     "z": 0,
                     "width": 567,
-                    "height": 214,
+                    "height": 230,
                     "color": ""
                 }
             },
@@ -20132,8 +20174,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3840,
-                    "y": 3000,
+                    "x": 3560,
+                    "y": 4970,
                     "z": 0,
                     "width": 486,
                     "height": 808,
@@ -20167,8 +20209,8 @@
                     "error": []
                 },
                 "info": {
-                    "x": 4670,
-                    "y": 2890,
+                    "x": 4380,
+                    "y": 4860,
                     "z": 0,
                     "width": 415,
                     "height": 372,
@@ -20423,15 +20465,15 @@
                 },
                 "outputs": {
                     "action": [
-                        "j9sGoiQL65"
+                        "am6M2iKEuG"
                     ],
                     "button": [
                         "iwmw159rWD"
                     ]
                 },
                 "info": {
-                    "x": 3190,
-                    "y": 1100,
+                    "x": 3740,
+                    "y": 1090,
                     "z": 0,
                     "width": 426,
                     "height": 355,
@@ -20609,40 +20651,6 @@
             {
                 "name": "create_button",
                 "inputs": {
-                    "action": "j9sGoiQL65",
-                    "styles": "BxFnook0JU",
-                    "label": "mdtAUzgN38",
-                    "emoji": "1EMRdWI3VH",
-                    "id": "AsEZsFOgie",
-                    "enable": "hgxQQVOF7T"
-                },
-                "options": {
-                    "styles": "primary",
-                    "label": "Transcript",
-                    "emoji": "",
-                    "id": "transcriptnow",
-                    "enable": "enabled"
-                },
-                "outputs": {
-                    "action": [
-                        "am6M2iKEuG"
-                    ],
-                    "button": [
-                        "HlOYrpqYkQ"
-                    ]
-                },
-                "info": {
-                    "x": 3640,
-                    "y": 1100,
-                    "z": 0,
-                    "width": 426,
-                    "height": 355,
-                    "color": ""
-                }
-            },
-            {
-                "name": "create_button",
-                "inputs": {
                     "action": "am6M2iKEuG",
                     "styles": "JWuxYQWU2S",
                     "label": "7PbK8Opjmy",
@@ -20662,12 +20670,12 @@
                         "mmIFiZOZ2L"
                     ],
                     "button": [
-                        "ZAg3ln5OAu"
+                        "HlOYrpqYkQ"
                     ]
                 },
                 "info": {
-                    "x": 4090,
-                    "y": 1110,
+                    "x": 4230,
+                    "y": 990,
                     "z": 0,
                     "width": 426,
                     "height": 355,
@@ -20824,8 +20832,8 @@
                     "error_message": []
                 },
                 "info": {
-                    "x": 5270,
-                    "y": 640,
+                    "x": 4930,
+                    "y": 6160,
                     "z": 0,
                     "width": 650,
                     "height": 344,
@@ -20852,8 +20860,8 @@
                     ]
                 },
                 "info": {
-                    "x": 6410,
-                    "y": 590,
+                    "x": 6070,
+                    "y": 6110,
                     "z": 0,
                     "width": 430,
                     "height": 204,
@@ -20881,8 +20889,8 @@
                     ]
                 },
                 "info": {
-                    "x": 7030,
-                    "y": 730,
+                    "x": 6690,
+                    "y": 6250,
                     "z": 0,
                     "width": 505,
                     "height": 225,
@@ -20938,8 +20946,8 @@
                     ]
                 },
                 "info": {
-                    "x": 5330,
-                    "y": 1190,
+                    "x": 4990,
+                    "y": 6710,
                     "z": 0,
                     "width": 955,
                     "height": 188,
@@ -20958,8 +20966,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 6660,
-                    "y": 1190,
+                    "x": 6320,
+                    "y": 6710,
                     "z": 0,
                     "width": 258,
                     "height": 150,
@@ -20978,8 +20986,8 @@
                     ]
                 },
                 "info": {
-                    "x": 5780,
-                    "y": 1430,
+                    "x": 5440,
+                    "y": 6950,
                     "z": 0,
                     "width": 312,
                     "height": 102,
@@ -21022,8 +21030,8 @@
                     "subcommandgroup": []
                 },
                 "info": {
-                    "x": 7490,
-                    "y": 290,
+                    "x": 4370,
+                    "y": 7760,
                     "z": 0,
                     "width": 396,
                     "height": 396,
@@ -21042,8 +21050,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 9290,
-                    "y": 470,
+                    "x": 6170,
+                    "y": 7940,
                     "z": 0,
                     "width": 210,
                     "height": 138,
@@ -21069,8 +21077,8 @@
                     ]
                 },
                 "info": {
-                    "x": 8060,
-                    "y": 190,
+                    "x": 4940,
+                    "y": 7660,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -21089,8 +21097,8 @@
                     ]
                 },
                 "info": {
-                    "x": 7680,
-                    "y": 100,
+                    "x": 4560,
+                    "y": 7570,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -21114,8 +21122,8 @@
                     ]
                 },
                 "info": {
-                    "x": 8030,
-                    "y": 530,
+                    "x": 4910,
+                    "y": 8000,
                     "z": 0,
                     "width": 268,
                     "height": 138,
@@ -21146,8 +21154,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 8650,
-                    "y": 530,
+                    "x": 5530,
+                    "y": 8000,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -21166,8 +21174,8 @@
                     ]
                 },
                 "info": {
-                    "x": 8310,
-                    "y": 660,
+                    "x": 5190,
+                    "y": 8130,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -21194,8 +21202,8 @@
                     ]
                 },
                 "info": {
-                    "x": 8010,
-                    "y": 340,
+                    "x": 4890,
+                    "y": 7810,
                     "z": 0,
                     "width": 423,
                     "height": 171,
@@ -21218,11 +21226,13 @@
                 },
                 "options": {},
                 "outputs": {
-                    "action": []
+                    "action": [
+                        "rnHkcka2nR"
+                    ]
                 },
                 "info": {
-                    "x": 4500,
-                    "y": 40,
+                    "x": 5210,
+                    "y": 190,
                     "z": 0,
                     "width": 258,
                     "height": 384,
@@ -21269,23 +21279,28 @@
                 },
                 "outputs": {
                     "action": [
-                        "K4iEalBnl1"
+                        "PBSau4DEvV"
                     ],
-                    "user": [],
-                    "member": [],
+                    "user": [
+                        "G7O6kV8v1s"
+                    ],
+                    "member": [
+                        "IZdBzdDD87",
+                        "XxsRFSPHK8"
+                    ],
                     "server": [
-                        "O5mXL25qVH"
+                        "gF904140Zp",
+                        "7n2EewmCN0"
                     ],
                     "channel": [
-                        "yQg1KLbA2e",
-                        "8FZlC5ZMDg",
-                        "Z80g79Wivy",
-                        "t7F9Yujul2",
-                        "xtBmsWO1vf"
+                        "d04As3C2np"
                     ],
-                    "message": [],
+                    "message": [
+                        "NdM4buplmT"
+                    ],
                     "interaction": [
-                        "XuQnXtNyjD"
+                        "lMpZJtnQWs",
+                        "lkdz9HwXqx"
                     ],
                     "args": [],
                     "name": [],
@@ -21294,8 +21309,8 @@
                     "subcommandgroup": []
                 },
                 "info": {
-                    "x": 220,
-                    "y": 1890,
+                    "x": 3130,
+                    "y": 2270,
                     "z": 0,
                     "width": 396,
                     "height": 396,
@@ -21326,8 +21341,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1170,
-                    "y": 2070,
+                    "x": 890,
+                    "y": 4040,
                     "z": 0,
                     "width": 345,
                     "height": 164,
@@ -21350,8 +21365,8 @@
                     ]
                 },
                 "info": {
-                    "x": 210,
-                    "y": 2390,
+                    "x": 0,
+                    "y": 4360,
                     "z": 0,
                     "width": 287,
                     "height": 182,
@@ -21376,8 +21391,8 @@
                     ]
                 },
                 "info": {
-                    "x": 800,
-                    "y": 2270,
+                    "x": 520,
+                    "y": 4240,
                     "z": 0,
                     "width": 719,
                     "height": 160,
@@ -21402,8 +21417,8 @@
                     "errormsg": []
                 },
                 "info": {
-                    "x": 950,
-                    "y": 2690,
+                    "x": 670,
+                    "y": 4660,
                     "z": 0,
                     "width": 289,
                     "height": 176,
@@ -21430,8 +21445,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1010,
-                    "y": 2460,
+                    "x": 730,
+                    "y": 4430,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -21453,12 +21468,13 @@
                         "aXMqpErcFL"
                     ],
                     "value": [
-                        "1zkqFzXfcA"
+                        "1zkqFzXfcA",
+                        "2kEDOxVsvt"
                     ]
                 },
                 "info": {
-                    "x": 900,
-                    "y": 2870,
+                    "x": 620,
+                    "y": 4840,
                     "z": 0,
                     "width": 412,
                     "height": 150,
@@ -21476,15 +21492,15 @@
                 },
                 "outputs": {
                     "action": [
-                        "TDve6QdHYY"
+                        "ams6OeeHcZ"
                     ],
                     "value": [
                         "xXkYeHEEc8"
                     ]
                 },
                 "info": {
-                    "x": 910,
-                    "y": 3050,
+                    "x": 630,
+                    "y": 5020,
                     "z": 0,
                     "width": 365,
                     "height": 117,
@@ -21511,8 +21527,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1350,
-                    "y": 3040,
+                    "x": 1280,
+                    "y": 4990,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -21538,8 +21554,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1630,
-                    "y": 2800,
+                    "x": 1100,
+                    "y": 4640,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -21561,8 +21577,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3120,
-                    "y": 2510,
+                    "x": 2840,
+                    "y": 4480,
                     "z": 0,
                     "width": 376,
                     "height": 156,
@@ -21593,8 +21609,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 4670,
-                    "y": 3670,
+                    "x": 4380,
+                    "y": 5640,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -21614,15 +21630,16 @@
                 },
                 "outputs": {
                     "action": [
-                        "RhBK2egq5s"
+                        "va9gEmjePq"
                     ],
                     "text": [
-                        "B4LyhJ76n1"
+                        "B4LyhJ76n1",
+                        "LLwKV66rtU"
                     ]
                 },
                 "info": {
-                    "x": 4710,
-                    "y": 3470,
+                    "x": 4420,
+                    "y": 5440,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -21647,8 +21664,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4550,
-                    "y": 3260,
+                    "x": 4260,
+                    "y": 5230,
                     "z": 0,
                     "width": 719,
                     "height": 160,
@@ -21671,11 +21688,11 @@
                 },
                 "options": {
                     "response": "defer",
-                    "private": "false"
+                    "private": "true"
                 },
                 "outputs": {
                     "action": [
-                        "gjPo6WnABK"
+                        "F92pLxXkc1"
                     ],
                     "interaction": [
                         "jVfphwiyKL"
@@ -21683,8 +21700,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 1100,
-                    "y": 1520,
+                    "x": 1810,
+                    "y": 2350,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -21715,8 +21732,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 3970,
-                    "y": 4000,
+                    "x": 4070,
+                    "y": 6020,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -21758,8 +21775,8 @@
                     "subcommandgroup": []
                 },
                 "info": {
-                    "x": 120,
-                    "y": 3940,
+                    "x": 220,
+                    "y": 5960,
                     "z": 0,
                     "width": 396,
                     "height": 396,
@@ -21784,8 +21801,8 @@
                     ]
                 },
                 "info": {
-                    "x": 610,
-                    "y": 4020,
+                    "x": 710,
+                    "y": 6040,
                     "z": 0,
                     "width": 715,
                     "height": 160,
@@ -21813,8 +21830,8 @@
                     ]
                 },
                 "info": {
-                    "x": 830,
-                    "y": 4290,
+                    "x": 930,
+                    "y": 6310,
                     "z": 0,
                     "width": 345,
                     "height": 164,
@@ -21837,8 +21854,8 @@
                     ]
                 },
                 "info": {
-                    "x": 140,
-                    "y": 4370,
+                    "x": 240,
+                    "y": 6390,
                     "z": 0,
                     "width": 287,
                     "height": 182,
@@ -21865,8 +21882,8 @@
                     ]
                 },
                 "info": {
-                    "x": 790,
-                    "y": 4570,
+                    "x": 890,
+                    "y": 6590,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -21892,8 +21909,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1360,
-                    "y": 4570,
+                    "x": 1460,
+                    "y": 6590,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -21920,8 +21937,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1870,
-                    "y": 4570,
+                    "x": 1970,
+                    "y": 6590,
                     "z": 0,
                     "width": 461,
                     "height": 171,
@@ -21949,8 +21966,8 @@
                     ]
                 },
                 "info": {
-                    "x": 770,
-                    "y": 4780,
+                    "x": 870,
+                    "y": 6800,
                     "z": 0,
                     "width": 258,
                     "height": 384,
@@ -22006,8 +22023,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2450,
-                    "y": 4070,
+                    "x": 2550,
+                    "y": 6090,
                     "z": 0,
                     "width": 951,
                     "height": 1702,
@@ -22026,8 +22043,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3631,
-                    "y": 4031,
+                    "x": 3730,
+                    "y": 6050,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -22145,18 +22162,21 @@
                     "value1": [],
                     "value2": [
                         "CabyjzBL5n",
-                        "WCQTlu4iKn"
+                        "WCQTlu4iKn",
+                        "o1MSQMBtPP"
                     ],
                     "value3": [
                         "ApkSn6RmDa",
                         "7lVVdYYp1o",
-                        "gjGieRBDvd"
+                        "gjGieRBDvd",
+                        "4bR58L6q1j"
                     ],
                     "value4": [
                         "bwGeuz8M4V",
                         "ciIuKeVaKx",
                         "RdTgSgOneb",
-                        "TfBFjsaxQP"
+                        "TfBFjsaxQP",
+                        "W5zu5lzpRq"
                     ],
                     "value5": [],
                     "value6": [],
@@ -22226,8 +22246,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2690,
-                    "y": 1500,
+                    "x": 2410,
+                    "y": 3470,
                     "z": 0,
                     "width": 715,
                     "height": 160,
@@ -22252,8 +22272,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4080,
-                    "y": 1490,
+                    "x": 3800,
+                    "y": 3460,
                     "z": 0,
                     "width": 683,
                     "height": 160,
@@ -22281,8 +22301,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3650,
-                    "y": 1570,
+                    "x": 3370,
+                    "y": 3540,
                     "z": 0,
                     "width": 319,
                     "height": 176,
@@ -22308,8 +22328,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3380,
-                    "y": 1700,
+                    "x": 3100,
+                    "y": 3670,
                     "z": 0,
                     "width": 198,
                     "height": 112,
@@ -22330,8 +22350,8 @@
                     "object": []
                 },
                 "info": {
-                    "x": 5420,
-                    "y": 1500,
+                    "x": 5130,
+                    "y": 3470,
                     "z": 0,
                     "width": 213,
                     "height": 164,
@@ -22350,8 +22370,8 @@
                     ]
                 },
                 "info": {
-                    "x": 5010,
-                    "y": 1680,
+                    "x": 4720,
+                    "y": 3650,
                     "z": 0,
                     "width": 312,
                     "height": 102,
@@ -22379,8 +22399,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3650,
-                    "y": 1760,
+                    "x": 3370,
+                    "y": 3730,
                     "z": 0,
                     "width": 319,
                     "height": 176,
@@ -22405,8 +22425,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4020,
-                    "y": 1790,
+                    "x": 3740,
+                    "y": 3760,
                     "z": 0,
                     "width": 687,
                     "height": 160,
@@ -22430,8 +22450,8 @@
                     ]
                 },
                 "info": {
-                    "x": 5370,
-                    "y": 1820,
+                    "x": 5080,
+                    "y": 3790,
                     "z": 0,
                     "width": 229,
                     "height": 138,
@@ -22452,8 +22472,8 @@
                     "object": []
                 },
                 "info": {
-                    "x": 6130,
-                    "y": 1820,
+                    "x": 5840,
+                    "y": 3790,
                     "z": 0,
                     "width": 213,
                     "height": 164,
@@ -22480,8 +22500,8 @@
                     ]
                 },
                 "info": {
-                    "x": 5640,
-                    "y": 1810,
+                    "x": 5350,
+                    "y": 3780,
                     "z": 0,
                     "width": 448,
                     "height": 156,
@@ -22507,8 +22527,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4750,
-                    "y": 2050,
+                    "x": 4460,
+                    "y": 4020,
                     "z": 0,
                     "width": 522,
                     "height": 171,
@@ -22533,8 +22553,8 @@
                     ]
                 },
                 "info": {
-                    "x": 5320,
-                    "y": 2040,
+                    "x": 5030,
+                    "y": 4010,
                     "z": 0,
                     "width": 556,
                     "height": 160,
@@ -22561,8 +22581,8 @@
                     ]
                 },
                 "info": {
-                    "x": 5950,
-                    "y": 2050,
+                    "x": 5660,
+                    "y": 4020,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -22585,8 +22605,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4050,
-                    "y": 2020,
+                    "x": 3770,
+                    "y": 3990,
                     "z": 0,
                     "width": 197,
                     "height": 112,
@@ -22609,8 +22629,8 @@
                     "list": []
                 },
                 "info": {
-                    "x": 6370,
-                    "y": 2030,
+                    "x": 6080,
+                    "y": 4000,
                     "z": 0,
                     "width": 412,
                     "height": 176,
@@ -22641,8 +22661,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4400,
-                    "y": 2120,
+                    "x": 4110,
+                    "y": 4090,
                     "z": 0,
                     "width": 308,
                     "height": 164,
@@ -22667,8 +22687,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4800,
-                    "y": 1500,
+                    "x": 4510,
+                    "y": 3470,
                     "z": 0,
                     "width": 556,
                     "height": 160,
@@ -22694,58 +22714,11 @@
                     ]
                 },
                 "info": {
-                    "x": 4750,
-                    "y": 1810,
+                    "x": 4460,
+                    "y": 3780,
                     "z": 0,
                     "width": 556,
                     "height": 160,
-                    "color": ""
-                }
-            },
-            {
-                "name": "get_object_info",
-                "inputs": {
-                    "action": "rqQSzJkhGz",
-                    "object": "kccMrNNh7R"
-                },
-                "options": {
-                    "object_info": "4"
-                },
-                "outputs": {
-                    "action": [
-                        "eAjfOwsyJi"
-                    ],
-                    "result": [
-                        "7sfR9Wjlwr"
-                    ]
-                },
-                "info": {
-                    "x": 5230,
-                    "y": 3150,
-                    "z": 0,
-                    "width": 475,
-                    "height": 112,
-                    "color": ""
-                }
-            },
-            {
-                "name": "console_log",
-                "inputs": {
-                    "action": "eAjfOwsyJi",
-                    "value": "7sfR9Wjlwr"
-                },
-                "options": {
-                    "value": ""
-                },
-                "outputs": {
-                    "action": []
-                },
-                "info": {
-                    "x": 5850,
-                    "y": 3270,
-                    "z": 0,
-                    "width": 364,
-                    "height": 117,
                     "color": ""
                 }
             },
@@ -22761,8 +22734,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3920,
-                    "y": 2220,
+                    "x": 3640,
+                    "y": 4190,
                     "z": 0,
                     "width": 312,
                     "height": 102,
@@ -22788,8 +22761,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4860,
-                    "y": 2270,
+                    "x": 4570,
+                    "y": 4240,
                     "z": 0,
                     "width": 386,
                     "height": 138,
@@ -22822,8 +22795,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4120,
-                    "y": 2590,
+                    "x": 3840,
+                    "y": 4560,
                     "z": 0,
                     "width": 426,
                     "height": 355,
@@ -22861,8 +22834,8 @@
                     "subcommandgroup": []
                 },
                 "info": {
-                    "x": 370,
-                    "y": 5970,
+                    "x": 640,
+                    "y": 7520,
                     "z": 0,
                     "width": 396,
                     "height": 396,
@@ -22887,8 +22860,8 @@
                     ]
                 },
                 "info": {
-                    "x": 860,
-                    "y": 5990,
+                    "x": 1130,
+                    "y": 7540,
                     "z": 0,
                     "width": 687,
                     "height": 160,
@@ -22915,8 +22888,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1020,
-                    "y": 6410,
+                    "x": 1290,
+                    "y": 7960,
                     "z": 0,
                     "width": 594,
                     "height": 160,
@@ -22942,8 +22915,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1040,
-                    "y": 6170,
+                    "x": 1310,
+                    "y": 7720,
                     "z": 0,
                     "width": 412,
                     "height": 150,
@@ -22960,8 +22933,8 @@
                     "text": []
                 },
                 "info": {
-                    "x": 780,
-                    "y": 7420,
+                    "x": 1050,
+                    "y": 8910,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -22994,8 +22967,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2060,
-                    "y": 6750,
+                    "x": 2330,
+                    "y": 8300,
                     "z": 0,
                     "width": 426,
                     "height": 355,
@@ -23026,8 +22999,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 2740,
-                    "y": 6760,
+                    "x": 3010,
+                    "y": 8310,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -23046,8 +23019,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2270,
-                    "y": 7170,
+                    "x": 2540,
+                    "y": 8720,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -23074,8 +23047,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1690,
-                    "y": 7190,
+                    "x": 1960,
+                    "y": 8740,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -23102,8 +23075,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1000,
-                    "y": 7110,
+                    "x": 1270,
+                    "y": 8660,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -23134,8 +23107,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2270,
-                    "y": 2050,
+                    "x": 1990,
+                    "y": 4020,
                     "z": 0,
                     "width": 460,
                     "height": 279,
@@ -23162,8 +23135,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2830,
-                    "y": 2050,
+                    "x": 2550,
+                    "y": 4020,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -23186,8 +23159,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3355,
-                    "y": 2199,
+                    "x": 3070,
+                    "y": 4170,
                     "z": 0,
                     "width": 398,
                     "height": 138,
@@ -23217,8 +23190,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1430,
-                    "y": 6820,
+                    "x": 1700,
+                    "y": 8370,
                     "z": 0,
                     "width": 415,
                     "height": 182,
@@ -23245,8 +23218,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1000,
-                    "y": 6930,
+                    "x": 1270,
+                    "y": 8480,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -23266,8 +23239,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 2168,
-                    "y": 6590,
+                    "x": 2440,
+                    "y": 8140,
                     "z": 0,
                     "width": 364,
                     "height": 117,
@@ -23294,8 +23267,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3340,
-                    "y": 3463,
+                    "x": 3040,
+                    "y": 5700,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -23317,8 +23290,8 @@
                     ]
                 },
                 "info": {
-                    "x": 8730,
-                    "y": 350,
+                    "x": 5610,
+                    "y": 7820,
                     "z": 0,
                     "width": 376,
                     "height": 156,
@@ -23351,8 +23324,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 8800,
-                    "y": 10,
+                    "x": 5680,
+                    "y": 7480,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -23371,8 +23344,8 @@
                     ]
                 },
                 "info": {
-                    "x": 8240,
-                    "y": 20,
+                    "x": 5120,
+                    "y": 7490,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -23389,15 +23362,565 @@
                     "key": "user"
                 },
                 "outputs": {
-                    "action": [],
-                    "value": []
+                    "action": [
+                        "TDve6QdHYY"
+                    ],
+                    "value": [
+                        "pka5UF7cBf",
+                        "P3aEM7oOLQ",
+                        "7utBIqzZDl",
+                        "0czXhyzceW",
+                        "XOxN6G5Pjw"
+                    ]
                 },
                 "info": {
-                    "x": 900,
-                    "y": 3200,
+                    "x": 620,
+                    "y": 5170,
                     "z": 0,
                     "width": 365,
                     "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "ZVX5A9TsXi",
+                    "value1": "0czXhyzceW",
+                    "value2": "xvqICNroy2"
+                },
+                "options": {
+                    "comparison_type": "greater_than",
+                    "value2": "1"
+                },
+                "outputs": {
+                    "action1": [
+                        "lFDlzyixwt"
+                    ],
+                    "action2": [
+                        "iTSBvI8A1Z"
+                    ]
+                },
+                "info": {
+                    "x": 1850,
+                    "y": 5010,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "emitter 8x",
+                "inputs": {
+                    "action": "rnHkcka2nR",
+                    "id": "jLrIJqAqUW",
+                    "search_value": "DB4mvrjUZg",
+                    "value1": "S4KSDyNfvb",
+                    "value2": "o1MSQMBtPP",
+                    "value3": "4bR58L6q1j",
+                    "value4": "W5zu5lzpRq",
+                    "value5": "lu44B0cH1m",
+                    "value6": "EZOOlJ1FUk",
+                    "value7": "TNaaQNnsyl",
+                    "value8": "XjWyDQpCyn"
+                },
+                "options": {
+                    "restriction_type": "all",
+                    "search_type": "number"
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 6260,
+                    "y": 590,
+                    "z": 0,
+                    "width": 455,
+                    "height": 358,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "transcriptnow"
+                },
+                "outputs": {
+                    "text": [
+                        "jLrIJqAqUW",
+                        "1tBfR0SyEF",
+                        "sigjUcPxzk"
+                    ]
+                },
+                "info": {
+                    "x": 5220,
+                    "y": 1040,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "close"
+                },
+                "outputs": {
+                    "text": [
+                        "TNaaQNnsyl"
+                    ]
+                },
+                "info": {
+                    "x": 5580,
+                    "y": 660,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "receiver",
+                "inputs": {
+                    "id": "1tBfR0SyEF"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "5dSO0tHlVu"
+                    ],
+                    "value1": [],
+                    "value2": [],
+                    "value3": [
+                        "O5mXL25qVH"
+                    ],
+                    "value4": [
+                        "t7F9Yujul2",
+                        "8FZlC5ZMDg",
+                        "yQg1KLbA2e",
+                        "xtBmsWO1vf",
+                        "Z80g79Wivy",
+                        "2ErO1PR5hw"
+                    ],
+                    "value5": [],
+                    "value6": [],
+                    "value7": [
+                        "tAQunJ3Bby",
+                        "SUCKIHvAMO"
+                    ],
+                    "value8": [
+                        "XuQnXtNyjD"
+                    ]
+                },
+                "info": {
+                    "x": 260,
+                    "y": 2600,
+                    "z": 0,
+                    "width": 239,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "5dSO0tHlVu",
+                    "value1": "tAQunJ3Bby",
+                    "value2": "iiTMB04aNv"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": "close"
+                },
+                "outputs": {
+                    "action1": [
+                        "F3KaR6m2Nd"
+                    ],
+                    "action2": [
+                        "K4iEalBnl1"
+                    ]
+                },
+                "info": {
+                    "x": 1110,
+                    "y": 2570,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "F92pLxXkc1",
+                    "action2": "F3KaR6m2Nd"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "gjPo6WnABK"
+                    ]
+                },
+                "info": {
+                    "x": 1893,
+                    "y": 2900,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "lFDlzyixwt",
+                    "action2": "qV7YUkZYj0"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "KTWStXPI73"
+                    ]
+                },
+                "info": {
+                    "x": 2410,
+                    "y": 4940,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "KTWStXPI73",
+                    "text1": "XOxN6G5Pjw",
+                    "text2": "pfeyk1qQmy",
+                    "text3": "bjxnsBAwLX"
+                },
+                "options": {
+                    "text": "${text1}${text2}"
+                },
+                "outputs": {
+                    "action": [
+                        "y4m7Q4Qexr"
+                    ],
+                    "text": [
+                        "1TG4BXVX1C"
+                    ]
+                },
+                "info": {
+                    "x": 2520,
+                    "y": 5080,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_2x",
+                "inputs": {},
+                "options": {
+                    "text1": "undefined",
+                    "text2": ""
+                },
+                "outputs": {
+                    "text1": [
+                        "uLCBYb6D7G"
+                    ],
+                    "text2": [
+                        "uARVuZrDd7"
+                    ]
+                },
+                "info": {
+                    "x": 2450,
+                    "y": 5250,
+                    "z": 0,
+                    "width": 287,
+                    "height": 182,
+                    "color": ""
+                }
+            },
+            {
+                "name": "replace_text",
+                "inputs": {
+                    "action": "y4m7Q4Qexr",
+                    "source_text": "1TG4BXVX1C",
+                    "old_text": "uLCBYb6D7G",
+                    "new_text": "uARVuZrDd7"
+                },
+                "options": {
+                    "replacement_type": "first"
+                },
+                "outputs": {
+                    "action": [
+                        "XTZahBSESc"
+                    ],
+                    "text": [
+                        "NOIQGKOhzp"
+                    ]
+                },
+                "info": {
+                    "x": 2900,
+                    "y": 5170,
+                    "z": 0,
+                    "width": 345,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "emitter 8x",
+                "inputs": {
+                    "action": "DupYygHmRh",
+                    "id": "sigjUcPxzk",
+                    "search_value": "aCTT8bzYCJ",
+                    "value1": "G7O6kV8v1s",
+                    "value2": "IZdBzdDD87",
+                    "value3": "gF904140Zp",
+                    "value4": "d04As3C2np",
+                    "value5": "NdM4buplmT",
+                    "value6": "9NH54CB3kv",
+                    "value7": "kKfrbkEm4E",
+                    "value8": "lMpZJtnQWs"
+                },
+                "options": {
+                    "restriction_type": "current",
+                    "search_type": "number"
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 4330,
+                    "y": 2290,
+                    "z": 0,
+                    "width": 455,
+                    "height": 358,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "mbnUHSq7nb",
+                    "server": "7n2EewmCN0",
+                    "search_value": "K5reqTeZSD"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "KGVCTELAEz"
+                    ],
+                    "role": [
+                        "3SGA4ootmQ"
+                    ]
+                },
+                "info": {
+                    "x": 3690,
+                    "y": 2430,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/staff.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "TVVRoObe6M"
+                    ]
+                },
+                "info": {
+                    "x": 3200,
+                    "y": 2130,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "PBSau4DEvV",
+                    "file_path": "TVVRoObe6M"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "mbnUHSq7nb"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "K5reqTeZSD"
+                    ]
+                },
+                "info": {
+                    "x": 3823,
+                    "y": 2108,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "KGVCTELAEz",
+                    "member": "XxsRFSPHK8",
+                    "role": "3SGA4ootmQ"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "DupYygHmRh"
+                    ],
+                    "action2": [
+                        "88P1UEOTO8"
+                    ]
+                },
+                "info": {
+                    "x": 3770,
+                    "y": 2680,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "88P1UEOTO8",
+                    "interaction": "lkdz9HwXqx",
+                    "message": "A9zzSLNuFH",
+                    "embeds": "KWfVsRKFMy",
+                    "row1": "ayjArtZEDC",
+                    "row2": "vVMvFgLfUn",
+                    "row3": "87G5il8WCC",
+                    "row4": "CaNoKYHgpP",
+                    "row5": "kMI5LXG602",
+                    "attachment": "haJLyPydSZ"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 4420,
+                    "y": 2750,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Je hebt geen toestemming om dit commando te gebruiken!"
+                },
+                "outputs": {
+                    "text": [
+                        "A9zzSLNuFH"
+                    ]
+                },
+                "info": {
+                    "x": 3530,
+                    "y": 2830,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "va9gEmjePq",
+                    "value1": "SUCKIHvAMO",
+                    "value2": "GZCDYhaYyb"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": "close"
+                },
+                "outputs": {
+                    "action1": [
+                        "BmFpMt8c7s"
+                    ],
+                    "action2": [
+                        "RhBK2egq5s"
+                    ]
+                },
+                "info": {
+                    "x": 4900,
+                    "y": 5440,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message",
+                "inputs": {
+                    "action": "BmFpMt8c7s",
+                    "channel": "2ErO1PR5hw",
+                    "poll": "aHJP2TB9PY",
+                    "file": [
+                        "u6Cghji4zP"
+                    ],
+                    "embed": [
+                        "oNxWaYrZLD"
+                    ],
+                    "row": [
+                        "itLxTTD84T"
+                    ],
+                    "text": [
+                        "LLwKV66rtU"
+                    ]
+                },
+                "options": {
+                    "type": "send",
+                    "silent": "undefined",
+                    "text": "${text1}"
+                },
+                "outputs": {
+                    "action": [],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 5130,
+                    "y": 5660,
+                    "z": 0,
+                    "width": 462,
+                    "height": 303,
                     "color": ""
                 }
             }
@@ -40773,8 +41296,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1756,
-                    "y": 379,
+                    "x": 1730,
+                    "y": 560,
                     "z": 218,
                     "width": 469,
                     "height": 172,
@@ -41133,8 +41656,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1760,
-                    "y": 4290,
+                    "x": 1780,
+                    "y": 4280,
                     "z": 0,
                     "width": 451,
                     "height": 138,
