@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.3.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.3.2"
                 },
                 "outputs": {
                     "text": [
@@ -968,7 +968,6 @@
                         "IKdzwfLelM"
                     ],
                     "result": [
-                        "MjCQRQNE2R",
                         "B3QTeGJrak",
                         "goUKgdCf09"
                     ]
@@ -1107,7 +1106,8 @@
                         "aSZStQKk3F",
                         "hQDLdcAdBx",
                         "0AduxvPBCq",
-                        "puoyi3fGkQ"
+                        "puoyi3fGkQ",
+                        "EZ7Y8mw74O"
                     ]
                 },
                 "info": {
@@ -1246,8 +1246,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2570,
-                    "y": 1690,
+                    "x": 2860,
+                    "y": 1680,
                     "z": 0,
                     "width": 476,
                     "height": 171,
@@ -1418,8 +1418,7 @@
                     ],
                     "number": [
                         "So4Q3lMMMk",
-                        "tLpBla4JbA",
-                        "n7ltw5a8J5"
+                        "tLpBla4JbA"
                     ]
                 },
                 "info": {
@@ -1525,7 +1524,8 @@
                     ],
                     "text": [
                         "hYS7evkNCg",
-                        "9JZDacFFKs"
+                        "9JZDacFFKs",
+                        "n7ltw5a8J5"
                     ]
                 },
                 "info": {
@@ -1783,7 +1783,7 @@
                         "kwH7ECCWqH"
                     ],
                     "message_embed": [
-                        "s6S0dF0TtY"
+                        "34gYZjmYCW"
                     ]
                 },
                 "info": {
@@ -1833,7 +1833,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "RZxgHF8Gzt"
+                        "P4ndf86Jbu"
                     ],
                     "result": [
                         "Ca9wANTVrj"
@@ -1884,55 +1884,19 @@
                     "value2": "0"
                 },
                 "outputs": {
-                    "action1": [],
+                    "action1": [
+                        "GwlT6QzOGB"
+                    ],
                     "action2": [
                         "BYRX474tey"
                     ]
                 },
                 "info": {
-                    "x": 3720,
-                    "y": 4510,
+                    "x": 3670,
+                    "y": 4520,
                     "z": 0,
                     "width": 476,
                     "height": 171,
-                    "color": ""
-                }
-            },
-            {
-                "name": "better_send_message",
-                "inputs": {
-                    "action": "jaIBRbLtUo",
-                    "channel": "MVDcOvOldS",
-                    "poll": "KOapfDObDo",
-                    "file": [
-                        "SXXcDmTL0z"
-                    ],
-                    "embed": [
-                        "s6S0dF0TtY"
-                    ],
-                    "row": [
-                        "UP05IFeUxI"
-                    ],
-                    "text": [
-                        "bd9UE5ZUqS"
-                    ]
-                },
-                "options": {
-                    "type": "send",
-                    "silent": "undefined",
-                    "text": ""
-                },
-                "outputs": {
-                    "action": [],
-                    "message": [],
-                    "error": []
-                },
-                "info": {
-                    "x": 5090,
-                    "y": 4870,
-                    "z": 0,
-                    "width": 466,
-                    "height": 303,
                     "color": ""
                 }
             },
@@ -1950,10 +1914,10 @@
                 },
                 "outputs": {
                     "action": [
-                        "jaIBRbLtUo"
+                        "Xm3yaHtUZU"
                     ],
                     "channel": [
-                        "MVDcOvOldS"
+                        "MdISli3uHa"
                     ]
                 },
                 "info": {
@@ -2245,6 +2209,60 @@
                     "height": 171,
                     "color": ""
                 }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "GwlT6QzOGB",
+                    "action2": "P4ndf86Jbu"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "RZxgHF8Gzt"
+                    ]
+                },
+                "info": {
+                    "x": 3970,
+                    "y": 3830,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message_v14",
+                "inputs": {
+                    "action": "Xm3yaHtUZU",
+                    "channel": "MdISli3uHa",
+                    "embed": "34gYZjmYCW",
+                    "attachment": "XAZJO6l9tO",
+                    "text1": "ZgNjyGg97i",
+                    "text2": "RT9JsYrf4Q",
+                    "text3": "PDvmePMyS7",
+                    "text4": "BNJ6Tgm2d8",
+                    "text5": "KIVbkKFyGA",
+                    "menu": "KcE6IYDFvf",
+                    "button": "2a6inl0Ro9",
+                    "button_row": "HeiuDKTVgF"
+                },
+                "options": {
+                    "text": ""
+                },
+                "outputs": {
+                    "action": [],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 5070,
+                    "y": 4800,
+                    "z": 0,
+                    "width": 415,
+                    "height": 372,
+                    "color": ""
+                }
             }
         ],
         "notes": []
@@ -2276,7 +2294,11 @@
                         "G6PuZ3ICA3",
                         "7K8AGdUpiw",
                         "D0yjm0e214",
-                        "hZfecW79lD"
+                        "hZfecW79lD",
+                        "aT9qNVVO2O",
+                        "WnTcDwjjCo",
+                        "X9zsQInET0",
+                        "EmfvzqdeDB"
                     ]
                 },
                 "info": {
@@ -3977,7 +3999,9 @@
                     "action1": [
                         "QAQJMferkL"
                     ],
-                    "action2": []
+                    "action2": [
+                        "rfmSXHjiFa"
+                    ]
                 },
                 "info": {
                     "x": 70,
@@ -4049,11 +4073,11 @@
                 "options": {},
                 "outputs": {
                     "action": [
-                        "4xBJsEjBCj"
+                        "luMK86McVV"
                     ],
                     "erroraction": [],
                     "response": [
-                        "CZj3AALgyL"
+                        "7hen2RIBb8"
                     ],
                     "errormsg": []
                 },
@@ -4076,92 +4100,11 @@
                     "value": ""
                 },
                 "outputs": {
-                    "action": [
-                        "nVbWftU8qK"
-                    ]
+                    "action": []
                 },
                 "info": {
-                    "x": 2110,
-                    "y": 3560,
-                    "z": 0,
-                    "width": 364,
-                    "height": 117,
-                    "color": ""
-                }
-            },
-            {
-                "name": "get_item_from_list",
-                "inputs": {
-                    "action": "4xBJsEjBCj",
-                    "list": "CZj3AALgyL",
-                    "custom_position": "1gGMtcwDuT"
-                },
-                "options": {
-                    "position_type": "first"
-                },
-                "outputs": {
-                    "action": [
-                        "BQqJzan7UZ"
-                    ],
-                    "value": [
-                        "nLNijNbnoQ",
-                        "7hen2RIBb8"
-                    ]
-                },
-                "info": {
-                    "x": 1293,
-                    "y": 3570,
-                    "z": 0,
-                    "width": 412,
-                    "height": 150,
-                    "color": ""
-                }
-            },
-            {
-                "name": "get_property_from_object_option",
-                "inputs": {
-                    "action": "BQqJzan7UZ",
-                    "object": "nLNijNbnoQ"
-                },
-                "options": {
-                    "key": "user"
-                },
-                "outputs": {
-                    "action": [
-                        "luMK86McVV"
-                    ],
-                    "value": [
-                        "WHYvcgDQrP",
-                        "vS9mk9EDlG",
-                        "yRsKerwH1R"
-                    ]
-                },
-                "info": {
-                    "x": 1280,
-                    "y": 3820,
-                    "z": 0,
-                    "width": 365,
-                    "height": 117,
-                    "color": ""
-                }
-            },
-            {
-                "name": "console_log",
-                "inputs": {
-                    "action": "nVbWftU8qK",
-                    "value": "drYYrFNQok"
-                },
-                "options": {
-                    "value": "User:"
-                },
-                "outputs": {
-                    "action": [
-                        "rgEEHOvZD7"
-                    ]
-                },
-                "info": {
-                    "x": 2140,
-                    "y": 3760,
+                    "x": 1510,
+                    "y": 3230,
                     "z": 0,
                     "width": 364,
                     "height": 117,
@@ -4171,25 +4114,25 @@
             {
                 "name": "check_comparison",
                 "inputs": {
-                    "action": "rgEEHOvZD7",
-                    "value1": "vS9mk9EDlG",
-                    "value2": "D4IAwfrwKZ"
+                    "action": "rfmSXHjiFa",
+                    "value1": "aT9qNVVO2O",
+                    "value2": "XeQiTMg4Lp"
                 },
                 "options": {
-                    "comparison_type": "greater_than",
-                    "value2": "1"
+                    "comparison_type": "start_with",
+                    "value2": "ticket delete "
                 },
                 "outputs": {
                     "action1": [
-                        "XMVXQfZZOs"
+                        "nW2ETe7jaB"
                     ],
                     "action2": [
-                        "oHzoStjCIY"
+                        "ESN04568WQ"
                     ]
                 },
                 "info": {
-                    "x": 1320,
-                    "y": 4310,
+                    "x": 80,
+                    "y": 3680,
                     "z": 0,
                     "width": 476,
                     "height": 171,
@@ -4197,31 +4140,167 @@
                 }
             },
             {
-                "name": "console_log",
+                "name": "replace_text",
                 "inputs": {
-                    "action": "oHzoStjCIY",
-                    "value": "UHGZfHnRBN"
+                    "action": "nW2ETe7jaB",
+                    "source_text": "WnTcDwjjCo",
+                    "old_text": "kMiGsOKhRW",
+                    "new_text": "pRUYCV8HG7"
                 },
                 "options": {
-                    "value": "= Null"
+                    "replacement_type": "first"
                 },
                 "outputs": {
-                    "action": []
+                    "action": [
+                        "zhmFnezJHm"
+                    ],
+                    "text": [
+                        "yd5cusE1iB"
+                    ]
                 },
                 "info": {
-                    "x": 2110,
-                    "y": 4500,
+                    "x": 780,
+                    "y": 3640,
                     "z": 0,
-                    "width": 364,
-                    "height": 117,
+                    "width": 345,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_2x",
+                "inputs": {},
+                "options": {
+                    "text1": "ticket delete ",
+                    "text2": ""
+                },
+                "outputs": {
+                    "text1": [
+                        "kMiGsOKhRW"
+                    ],
+                    "text2": [
+                        "pRUYCV8HG7"
+                    ]
+                },
+                "info": {
+                    "x": 270,
+                    "y": 3860,
+                    "z": 0,
+                    "width": 287,
+                    "height": 182,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_server",
+                "inputs": {
+                    "action": "zhmFnezJHm",
+                    "search_value": "w4QvKkVbAW"
+                },
+                "options": {
+                    "find_server_by": "id",
+                    "search_value": "443121395615137792"
+                },
+                "outputs": {
+                    "action": [
+                        "KNdiK8PBwg"
+                    ],
+                    "server": [
+                        "hUNZ0KG8wA"
+                    ]
+                },
+                "info": {
+                    "x": 1260,
+                    "y": 3510,
+                    "z": 0,
+                    "width": 437,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_channel",
+                "inputs": {
+                    "action": "cLSZImwT2e",
+                    "server": "hUNZ0KG8wA",
+                    "search_value": "mWb5YKx2BQ"
+                },
+                "options": {
+                    "channel_type": "any",
+                    "find_channel_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "Y4edy9k3kv"
+                    ],
+                    "channel": [
+                        "HRloVzMA09",
+                        "tpOZ8smGuU"
+                    ]
+                },
+                "info": {
+                    "x": 1150,
+                    "y": 4140,
+                    "z": 0,
+                    "width": 505,
+                    "height": 225,
+                    "color": ""
+                }
+            },
+            {
+                "name": "delete_channel",
+                "inputs": {
+                    "action": "0evrjNiqKv",
+                    "channel": "tpOZ8smGuU",
+                    "reason": "Cq5e2K7u0y"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "DlibBOPABg"
+                    ]
+                },
+                "info": {
+                    "x": 1770,
+                    "y": 3910,
+                    "z": 0,
+                    "width": 210,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_text_channel_info",
+                "inputs": {
+                    "action": "Y4edy9k3kv",
+                    "text_channel": "HRloVzMA09"
+                },
+                "options": {
+                    "text_channel_info": "13"
+                },
+                "outputs": {
+                    "action": [
+                        "0evrjNiqKv"
+                    ],
+                    "result": [
+                        "M0wCG1E8s7"
+                    ]
+                },
+                "info": {
+                    "x": 1240,
+                    "y": 4390,
+                    "z": 0,
+                    "width": 385,
+                    "height": 160,
                     "color": ""
                 }
             },
             {
                 "name": "console_log",
                 "inputs": {
-                    "action": "XMVXQfZZOs",
-                    "value": "yRsKerwH1R"
+                    "action": "tOY3X2zVFJ",
+                    "value": "tJnnuLJrIY"
                 },
                 "options": {
                     "value": ""
@@ -4230,11 +4309,213 @@
                     "action": []
                 },
                 "info": {
-                    "x": 2120,
-                    "y": 4350,
+                    "x": 1780,
+                    "y": 4340,
                     "z": 0,
                     "width": 364,
                     "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "DlibBOPABg",
+                    "text1": "M0wCG1E8s7",
+                    "text2": "35ZTLsR8lo",
+                    "text3": "DVwTZhfhjI"
+                },
+                "options": {
+                    "text": "[Bot] Kanaal ${text1} verwijderd"
+                },
+                "outputs": {
+                    "action": [
+                        "tOY3X2zVFJ"
+                    ],
+                    "text": [
+                        "tJnnuLJrIY"
+                    ]
+                },
+                "info": {
+                    "x": 1810,
+                    "y": 4100,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_diff",
+                "inputs": {
+                    "action": "Cm9MclUl4o",
+                    "value1": "X9zsQInET0",
+                    "value2": "ezKiXv8Mcs"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": "checkdiff @everyone"
+                },
+                "outputs": {
+                    "action1": [
+                        "GHfUQsXCRI"
+                    ],
+                    "action2": [
+                        "dd0EVRDQ0g"
+                    ],
+                    "diff": [
+                        "la3yTsKuhQ"
+                    ]
+                },
+                "info": {
+                    "x": 110,
+                    "y": 4360,
+                    "z": 0,
+                    "width": 478,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "GHfUQsXCRI",
+                    "action2": "dd0EVRDQ0g"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "qdXwxJyJY4"
+                    ]
+                },
+                "info": {
+                    "x": 690,
+                    "y": 4370,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "qdXwxJyJY4",
+                    "value": "la3yTsKuhQ"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 970,
+                    "y": 4580,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "ESN04568WQ",
+                    "value1": "EmfvzqdeDB",
+                    "value2": "9AUWGXyzhz"
+                },
+                "options": {
+                    "comparison_type": "start_with",
+                    "value2": "checkdiff"
+                },
+                "outputs": {
+                    "action1": [
+                        "Cm9MclUl4o"
+                    ],
+                    "action2": []
+                },
+                "info": {
+                    "x": 100,
+                    "y": 4140,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "split_text",
+                "inputs": {
+                    "action": "KNdiK8PBwg",
+                    "text": "yd5cusE1iB",
+                    "separator": "MCbwkhyHGX",
+                    "limit": "2kcCQdwG63"
+                },
+                "options": {
+                    "separator": ","
+                },
+                "outputs": {
+                    "action": [
+                        "8XR77HMPN7"
+                    ],
+                    "list": [
+                        "yB26WUB4Mh"
+                    ]
+                },
+                "info": {
+                    "x": 750,
+                    "y": 3830,
+                    "z": 0,
+                    "width": 386,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_loop_list",
+                "inputs": {
+                    "action": "8XR77HMPN7",
+                    "list": "yB26WUB4Mh",
+                    "delay": "L5e9CCbF33"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "cLSZImwT2e"
+                    ],
+                    "action2": [],
+                    "index": [],
+                    "value": [
+                        "mWb5YKx2BQ"
+                    ]
+                },
+                "info": {
+                    "x": 780,
+                    "y": 4030,
+                    "z": 0,
+                    "width": 319,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "number",
+                "inputs": {},
+                "options": {
+                    "number": 500
+                },
+                "outputs": {
+                    "number": [
+                        "L5e9CCbF33"
+                    ]
+                },
+                "info": {
+                    "x": 330,
+                    "y": 4050,
+                    "z": 0,
+                    "width": 312,
+                    "height": 102,
                     "color": ""
                 }
             }
@@ -22408,8 +22689,7 @@
                         "va9gEmjePq"
                     ],
                     "text": [
-                        "B4LyhJ76n1",
-                        "LLwKV66rtU"
+                        "B4LyhJ76n1"
                     ]
                 },
                 "info": {
@@ -23098,8 +23378,7 @@
                         "k03BB3e6rH",
                         "s60IMk0160",
                         "adrl3EAyWs",
-                        "yOIzvJ1Ngq",
-                        "kccMrNNh7R"
+                        "yOIzvJ1Ngq"
                     ]
                 },
                 "info": {
@@ -24141,9 +24420,6 @@
                         "TDve6QdHYY"
                     ],
                     "value": [
-                        "pka5UF7cBf",
-                        "P3aEM7oOLQ",
-                        "7utBIqzZDl",
                         "0czXhyzceW",
                         "XOxN6G5Pjw"
                     ]
@@ -24278,8 +24554,7 @@
                         "8FZlC5ZMDg",
                         "yQg1KLbA2e",
                         "xtBmsWO1vf",
-                        "Z80g79Wivy",
-                        "2ErO1PR5hw"
+                        "Z80g79Wivy"
                     ],
                     "value5": [],
                     "value6": [],
@@ -24645,9 +24920,7 @@
                     "value2": "close"
                 },
                 "outputs": {
-                    "action1": [
-                        "BmFpMt8c7s"
-                    ],
+                    "action1": [],
                     "action2": [
                         "RhBK2egq5s"
                     ]
@@ -24658,6 +24931,321 @@
                     "z": 0,
                     "width": 476,
                     "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "command_event_with_text",
+                "inputs": {},
+                "options": {
+                    "command_name": "ticketfix",
+                    "custom_prefix": "",
+                    "command_restriction": "none",
+                    "required_member_permission": "kick_members",
+                    "command_slowmode_restriction": "none"
+                },
+                "outputs": {
+                    "action1": [
+                        "lkqiMj60pe"
+                    ],
+                    "action2": [],
+                    "message": [
+                        "vPS0vqtdhe"
+                    ],
+                    "server": [],
+                    "channel": [
+                        "6dKTLtdO1G",
+                        "63hlYI2kab"
+                    ],
+                    "vc": [],
+                    "user": [],
+                    "member": [],
+                    "error_message": []
+                },
+                "info": {
+                    "x": 5400,
+                    "y": 1900,
+                    "z": 0,
+                    "width": 530,
+                    "height": 360,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_text_channel_info",
+                "inputs": {
+                    "action": "lkqiMj60pe",
+                    "text_channel": "6dKTLtdO1G"
+                },
+                "options": {
+                    "text_channel_info": "13"
+                },
+                "outputs": {
+                    "action": [
+                        "pamsckTX25"
+                    ],
+                    "result": [
+                        "ZbJJ5e9X7M"
+                    ]
+                },
+                "info": {
+                    "x": 6060,
+                    "y": 1980,
+                    "z": 0,
+                    "width": 385,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "replace_text",
+                "inputs": {
+                    "action": "pamsckTX25",
+                    "source_text": "ZbJJ5e9X7M",
+                    "old_text": "Hq2i3HPEPQ",
+                    "new_text": "rPYQ4Ivhos"
+                },
+                "options": {
+                    "replacement_type": "first"
+                },
+                "outputs": {
+                    "action": [
+                        "7MEIno2Aqr"
+                    ],
+                    "text": [
+                        "qS1REdDD8M"
+                    ]
+                },
+                "info": {
+                    "x": 6609,
+                    "y": 2197,
+                    "z": 0,
+                    "width": 345,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_2x",
+                "inputs": {},
+                "options": {
+                    "text1": "gesloten-",
+                    "text2": ""
+                },
+                "outputs": {
+                    "text1": [
+                        "Hq2i3HPEPQ"
+                    ],
+                    "text2": [
+                        "rPYQ4Ivhos"
+                    ]
+                },
+                "info": {
+                    "x": 6110,
+                    "y": 2170,
+                    "z": 0,
+                    "width": 287,
+                    "height": 182,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "7MEIno2Aqr",
+                    "text1": "qS1REdDD8M",
+                    "text2": "G9mwuLE7iG",
+                    "text3": "CvC4ggkr8c"
+                },
+                "options": {
+                    "text": "tickets/${text1}.txt"
+                },
+                "outputs": {
+                    "action": [
+                        "Z4HDXy3ENz"
+                    ],
+                    "text": [
+                        "WkGVMj1BZt"
+                    ]
+                },
+                "info": {
+                    "x": 6090,
+                    "y": 2450,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "Z4HDXy3ENz",
+                    "file_path": "WkGVMj1BZt"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "JNroZlE2AC"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "hV5wgEfUwP"
+                    ]
+                },
+                "info": {
+                    "x": 6560,
+                    "y": 2490,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "xokQQ9Q3FF",
+                    "query": "kHLTb1LLT3"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "dTRnfBXJQb"
+                    ],
+                    "erroraction": [],
+                    "response": [],
+                    "errormsg": []
+                },
+                "info": {
+                    "x": 6910,
+                    "y": 2750,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_text_channel_info",
+                "inputs": {
+                    "action": "JNroZlE2AC",
+                    "text_channel": "63hlYI2kab"
+                },
+                "options": {
+                    "text_channel_info": "5"
+                },
+                "outputs": {
+                    "action": [
+                        "FOEjE6qNqc"
+                    ],
+                    "result": [
+                        "L0v5Yo0cTQ"
+                    ]
+                },
+                "info": {
+                    "x": 6060,
+                    "y": 2710,
+                    "z": 0,
+                    "width": 385,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "FOEjE6qNqc",
+                    "text1": "hV5wgEfUwP",
+                    "text2": "L0v5Yo0cTQ",
+                    "text3": "mfPyFsOqck"
+                },
+                "options": {
+                    "text": "UPDATE `tickets` SET `user` = '${text1}' WHERE `tickets`.`channel` = '${text2}';"
+                },
+                "outputs": {
+                    "action": [
+                        "xokQQ9Q3FF"
+                    ],
+                    "text": [
+                        "kHLTb1LLT3",
+                        "DcBVS6H69f"
+                    ]
+                },
+                "info": {
+                    "x": 6030,
+                    "y": 2980,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "wait_with_number",
+                "inputs": {
+                    "action": "dTRnfBXJQb"
+                },
+                "options": {
+                    "time_type": "milliseconds",
+                    "time": 500
+                },
+                "outputs": {
+                    "action": [
+                        "pqgCWKhBRl"
+                    ]
+                },
+                "info": {
+                    "x": 6840,
+                    "y": 2970,
+                    "z": 0,
+                    "width": 376,
+                    "height": 156,
+                    "color": ""
+                }
+            },
+            {
+                "name": "delete_message",
+                "inputs": {
+                    "action": "pqgCWKhBRl",
+                    "message": "vPS0vqtdhe",
+                    "timeout": "XHWYNRWfnr"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "jsLNBjrvTJ"
+                    ]
+                },
+                "info": {
+                    "x": 6910,
+                    "y": 3160,
+                    "z": 0,
+                    "width": 258,
+                    "height": 150,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "jsLNBjrvTJ",
+                    "value": "DcBVS6H69f"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 6870,
+                    "y": 3360,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
                     "color": ""
                 }
             }
@@ -39747,8 +40335,8 @@
                     ]
                 },
                 "info": {
-                    "x": 471,
-                    "y": 361,
+                    "x": 420,
+                    "y": 90,
                     "z": 2,
                     "width": 653,
                     "height": 160,
@@ -39773,8 +40361,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1789,
-                    "y": 366,
+                    "x": 1150,
+                    "y": 50,
                     "z": 14,
                     "width": 544,
                     "height": 160,
@@ -39801,10 +40389,10 @@
                     ]
                 },
                 "info": {
-                    "x": 3490,
-                    "y": 650,
+                    "x": 1150,
+                    "y": 340,
                     "z": 0,
-                    "width": 1330,
+                    "width": 740,
                     "height": 190,
                     "color": ""
                 }
@@ -39828,8 +40416,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2920,
-                    "y": 630,
+                    "x": 510,
+                    "y": 370,
                     "z": 0,
                     "width": 459,
                     "height": 160,
@@ -39850,8 +40438,8 @@
                     "errormsg": []
                 },
                 "info": {
-                    "x": 4860,
-                    "y": 660,
+                    "x": 2000,
+                    "y": 190,
                     "z": 0,
                     "width": 289,
                     "height": 176,
