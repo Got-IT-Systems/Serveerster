@@ -37035,7 +37035,9 @@
                         "WKsnyUssxo",
                         "uzupWKmjXx",
                         "OfY0Su77tR",
-                        "FIVKM5VKO3"
+                        "FIVKM5VKO3",
+                        "76lid9TDTX",
+                        "zROc1raaM0"
                     ]
                 },
                 "info": {
@@ -37824,7 +37826,11 @@
                     "value": [
                         "y00GSBlcu7",
                         "CebrnOujYp",
-                        "03J2MXSIZs"
+                        "03J2MXSIZs",
+                        "ZloO4HiQXo",
+                        "8T7cU7Nt5m",
+                        "9yHWe2sgBC",
+                        "bl8nBlittZ"
                     ]
                 },
                 "info": {
@@ -37849,7 +37855,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "osaleVCcmZ"
+                        "rKeDxkBpQb"
                     ],
                     "role": [
                         "naMJ00lF4a",
@@ -37857,8 +37863,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1170,
-                    "y": 1590,
+                    "x": 1160,
+                    "y": 1090,
                     "z": 0,
                     "width": 423,
                     "height": 171,
@@ -37876,12 +37882,12 @@
                 "options": {},
                 "outputs": {
                     "action": [
-                        "nTMuk8mHht"
+                        "xhOIMIBfF5"
                     ]
                 },
                 "info": {
-                    "x": 1960,
-                    "y": 1620,
+                    "x": 2020,
+                    "y": 1170,
                     "z": 0,
                     "width": 209,
                     "height": 164,
@@ -39955,7 +39961,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "tuDrnd3viJ"
+                        "jWgfDYrs4b"
                     ],
                     "action2": [],
                     "content": [
@@ -39963,31 +39969,11 @@
                     ]
                 },
                 "info": {
-                    "x": 1150,
-                    "y": 1390,
+                    "x": 650,
+                    "y": 1120,
                     "z": 0,
                     "width": 451,
                     "height": 138,
-                    "color": ""
-                }
-            },
-            {
-                "name": "text",
-                "inputs": {},
-                "options": {
-                    "text": "config/roles/verified.txt"
-                },
-                "outputs": {
-                    "text": [
-                        "MY0rOrCTRO"
-                    ]
-                },
-                "info": {
-                    "x": 960,
-                    "y": 1270,
-                    "z": 0,
-                    "width": 276,
-                    "height": 117,
                     "color": ""
                 }
             },
@@ -40031,7 +40017,7 @@
                     ]
                 },
                 "info": {
-                    "x": 2430,
+                    "x": 2470,
                     "y": 1420,
                     "z": 0,
                     "width": 276,
@@ -40242,11 +40228,289 @@
                     "action2": []
                 },
                 "info": {
-                    "x": 1640,
-                    "y": 1620,
+                    "x": 1650,
+                    "y": 1180,
                     "z": 0,
                     "width": 268,
                     "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "jWgfDYrs4b",
+                    "file_path": "zQB2TxsMay"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "Xo3PrxIGuv"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "58Jp6Obuy0"
+                    ]
+                },
+                "info": {
+                    "x": 650,
+                    "y": 1280,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "Xo3PrxIGuv",
+                    "file_path": "YNwgjpRVJ7"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "tuDrnd3viJ"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "Q8lIfzXObD"
+                    ]
+                },
+                "info": {
+                    "x": 650,
+                    "y": 1440,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "rKeDxkBpQb",
+                    "server": "76lid9TDTX",
+                    "search_value": "58Jp6Obuy0"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "bJ6MEjST9H"
+                    ],
+                    "role": [
+                        "CU4QEkxrjO",
+                        "B3G7wCBc2p"
+                    ]
+                },
+                "info": {
+                    "x": 1160,
+                    "y": 1290,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "bJ6MEjST9H",
+                    "server": "zROc1raaM0",
+                    "search_value": "Q8lIfzXObD"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "osaleVCcmZ"
+                    ],
+                    "role": [
+                        "9H1OspP4jN",
+                        "8zx6VekVVQ"
+                    ]
+                },
+                "info": {
+                    "x": 1160,
+                    "y": 1490,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "xhOIMIBfF5",
+                    "member": "8T7cU7Nt5m",
+                    "role": "CU4QEkxrjO"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "6xfn6iwHxI"
+                    ],
+                    "action2": [
+                        "eFhJWZ2pAp"
+                    ]
+                },
+                "info": {
+                    "x": 1670,
+                    "y": 1360,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "nFoDnwwAYy",
+                    "member": "ZloO4HiQXo",
+                    "role": "9H1OspP4jN"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "mbvU9rZeS0"
+                    ],
+                    "action2": [
+                        "Sr14VRwXy5"
+                    ]
+                },
+                "info": {
+                    "x": 1650,
+                    "y": 1530,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "remove_member_role",
+                "inputs": {
+                    "action": "6xfn6iwHxI",
+                    "member": "9yHWe2sgBC",
+                    "role": "B3G7wCBc2p",
+                    "reason": "5YYKJOgJjF"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "mrg9hnIEVJ"
+                    ]
+                },
+                "info": {
+                    "x": 2030,
+                    "y": 1360,
+                    "z": 0,
+                    "width": 211,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "remove_member_role",
+                "inputs": {
+                    "action": "mbvU9rZeS0",
+                    "member": "bl8nBlittZ",
+                    "role": "8zx6VekVVQ",
+                    "reason": "VHR5Clwre5"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "MxwQcEehMz"
+                    ]
+                },
+                "info": {
+                    "x": 2020,
+                    "y": 1550,
+                    "z": 0,
+                    "width": 211,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "eFhJWZ2pAp",
+                    "action2": "mrg9hnIEVJ"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "nFoDnwwAYy"
+                    ]
+                },
+                "info": {
+                    "x": 2290,
+                    "y": 1280,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions",
+                "inputs": {
+                    "action1": "Sr14VRwXy5",
+                    "action2": "MxwQcEehMz"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "nTMuk8mHht"
+                    ]
+                },
+                "info": {
+                    "x": 2270,
+                    "y": 1520,
+                    "z": 0,
+                    "width": 209,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_3x",
+                "inputs": {},
+                "options": {
+                    "text1": "config/roles/verified.txt",
+                    "text2": "config/roles/nsfw.txt",
+                    "text3": "config/roles/support.txt"
+                },
+                "outputs": {
+                    "text1": [
+                        "MY0rOrCTRO"
+                    ],
+                    "text2": [
+                        "zQB2TxsMay"
+                    ],
+                    "text3": [
+                        "YNwgjpRVJ7"
+                    ]
+                },
+                "info": {
+                    "x": 220,
+                    "y": 1280,
+                    "z": 0,
+                    "width": 287,
+                    "height": 247,
                     "color": ""
                 }
             }
