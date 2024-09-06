@@ -71,7 +71,7 @@
                     "x": 670,
                     "y": 60,
                     "z": 0,
-                    "width": 420,
+                    "width": 426,
                     "height": 360,
                     "color": ""
                 }
@@ -157,7 +157,7 @@
                     "x": 1740,
                     "y": 640,
                     "z": 0,
-                    "width": 459,
+                    "width": 466,
                     "height": 303,
                     "color": ""
                 }
@@ -369,10 +369,10 @@
                 },
                 "info": {
                     "x": 0,
-                    "y": 950,
+                    "y": 1005,
                     "z": 79,
                     "width": 579,
-                    "height": 465,
+                    "height": 410,
                     "color": "#5a5a5a"
                 }
             },
@@ -424,7 +424,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.3.2"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.3.3"
                 },
                 "outputs": {
                     "text": [
