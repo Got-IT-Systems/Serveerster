@@ -59,6 +59,13 @@ ALTER TABLE `messages` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
 CREATE TABLE `serveerster`.`notities` ( `id` INT(255) NOT NULL , `UserID` VARCHAR(255) NOT NULL , `datetime` VARCHAR(255) NOT NULL , `notitie` TEXT NOT NULL , `staff` VARCHAR(255) NOT NULL ) ENGINE = InnoDB;
 ALTER TABLE `notities` ADD PRIMARY KEY( `id`);
 ALTER TABLE `notities` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
+
+CREATE TABLE `serveerster`.`tickets` (
+    `id` INT(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `channel` VARCHAR(255) NOT NULL,
+    `button` VARCHAR(255) NOT NULL,
+    `user` VARCHAR(255) NULL
+);
 ```
 
 ## bdaybot
