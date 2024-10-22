@@ -517,7 +517,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.4.2"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 9.0.0dev1"
                 },
                 "outputs": {
                     "text": [
@@ -2996,7 +2996,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "zhmFnezJHm"
+                        "h2rKDs0ogd"
                     ],
                     "text": [
                         "yd5cusE1iB"
@@ -3043,7 +3043,7 @@
                 },
                 "options": {
                     "find_server_by": "id",
-                    "search_value": "443121395615137792"
+                    "search_value": ""
                 },
                 "outputs": {
                     "action": [
@@ -3054,8 +3054,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1260,
-                    "y": 3510,
+                    "x": 1370,
+                    "y": 3660,
                     "z": 0,
                     "width": 437,
                     "height": 171,
@@ -4556,6 +4556,53 @@
                     "z": 0,
                     "width": 415,
                     "height": 372,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "h2rKDs0ogd",
+                    "file_path": "kbbagJNyOu"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "zhmFnezJHm"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "w4QvKkVbAW"
+                    ]
+                },
+                "info": {
+                    "x": 1370,
+                    "y": 3500,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/server.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "kbbagJNyOu"
+                    ]
+                },
+                "info": {
+                    "x": 1030,
+                    "y": 3440,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
                     "color": ""
                 }
             }
