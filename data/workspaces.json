@@ -517,7 +517,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 9.0.0dev1"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 9.0.0dev3"
                 },
                 "outputs": {
                     "text": [
@@ -12911,6 +12911,333 @@
                     "z": 0,
                     "width": 276,
                     "height": 117,
+                    "color": ""
+                }
+            }
+        ],
+        "notes": []
+    },
+    {
+        "id": "vMeTyF9RIR",
+        "active": true,
+        "info": {
+            "title": "Role flipper 9000",
+            "description": "",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "member_update_event",
+                "inputs": {},
+                "options": {
+                    "unstable_outputs": "no"
+                },
+                "outputs": {
+                    "action": [
+                        "D9ij9y968q"
+                    ],
+                    "old_member": [
+                        "2sNz4Xg4z5",
+                        "j8QgF8rbvu"
+                    ],
+                    "new_member": [
+                        "KszIfY0P1O",
+                        "s9El6z7uVF"
+                    ],
+                    "user": [],
+                    "reason": []
+                },
+                "info": {
+                    "x": 150,
+                    "y": 140,
+                    "z": 0,
+                    "width": 395,
+                    "height": 214,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "Uh7sjtDPpF",
+                    "file_path": "h22UVZ2mm4"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "jSgfqeZtX4"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "BSAarX03SZ"
+                    ]
+                },
+                "info": {
+                    "x": 730,
+                    "y": 430,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "jSgfqeZtX4",
+                    "file_path": "ABPQnKVZmt"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "yZenbKI2gK"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "NV2QBC3yFA"
+                    ]
+                },
+                "info": {
+                    "x": 730,
+                    "y": 590,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "D9ij9y968q",
+                    "file_path": "ZwdzrMih6E"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "Uh7sjtDPpF"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "FDHIG7Lh6b"
+                    ]
+                },
+                "info": {
+                    "x": 730,
+                    "y": 270,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_3x",
+                "inputs": {},
+                "options": {
+                    "text1": "config/server.txt",
+                    "text2": "config/roles/member.txt",
+                    "text3": "config/roles/confirmatie.txt"
+                },
+                "outputs": {
+                    "text1": [
+                        "ZwdzrMih6E"
+                    ],
+                    "text2": [
+                        "h22UVZ2mm4"
+                    ],
+                    "text3": [
+                        "ABPQnKVZmt"
+                    ]
+                },
+                "info": {
+                    "x": 160,
+                    "y": 370,
+                    "z": 0,
+                    "width": 287,
+                    "height": 247,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_server",
+                "inputs": {
+                    "action": "yZenbKI2gK",
+                    "search_value": "FDHIG7Lh6b"
+                },
+                "options": {
+                    "find_server_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "h6M7W1dmM6"
+                    ],
+                    "server": [
+                        "zxyh19V6hz",
+                        "LvvTLTYhAP"
+                    ]
+                },
+                "info": {
+                    "x": 1260,
+                    "y": 250,
+                    "z": 0,
+                    "width": 437,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "h6M7W1dmM6",
+                    "server": "zxyh19V6hz",
+                    "search_value": "BSAarX03SZ"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "5zzYdDIBqJ"
+                    ],
+                    "role": [
+                        "NWfIfkCX68"
+                    ]
+                },
+                "info": {
+                    "x": 1280,
+                    "y": 440,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "5zzYdDIBqJ",
+                    "server": "LvvTLTYhAP",
+                    "search_value": "NV2QBC3yFA"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "Zjbg5ZHwyF"
+                    ],
+                    "role": [
+                        "vv3FDDjbS1",
+                        "miar5apVkb",
+                        "tLboLFyzMp"
+                    ]
+                },
+                "info": {
+                    "x": 1270,
+                    "y": 620,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "Zjbg5ZHwyF",
+                    "member": "2sNz4Xg4z5",
+                    "role": "NWfIfkCX68"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "S5linRrkPG"
+                    ],
+                    "action2": []
+                },
+                "info": {
+                    "x": 1850,
+                    "y": 260,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "S5linRrkPG",
+                    "member": "j8QgF8rbvu",
+                    "role": "vv3FDDjbS1"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [],
+                    "action2": [
+                        "DxfUwoOAiA"
+                    ]
+                },
+                "info": {
+                    "x": 1850,
+                    "y": 420,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "DxfUwoOAiA",
+                    "member": "KszIfY0P1O",
+                    "role": "miar5apVkb"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "ya8KWLxkf7"
+                    ],
+                    "action2": []
+                },
+                "info": {
+                    "x": 1860,
+                    "y": 590,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "remove_member_role",
+                "inputs": {
+                    "action": "ya8KWLxkf7",
+                    "member": "s9El6z7uVF",
+                    "role": "tLboLFyzMp",
+                    "reason": "m0kURV0qay"
+                },
+                "options": {},
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 1900,
+                    "y": 760,
+                    "z": 0,
+                    "width": 209,
+                    "height": 164,
                     "color": ""
                 }
             }
@@ -44878,7 +45205,7 @@
                 "options": {},
                 "outputs": {
                     "action": [
-                        "riNZCPelK5"
+                        "OJwV6wEo08"
                     ],
                     "action1": []
                 },
@@ -45186,7 +45513,8 @@
                         "p5xLOotfLJ",
                         "Y9RisBkXLU",
                         "xbOI327QgB",
-                        "dKzCd7uFTh"
+                        "dKzCd7uFTh",
+                        "QQJRZJb6oo"
                     ],
                     "channel": [
                         "lSS94Y2XaW",
@@ -45311,7 +45639,8 @@
                         "G4H6DKABL0",
                         "g1k1t5oqb2",
                         "cTmfKFwZj0",
-                        "UVQXrH9pNq"
+                        "UVQXrH9pNq",
+                        "ymcuaZk3EJ"
                     ]
                 },
                 "info": {
@@ -45707,6 +46036,104 @@
                     "z": 0,
                     "width": 451,
                     "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "OJwV6wEo08",
+                    "file_path": "hZQwxy3syY"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "BcSz53JnVM"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "snEnGviUMv"
+                    ]
+                },
+                "info": {
+                    "x": 1610,
+                    "y": 3740,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/confirmatie.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "hZQwxy3syY"
+                    ]
+                },
+                "info": {
+                    "x": 1440,
+                    "y": 3620,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "BcSz53JnVM",
+                    "server": "QQJRZJb6oo",
+                    "search_value": "snEnGviUMv"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "cHnyQF1Gmj"
+                    ],
+                    "role": [
+                        "G9yIjcfMz3"
+                    ]
+                },
+                "info": {
+                    "x": 1600,
+                    "y": 3900,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "remove_member_role",
+                "inputs": {
+                    "action": "cHnyQF1Gmj",
+                    "member": "ymcuaZk3EJ",
+                    "role": "G9yIjcfMz3",
+                    "reason": "DiIzhI9Kko"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "riNZCPelK5"
+                    ]
+                },
+                "info": {
+                    "x": 1720,
+                    "y": 4090,
+                    "z": 0,
+                    "width": 209,
+                    "height": 164,
                     "color": ""
                 }
             }
