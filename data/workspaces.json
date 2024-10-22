@@ -517,7 +517,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.4.1"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 8.4.2"
                 },
                 "outputs": {
                     "text": [
@@ -13819,8 +13819,8 @@
                     "reason": []
                 },
                 "info": {
-                    "x": 0,
-                    "y": 1380,
+                    "x": 10,
+                    "y": 1370,
                     "z": 6,
                     "width": 395,
                     "height": 217,
@@ -13874,8 +13874,8 @@
                     ]
                 },
                 "info": {
-                    "x": 50,
-                    "y": 6190,
+                    "x": 80,
+                    "y": 5710,
                     "z": 9,
                     "width": 241,
                     "height": 144,
@@ -15039,15 +15039,16 @@
                 },
                 "outputs": {
                     "action": [
-                        "HymqE48guc"
+                        "PGscmcHAY8"
                     ],
                     "result": [
-                        "LZ76qtDoZR"
+                        "LZ76qtDoZR",
+                        "t4zPycEpm6"
                     ]
                 },
                 "info": {
                     "x": 630,
-                    "y": 5720,
+                    "y": 5700,
                     "z": 108,
                     "width": 653,
                     "height": 160,
@@ -17650,6 +17651,105 @@
                     "z": 0,
                     "width": 343,
                     "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_text_channel_info",
+                "inputs": {
+                    "action": "PGscmcHAY8",
+                    "text_channel": "t4zPycEpm6"
+                },
+                "options": {
+                    "text_channel_info": "5"
+                },
+                "outputs": {
+                    "action": [
+                        "sK85OZUnpe"
+                    ],
+                    "result": [
+                        "2AbMUW8Vkq"
+                    ]
+                },
+                "info": {
+                    "x": 170,
+                    "y": 5870,
+                    "z": 0,
+                    "width": 385,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/channels/mclog.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "TyhnmGBzkN"
+                    ]
+                },
+                "info": {
+                    "x": 40,
+                    "y": 6060,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "sK85OZUnpe",
+                    "file_path": "TyhnmGBzkN"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "FHxgqZYUDt"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "0smp2mvyR1"
+                    ]
+                },
+                "info": {
+                    "x": 130,
+                    "y": 6200,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "FHxgqZYUDt",
+                    "value1": "2AbMUW8Vkq",
+                    "value2": "0smp2mvyR1"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": ""
+                },
+                "outputs": {
+                    "action1": [],
+                    "action2": [
+                        "HymqE48guc"
+                    ]
+                },
+                "info": {
+                    "x": 90,
+                    "y": 6360,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
                     "color": ""
                 }
             }
