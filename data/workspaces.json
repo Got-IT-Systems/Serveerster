@@ -18151,8 +18151,8 @@
                 "title": "Member stuff",
                 "description": "",
                 "color": "#840664",
-                "x": 10,
-                "y": 650,
+                "x": 0,
+                "y": 640,
                 "width": 3380,
                 "height": 3160
             },
@@ -33612,10 +33612,11 @@
                 },
                 "outputs": {
                     "action": [
-                        "IOp6iOhwJX"
+                        "6FWZMDPS9H"
                     ],
                     "button": [
-                        "z5W5zeYsln"
+                        "z5W5zeYsln",
+                        "1RY7SYJkmF"
                     ]
                 },
                 "info": {
@@ -33624,39 +33625,6 @@
                     "z": 0,
                     "width": 426,
                     "height": 355,
-                    "color": ""
-                }
-            },
-            {
-                "name": "better_send_message_v14",
-                "inputs": {
-                    "action": "IOp6iOhwJX",
-                    "channel": "ZsRo7OPL1J",
-                    "embed": "a0k0eJD13N",
-                    "attachment": "iA2AVxfaDl",
-                    "text1": "1AuIinC85l",
-                    "text2": "olInLXzuF4",
-                    "text3": "GaZmNKrnI4",
-                    "text4": "TPjIXlnEzE",
-                    "text5": "Kt8QQwk02R",
-                    "menu": "oLvS7ugJBH",
-                    "button": "z5W5zeYsln",
-                    "button_row": "O6rJveAEi6"
-                },
-                "options": {
-                    "text": "Wil je helpen de server beter vindbaar te maken op Discord?\nMeld je dan aan voor de Bumper role!\nJe wordt dan 2 uur na de laatste bump gepingd om weer een bump te doen!"
-                },
-                "outputs": {
-                    "action": [],
-                    "message": [],
-                    "error": []
-                },
-                "info": {
-                    "x": 4260,
-                    "y": 2380,
-                    "z": 0,
-                    "width": 415,
-                    "height": 372,
                     "color": ""
                 }
             },
@@ -34011,7 +33979,8 @@
                         "SxPTetyYjz"
                     ],
                     "row": [
-                        "QoiuSqn3KK"
+                        "QoiuSqn3KK",
+                        "mmKj8CAUUX"
                     ]
                 },
                 "info": {
@@ -34035,9 +34004,12 @@
                 },
                 "options": {},
                 "outputs": {
-                    "action": [],
+                    "action": [
+                        "FtUvlXutuT"
+                    ],
                     "row": [
-                        "Rb5ukoV0Ma"
+                        "Rb5ukoV0Ma",
+                        "hI3aZ5yMxz"
                     ]
                 },
                 "info": {
@@ -34046,76 +34018,6 @@
                     "z": 0,
                     "width": 426,
                     "height": 355,
-                    "color": ""
-                }
-            },
-            {
-                "name": "better_send_message_v14",
-                "inputs": {
-                    "action": "lDmd26vAIv",
-                    "channel": "wcXDeK2dVw",
-                    "embed": "d2i3lqlBtC",
-                    "attachment": "nL8iWzFWmr",
-                    "text1": "bFkUoxIluJ",
-                    "text2": "XiPHZnaHz2",
-                    "text3": "xjZDMAH14N",
-                    "text4": "cBZgrUPAAI",
-                    "text5": "X6TeWPDRLH",
-                    "menu": "K5y7NLUytr",
-                    "button": "uFFLn3Am8P",
-                    "button_row": "QoiuSqn3KK"
-                },
-                "options": {
-                    "text": "Kanaal rollen:"
-                },
-                "outputs": {
-                    "action": [
-                        "BNdu06gE7P"
-                    ],
-                    "message": [],
-                    "error": []
-                },
-                "info": {
-                    "x": 3780,
-                    "y": 1650,
-                    "z": 0,
-                    "width": 415,
-                    "height": 372,
-                    "color": ""
-                }
-            },
-            {
-                "name": "better_send_message_v14",
-                "inputs": {
-                    "action": "gyhiEydrfZ",
-                    "channel": "XGZLYKeHf4",
-                    "embed": "yEUKFwAyGM",
-                    "attachment": "bYz5qzuVrO",
-                    "text1": "8N4dgIjMmQ",
-                    "text2": "697GMME4Rd",
-                    "text3": "rSfGfQkiFB",
-                    "text4": "dXWlcMoeXJ",
-                    "text5": "NK5VLIsQ9D",
-                    "menu": "m8sJem0yto",
-                    "button": "wbKEFZ15Z3",
-                    "button_row": "Rb5ukoV0Ma"
-                },
-                "options": {
-                    "text": "----------------------------"
-                },
-                "outputs": {
-                    "action": [
-                        "X9jl0KgjRG"
-                    ],
-                    "message": [],
-                    "error": []
-                },
-                "info": {
-                    "x": 3780,
-                    "y": 2030,
-                    "z": 0,
-                    "width": 415,
-                    "height": 372,
                     "color": ""
                 }
             },
@@ -35494,7 +35396,10 @@
                     "channel": [
                         "wcXDeK2dVw",
                         "XGZLYKeHf4",
-                        "ZsRo7OPL1J"
+                        "ZsRo7OPL1J",
+                        "Ki4BxAoYhB",
+                        "maByTB4S6R",
+                        "HbzBM3C67i"
                     ]
                 },
                 "info": {
@@ -35537,7 +35442,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "lDmd26vAIv"
+                        "mUoGe2Lhj3"
                     ]
                 },
                 "info": {
@@ -35546,6 +35451,124 @@
                     "z": 0,
                     "width": 364,
                     "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message",
+                "inputs": {
+                    "action": "mUoGe2Lhj3",
+                    "channel": "Ki4BxAoYhB",
+                    "poll": "OqxS4HRkZi",
+                    "file": [
+                        "JZPlEAMzYT"
+                    ],
+                    "embed": [
+                        "UKsjPkU8np"
+                    ],
+                    "row": [
+                        "mmKj8CAUUX"
+                    ],
+                    "text": [
+                        "N46kNwLbpR"
+                    ]
+                },
+                "options": {
+                    "type": "send",
+                    "silent": "undefined",
+                    "text": "Kanaal rollen:"
+                },
+                "outputs": {
+                    "action": [
+                        "BNdu06gE7P"
+                    ],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 3680,
+                    "y": 1650,
+                    "z": 0,
+                    "width": 466,
+                    "height": 303,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message",
+                "inputs": {
+                    "action": "FtUvlXutuT",
+                    "channel": "maByTB4S6R",
+                    "poll": "EdHPhY19we",
+                    "file": [
+                        "RDkp8ya81L"
+                    ],
+                    "embed": [
+                        "7dlTEDHr8f"
+                    ],
+                    "row": [
+                        "hI3aZ5yMxz"
+                    ],
+                    "text": [
+                        "iaGsiNQXkZ"
+                    ]
+                },
+                "options": {
+                    "type": "send",
+                    "silent": "undefined",
+                    "text": "--------------------------"
+                },
+                "outputs": {
+                    "action": [
+                        "X9jl0KgjRG"
+                    ],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 3620,
+                    "y": 2060,
+                    "z": 0,
+                    "width": 466,
+                    "height": 303,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message",
+                "inputs": {
+                    "action": "6FWZMDPS9H",
+                    "channel": "HbzBM3C67i",
+                    "poll": "7dW0qlqDhX",
+                    "file": [
+                        "PVTxQXeZRv"
+                    ],
+                    "embed": [
+                        "4WxCUNOu3e"
+                    ],
+                    "row": [
+                        "1RY7SYJkmF"
+                    ],
+                    "text": [
+                        "v1Nfd3K2qi"
+                    ]
+                },
+                "options": {
+                    "type": "send",
+                    "silent": "undefined",
+                    "text": "Wil je helpen de server beter vindbaar te maken op Discord?\nMeld je dan aan voor de Bumper role!\nJe wordt dan 2 uur na de laatste bump gepingd om weer een bump te doen!"
+                },
+                "outputs": {
+                    "action": [],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 4330,
+                    "y": 2040,
+                    "z": 0,
+                    "width": 466,
+                    "height": 303,
                     "color": ""
                 }
             }
