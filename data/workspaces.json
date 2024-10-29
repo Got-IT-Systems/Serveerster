@@ -517,7 +517,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 9.0.0dev7"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 9.0.0"
                 },
                 "outputs": {
                     "text": [
