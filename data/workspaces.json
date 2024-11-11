@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 10.0.0Dev4"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 10.0.0"
                 },
                 "outputs": {
                     "text": [
@@ -5658,7 +5658,10 @@
                     "action": [
                         "ki1ILaxaMB"
                     ],
-                    "result": []
+                    "result": [
+                        "keHCRDpYMA",
+                        "Q68emK5jv4"
+                    ]
                 },
                 "info": {
                     "x": 2570,
@@ -27703,7 +27706,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "B67NU0t6CT"
+                        "DLJ7978UEO"
                     ]
                 },
                 "info": {
@@ -27721,41 +27724,20 @@
                     "cronInfo": "Xq6SZoPZyr"
                 },
                 "options": {
-                    "cronInfo": "30 * * * * *",
+                    "cronInfo": "15 * * * * *",
                     "timezone": "Europe/Amsterdam"
                 },
                 "outputs": {
                     "action": [
-                        "ZpAYI8tGJS"
+                        "M5twk2s3wG"
                     ]
                 },
                 "info": {
-                    "x": 4390,
+                    "x": 4380,
                     "y": 8740,
                     "z": 0,
                     "width": 486,
                     "height": 171,
-                    "color": ""
-                }
-            },
-            {
-                "name": "merge_actions",
-                "inputs": {
-                    "action1": "B67NU0t6CT",
-                    "action2": "ZpAYI8tGJS"
-                },
-                "options": {},
-                "outputs": {
-                    "action": [
-                        "50yBjxBm4y"
-                    ]
-                },
-                "info": {
-                    "x": 4930,
-                    "y": 8710,
-                    "z": 0,
-                    "width": 209,
-                    "height": 112,
                     "color": ""
                 }
             },
@@ -27788,11 +27770,12 @@
                 "options": {},
                 "outputs": {
                     "action": [
-                        "CQN2MB2Piy"
+                        "GVzOCuDDs2"
                     ],
                     "erroraction": [],
                     "response": [
-                        "BKLulV0b2U"
+                        "BKLulV0b2U",
+                        "XNeFNi1weW"
                     ],
                     "errormsg": []
                 },
@@ -27941,8 +27924,12 @@
                     "text": "DELETE FROM `ticketdeletequeue` WHERE `channelid` = \"${text1}\""
                 },
                 "outputs": {
-                    "action": [],
-                    "text": []
+                    "action": [
+                        "cL2XO3zDTO"
+                    ],
+                    "text": [
+                        "ThjMM98daK"
+                    ]
                 },
                 "info": {
                     "x": 6720,
@@ -28028,6 +28015,148 @@
                     "z": 0,
                     "width": 210,
                     "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_list_length",
+                "inputs": {
+                    "action": "GVzOCuDDs2",
+                    "list": "XNeFNi1weW"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "4opCQG7Egb"
+                    ],
+                    "number": [
+                        "HsBdYTbwGr"
+                    ]
+                },
+                "info": {
+                    "x": 5620,
+                    "y": 8540,
+                    "z": 0,
+                    "width": 208,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "4opCQG7Egb",
+                    "value1": "HsBdYTbwGr",
+                    "value2": "InHYc5wmB0"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": "0"
+                },
+                "outputs": {
+                    "action1": [],
+                    "action2": [
+                        "CQN2MB2Piy"
+                    ]
+                },
+                "info": {
+                    "x": 5880,
+                    "y": 8470,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "cL2XO3zDTO",
+                    "query": "ThjMM98daK"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [],
+                    "erroraction": [],
+                    "response": [],
+                    "errormsg": []
+                },
+                "info": {
+                    "x": 7200,
+                    "y": 9430,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "cron_job_event",
+                "inputs": {
+                    "cronInfo": "0xYC5Znh1x"
+                },
+                "options": {
+                    "cronInfo": "30 * * * * *",
+                    "timezone": "Europe/Amsterdam"
+                },
+                "outputs": {
+                    "action": [
+                        "UvMN75Ucuw"
+                    ]
+                },
+                "info": {
+                    "x": 4390,
+                    "y": 8940,
+                    "z": 0,
+                    "width": 486,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "cron_job_event",
+                "inputs": {
+                    "cronInfo": "t1wWTCjxLv"
+                },
+                "options": {
+                    "cronInfo": "45 * * * * *",
+                    "timezone": "Europe/Amsterdam"
+                },
+                "outputs": {
+                    "action": [
+                        "mnGb6USZ41"
+                    ]
+                },
+                "info": {
+                    "x": 4380,
+                    "y": 9150,
+                    "z": 0,
+                    "width": 486,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_actions_5x",
+                "inputs": {
+                    "action1": "DLJ7978UEO",
+                    "action2": "M5twk2s3wG",
+                    "action3": "UvMN75Ucuw",
+                    "action4": "mnGb6USZ41",
+                    "action5": "rXlQZOKs5q"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "50yBjxBm4y"
+                    ]
+                },
+                "info": {
+                    "x": 5031,
+                    "y": 8805,
+                    "z": 0,
+                    "width": 209,
+                    "height": 190,
                     "color": ""
                 }
             }
