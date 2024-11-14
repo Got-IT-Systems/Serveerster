@@ -24424,7 +24424,6 @@
                         "z5SyB5LnEa"
                     ],
                     "channel": [
-                        "PAz5kYDcUh",
                         "izSxaDJoLD"
                     ],
                     "message": [],
@@ -50870,7 +50869,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "QvNzO3P1cC"
+                        "IHyURwgike"
                     ],
                     "action2": [
                         "N9grn5GNb6"
@@ -50878,7 +50877,8 @@
                     "content": [
                         "uDkLBDO8rw",
                         "yocggswZyQ",
-                        "xU7wuLYoEc"
+                        "xU7wuLYoEc",
+                        "OLRuOt4CwE"
                     ]
                 },
                 "info": {
@@ -51006,9 +51006,7 @@
                     "action1": [
                         "ellzvKQwsg"
                     ],
-                    "action2": [
-                        "jNXnRCxIzR"
-                    ]
+                    "action2": []
                 },
                 "info": {
                     "x": 4270,
@@ -51498,6 +51496,30 @@
                     "z": 0,
                     "width": 347,
                     "height": 190,
+                    "color": ""
+                }
+            },
+            {
+                "name": "is-number",
+                "inputs": {
+                    "action": "IHyURwgike",
+                    "input": "OLRuOt4CwE"
+                },
+                "options": {},
+                "outputs": {
+                    "true_action": [
+                        "QvNzO3P1cC"
+                    ],
+                    "false_action": [
+                        "jNXnRCxIzR"
+                    ]
+                },
+                "info": {
+                    "x": 3950,
+                    "y": 690,
+                    "z": 0,
+                    "width": 234,
+                    "height": 112,
                     "color": ""
                 }
             }

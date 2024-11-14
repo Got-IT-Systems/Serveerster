@@ -20,7 +20,7 @@ const block = {
             id: "input",
             name: "Input",
             description: "Type: Text, Number\n\nDescription: value to check for being a number",
-            types: ["text", "number"],
+            types: ["unspecified", "text", "number"],
         },
     ],
     outputs: [
