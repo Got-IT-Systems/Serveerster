@@ -13774,7 +13774,7 @@
                     "button_row": "3Fk1g0tVhT"
                 },
                 "options": {
-                    "text": "<@${text1}>"
+                    "text": "<@&${text1}>"
                 },
                 "outputs": {
                     "action": [],
