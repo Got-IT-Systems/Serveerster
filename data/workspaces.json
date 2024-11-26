@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 10.3.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 11beta01"
                 },
                 "outputs": {
                     "text": [
@@ -916,7 +916,7 @@
                     "author_url": "",
                     "title": "Ben je gebanned? Maak hieronder jouw appeal.",
                     "url": "",
-                    "description": "Ben je gebanned uit T-Huis?\nMaak dan hieronder jouw appeal. \n\nLet op! Na het aanmaken van jouw appeal wordt je automatisch geblokkeerd om dit nogmaals te doen voor 1 jaar.\nJe komt dan in een leeg \"time-out\" kanaal.\nDe staff maakt vervolgens een ticket voor je aan om verder met je te praten.",
+                    "description": "Ben je gebanned uit T-Huis?\nMaak dan hieronder jouw appeal. ",
                     "image": "",
                     "footer_icon": "",
                     "footer_text": "Serveerster™",
@@ -1103,6 +1103,903 @@
                     "z": 0,
                     "width": 476,
                     "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "member_join_server_event",
+                "inputs": {},
+                "options": {
+                    "react": "member"
+                },
+                "outputs": {
+                    "action": [
+                        "642fniohSB"
+                    ],
+                    "member": [
+                        "LuWz9b9UPt"
+                    ],
+                    "user": [
+                        "7LGEW5vjpd",
+                        "MxJGKCl0uU",
+                        "EDwmoodNSL",
+                        "A7w8BDPZem"
+                    ],
+                    "guild": [
+                        "nOVyA6CjNK"
+                    ],
+                    "invite": [],
+                    "isbot": []
+                },
+                "info": {
+                    "x": 234,
+                    "y": 1775,
+                    "z": 0,
+                    "width": 263,
+                    "height": 216,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "642fniohSB",
+                    "file_path": "shPuzUS3KT"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "ZfLiFYUAQi"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "cz0BlCh6oQ"
+                    ]
+                },
+                "info": {
+                    "x": 660,
+                    "y": 1750,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "ZfLiFYUAQi",
+                    "file_path": "nRQwW0euLz"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "bX8gphrMoy"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "WIRzySSgj8",
+                        "a3BEPJ0pBx"
+                    ]
+                },
+                "info": {
+                    "x": 660,
+                    "y": 1900,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "2xKeMvupGi",
+                    "file_path": "se6KBvsga8"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [],
+                    "action2": [],
+                    "content": []
+                },
+                "info": {
+                    "x": 810,
+                    "y": 2820,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "4NVZUJ7P6J",
+                    "file_path": "eYw94NeTGi"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [],
+                    "action2": [],
+                    "content": []
+                },
+                "info": {
+                    "x": 810,
+                    "y": 2980,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "zLpgIoWTvk",
+                    "file_path": "uN6o721BvE"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [],
+                    "action2": [],
+                    "content": []
+                },
+                "info": {
+                    "x": 820,
+                    "y": 3120,
+                    "z": 0,
+                    "width": 451,
+                    "height": 150,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_12x",
+                "inputs": {},
+                "options": {
+                    "text1": "config/server.txt",
+                    "text2": "config/appeals/server.txt",
+                    "text3": "config/roles/staff.txt",
+                    "text4": "config/channels/banappeals.txt",
+                    "text5": "config/appeals/roles/staff.txt",
+                    "text6": "",
+                    "text7": "",
+                    "text8": "",
+                    "text9": "",
+                    "text10": "",
+                    "text11": "",
+                    "text12": ""
+                },
+                "outputs": {
+                    "text1": [
+                        "shPuzUS3KT"
+                    ],
+                    "text2": [
+                        "nRQwW0euLz"
+                    ],
+                    "text3": [
+                        "se6KBvsga8"
+                    ],
+                    "text4": [
+                        "eYw94NeTGi"
+                    ],
+                    "text5": [
+                        "uN6o721BvE"
+                    ],
+                    "text6": [],
+                    "text7": [],
+                    "text8": [],
+                    "text9": [],
+                    "text10": [],
+                    "text11": [],
+                    "text12": []
+                },
+                "info": {
+                    "x": 240,
+                    "y": 2000,
+                    "z": 0,
+                    "width": 295,
+                    "height": 832,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_server_info",
+                "inputs": {
+                    "action": "bX8gphrMoy",
+                    "server": "nOVyA6CjNK"
+                },
+                "options": {
+                    "server_info": "17"
+                },
+                "outputs": {
+                    "action": [
+                        "UbSZL1CF0e"
+                    ],
+                    "result": [
+                        "wcyKOE4A9V"
+                    ]
+                },
+                "info": {
+                    "x": 1230,
+                    "y": 1760,
+                    "z": 0,
+                    "width": 631,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "UbSZL1CF0e",
+                    "value1": "WIRzySSgj8",
+                    "value2": "wcyKOE4A9V"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": ""
+                },
+                "outputs": {
+                    "action1": [
+                        "3PGasLvnKA"
+                    ],
+                    "action2": []
+                },
+                "info": {
+                    "x": 1260,
+                    "y": 1960,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_server_info",
+                "inputs": {
+                    "action": "53WIErIA0A",
+                    "server": "6oa53RAXqH"
+                },
+                "options": {
+                    "server_info": "38"
+                },
+                "outputs": {
+                    "action": [
+                        "UGQiCGgU6l"
+                    ],
+                    "result": [
+                        "MTIeC5P7on"
+                    ]
+                },
+                "info": {
+                    "x": 1950,
+                    "y": 1960,
+                    "z": 0,
+                    "width": 631,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_server",
+                "inputs": {
+                    "action": "3PGasLvnKA",
+                    "search_value": "cz0BlCh6oQ"
+                },
+                "options": {
+                    "find_server_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "6rcEzVZOSA"
+                    ],
+                    "server": [
+                        "6oa53RAXqH",
+                        "B8NpT5PvUJ"
+                    ]
+                },
+                "info": {
+                    "x": 1280,
+                    "y": 2170,
+                    "z": 0,
+                    "width": 437,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_server",
+                "inputs": {
+                    "action": "6rcEzVZOSA",
+                    "search_value": "a3BEPJ0pBx"
+                },
+                "options": {
+                    "find_server_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "53WIErIA0A"
+                    ],
+                    "server": []
+                },
+                "info": {
+                    "x": 1280,
+                    "y": 2360,
+                    "z": 0,
+                    "width": 437,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "UGQiCGgU6l",
+                    "user": "MxJGKCl0uU"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "BXjKt44G70"
+                    ],
+                    "result": [
+                        "mcMskZalqU",
+                        "o4kQtMMuFX",
+                        "jUxlYz7Omi"
+                    ]
+                },
+                "info": {
+                    "x": 1960,
+                    "y": 2200,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "irUzJLfwqv",
+                    "user": "8cekrXljoq"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "w4y3XUg14Q"
+                    ],
+                    "result": [
+                        "7RS74SDpkB"
+                    ]
+                },
+                "info": {
+                    "x": 3510,
+                    "y": 2020,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_loop_list",
+                "inputs": {
+                    "action": "ajHCxT8iuB",
+                    "list": "MTIeC5P7on",
+                    "delay": "5JQ7QOUJ8x"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "vctCgx04Pp"
+                    ],
+                    "action2": [
+                        "nSziT04bs5"
+                    ],
+                    "index": [],
+                    "value": [
+                        "N1kMbpz5pM",
+                        "Q9lLwI8yoW"
+                    ]
+                },
+                "info": {
+                    "x": 2680,
+                    "y": 1990,
+                    "z": 0,
+                    "width": 319,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_ban_info",
+                "inputs": {
+                    "action": "vctCgx04Pp",
+                    "ban": "N1kMbpz5pM"
+                },
+                "options": {
+                    "ban_info": "1"
+                },
+                "outputs": {
+                    "action": [
+                        "irUzJLfwqv"
+                    ],
+                    "result": [
+                        "8cekrXljoq"
+                    ]
+                },
+                "info": {
+                    "x": 3090,
+                    "y": 2030,
+                    "z": 0,
+                    "width": 361,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_list",
+                "inputs": {
+                    "action": "SccFCy7Na3"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "ajHCxT8iuB"
+                    ],
+                    "list": [
+                        "UbV2Uns7UE",
+                        "9vKwo9dEsP",
+                        "oVSyCkIzEI"
+                    ]
+                },
+                "info": {
+                    "x": 2580,
+                    "y": 1840,
+                    "z": 0,
+                    "width": 197,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "w4y3XUg14Q",
+                    "value1": "7RS74SDpkB",
+                    "value2": "mcMskZalqU"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": ""
+                },
+                "outputs": {
+                    "action1": [
+                        "8t9Aohq7yE"
+                    ],
+                    "action2": []
+                },
+                "info": {
+                    "x": 4130,
+                    "y": 2040,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "add_item_to_list",
+                "inputs": {
+                    "action": "8t9Aohq7yE",
+                    "list": "UbV2Uns7UE",
+                    "item": "Q9lLwI8yoW",
+                    "custom_position": "IRlq1s9QQA"
+                },
+                "options": {
+                    "position_type": "first"
+                },
+                "outputs": {
+                    "action": [],
+                    "list": []
+                },
+                "info": {
+                    "x": 4097,
+                    "y": 2309,
+                    "z": 0,
+                    "width": 412,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_list_length",
+                "inputs": {
+                    "action": "nSziT04bs5",
+                    "list": "9vKwo9dEsP"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "DynKLXO8FH"
+                    ],
+                    "number": [
+                        "njmajfGxF5"
+                    ]
+                },
+                "info": {
+                    "x": 2720,
+                    "y": 2410,
+                    "z": 0,
+                    "width": 208,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "DynKLXO8FH",
+                    "value1": "njmajfGxF5",
+                    "value2": "1GIKG0tIih"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": "0"
+                },
+                "outputs": {
+                    "action1": [
+                        "KmFmIRmZ3o"
+                    ],
+                    "action2": [
+                        "Q79rrthhHW"
+                    ]
+                },
+                "info": {
+                    "x": 2990,
+                    "y": 2400,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "kick_member",
+                "inputs": {
+                    "action": "vNE1hs5WMA",
+                    "member": "LuWz9b9UPt",
+                    "reason": "UqwHzKdTdV"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "Alun6xbeU8"
+                    ]
+                },
+                "info": {
+                    "x": 4790,
+                    "y": 2810,
+                    "z": 0,
+                    "width": 209,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_item_from_list",
+                "inputs": {
+                    "action": "Q79rrthhHW",
+                    "list": "oVSyCkIzEI",
+                    "custom_position": "KvKYDjcp22"
+                },
+                "options": {
+                    "position_type": "first"
+                },
+                "outputs": {
+                    "action": [
+                        "swVlon4rgt"
+                    ],
+                    "value": [
+                        "IqWo3lXIZO"
+                    ]
+                },
+                "info": {
+                    "x": 2370,
+                    "y": 2900,
+                    "z": 0,
+                    "width": 412,
+                    "height": 150,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "KmFmIRmZ3o",
+                    "user": "EDwmoodNSL"
+                },
+                "options": {
+                    "user_info": "8"
+                },
+                "outputs": {
+                    "action": [
+                        "VtYyG0WEqO"
+                    ],
+                    "result": [
+                        "RRe4hvQjfm"
+                    ]
+                },
+                "info": {
+                    "x": 3540,
+                    "y": 2500,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message_v14",
+                "inputs": {
+                    "action": "VtYyG0WEqO",
+                    "channel": "RRe4hvQjfm",
+                    "embed": "wA1V7NxmTa",
+                    "attachment": "tzvoTjsLZh",
+                    "text1": "o4kQtMMuFX",
+                    "text2": "xHjRgxilON",
+                    "text3": "VqhNxnUO4l",
+                    "text4": "tDvpzva0V4",
+                    "text5": "pOlm3syBvL",
+                    "menu": "6HUi9BSSOt",
+                    "button": "2ECvjNIAOc",
+                    "button_row": "l2SZedr5Yv"
+                },
+                "options": {
+                    "text": "Hoi <@${text1}>,\n\nJe joinede zojuist onze Ban Appeal server.\n\nEchter lijk je in T-Huis niet gebanned te zijn.\n\nWe hebben je daarom uit de Appeal server verwijderd.\n\nJe kan T-Huis joinen via https://t-huis.xyz/\n\nMet vriendelijke groet,\n\nNamens T-Huis Staff,\nServeerster Bot"
+                },
+                "outputs": {
+                    "action": [
+                        "vNE1hs5WMA"
+                    ],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 4080,
+                    "y": 2720,
+                    "z": 0,
+                    "width": 415,
+                    "height": 372,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "Alun6xbeU8",
+                    "file_path": "ItFD764EIu"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "AaTI1fPjFL"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "jtb0X1I9tN"
+                    ]
+                },
+                "info": {
+                    "x": 4090,
+                    "y": 3160,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "BXjKt44G70",
+                    "user": "A7w8BDPZem"
+                },
+                "options": {
+                    "user_info": "16"
+                },
+                "outputs": {
+                    "action": [
+                        "SccFCy7Na3"
+                    ],
+                    "result": [
+                        "a2GOIcKJR1"
+                    ]
+                },
+                "info": {
+                    "x": 1960,
+                    "y": 2380,
+                    "z": 0,
+                    "width": 556,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/channels/log.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "ItFD764EIu"
+                    ]
+                },
+                "info": {
+                    "x": 3760,
+                    "y": 3140,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message_v14",
+                "inputs": {
+                    "action": "8XZfnz01xQ",
+                    "channel": "vD0X7WeED1",
+                    "embed": "TpDiQGMTqk",
+                    "attachment": "uabelqu54J",
+                    "text1": "a2GOIcKJR1",
+                    "text2": "tIEobKVW0S",
+                    "text3": "VLbx6Jq9GM",
+                    "text4": "XTlmCHtnvf",
+                    "text5": "se8oIWIxaC",
+                    "menu": "PFMdFrNvTt",
+                    "button": "EsW3ktSHGC",
+                    "button_row": "jjTLvOQhHS"
+                },
+                "options": {
+                    "text": "${text1} joinede de Appeal server maar is niet gebanned."
+                },
+                "outputs": {
+                    "action": [],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 4644,
+                    "y": 3241,
+                    "z": 0,
+                    "width": 415,
+                    "height": 372,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_channel",
+                "inputs": {
+                    "action": "AaTI1fPjFL",
+                    "server": "B8NpT5PvUJ",
+                    "search_value": "jtb0X1I9tN"
+                },
+                "options": {
+                    "channel_type": "any",
+                    "find_channel_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "8XZfnz01xQ"
+                    ],
+                    "channel": [
+                        "vD0X7WeED1"
+                    ]
+                },
+                "info": {
+                    "x": 4630,
+                    "y": 3010,
+                    "z": 0,
+                    "width": 505,
+                    "height": 225,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "swVlon4rgt",
+                    "text1": "jUxlYz7Omi",
+                    "text2": "5aHHgZDTmh",
+                    "text3": "EtWlb5l6WL"
+                },
+                "options": {
+                    "text": "config/appeals/users/${text1}.txt"
+                },
+                "outputs": {
+                    "action": [
+                        "ZDBDKaOAqE"
+                    ],
+                    "text": [
+                        "JnPoQtdnD2"
+                    ]
+                },
+                "info": {
+                    "x": 2880,
+                    "y": 2780,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_ban_info",
+                "inputs": {
+                    "action": "ZDBDKaOAqE",
+                    "ban": "IqWo3lXIZO"
+                },
+                "options": {
+                    "ban_info": "2"
+                },
+                "outputs": {
+                    "action": [
+                        "Lke95Yqt2r"
+                    ],
+                    "result": [
+                        "R52YVlvSdx"
+                    ]
+                },
+                "info": {
+                    "x": 2890,
+                    "y": 2990,
+                    "z": 0,
+                    "width": 361,
+                    "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "write_file",
+                "inputs": {
+                    "action": "Lke95Yqt2r",
+                    "file_path": "JnPoQtdnD2",
+                    "content": "R52YVlvSdx"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 2890,
+                    "y": 3140,
+                    "z": 0,
+                    "width": 398,
+                    "height": 138,
                     "color": ""
                 }
             }
