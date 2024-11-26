@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 10.2.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 10.2.1"
                 },
                 "outputs": {
                     "text": [
@@ -64663,7 +64663,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "Wij snappen je frustratie met het gedrag van de staff, maar gelieve, gezien de staff autisme heeft, dit te vergeven en hier geduld mee te hebben.\n\n(It will happen again)"
+                    "text": "Wij snappen je frustratie met het gedrag van de staff, maar gelieve, gezien de staff autisme heeft (behalve Naomi want tja, token neurotypische hè), dit te vergeven en hier geduld mee te hebben.\n\n(It will happen again)"
                 },
                 "outputs": {
                     "text": [
