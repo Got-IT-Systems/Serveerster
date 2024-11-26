@@ -23868,7 +23868,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "You do not have permissions to close a ticket."
+                    "text": "Je hebt geen toestemming om deze knop te gebruiken.\n"
                 },
                 "outputs": {
                     "text": [
