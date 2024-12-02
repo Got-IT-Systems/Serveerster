@@ -46,26 +46,136 @@
 
 ## SQL
 ```
-CREATE DATABASE serveerster;
-CREATE USER 'serveerster'@'localhost' IDENTIFIED BY 'wachtwoord';
-GRANT ALL PRIVILEGES ON serveerster.* TO 'serveerster'@'localhost';
-USE serveerster;
-CREATE TABLE `serveerster`.`bdays` ( `ID` INT(15) NOT NULL , `UserID` VARCHAR(255) NOT NULL , `Bday` VARCHAR(255) NOT NULL ) ENGINE = InnoDB;
-ALTER TABLE `bdays` ADD PRIMARY KEY( `ID`);
-ALTER TABLE `bdays` CHANGE `ID` `ID` INT NOT NULL AUTO_INCREMENT;
-CREATE TABLE `serveerster`.`messages` ( `id` INT(255) NOT NULL , `UserID` VARCHAR(255) NOT NULL , `datetime` INT(255) NOT NULL ) ENGINE = InnoDB;
-ALTER TABLE `messages` ADD PRIMARY KEY( `id`);
-ALTER TABLE `messages` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
-CREATE TABLE `serveerster`.`notities` ( `id` INT(255) NOT NULL , `UserID` VARCHAR(255) NOT NULL , `datetime` VARCHAR(255) NOT NULL , `notitie` TEXT NOT NULL , `staff` VARCHAR(255) NOT NULL ) ENGINE = InnoDB;
-ALTER TABLE `notities` ADD PRIMARY KEY( `id`);
-ALTER TABLE `notities` CHANGE `id` `id` INT NOT NULL AUTO_INCREMENT;
+CREATE DATABASE IF NOT EXISTS `serveerster` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `serveerster`;
+CREATE TABLE `appeals` (
+  `id` int NOT NULL,
+  `channel` varchar(255) NOT NULL,
+  `user` varchar(255) NOT NULL,
+  `time` int NOT NULL,
+  `open` varchar(255) NOT NULL,
+  `denied` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-CREATE TABLE `serveerster`.`tickets` (
-    `id` INT(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `channel` VARCHAR(255) NOT NULL,
-    `button` VARCHAR(255) NOT NULL,
-    `user` VARCHAR(255) NULL
-);
+CREATE TABLE `appealsticketdeletequeue` (
+  `id` int NOT NULL,
+  `channelid` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `bdays` (
+  `ID` int NOT NULL,
+  `UserID` varchar(255) NOT NULL,
+  `Bday` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `haldesroems` (
+  `id` int NOT NULL,
+  `message` varchar(255) NOT NULL,
+  `stars` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `mc` (
+  `id` int NOT NULL,
+  `userid` varchar(255) NOT NULL,
+  `mcuser` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `messages` (
+  `id` int NOT NULL,
+  `UserID` varchar(255) NOT NULL,
+  `datetime` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `notities` (
+  `id` int NOT NULL,
+  `UserID` varchar(255) NOT NULL,
+  `datetime` varchar(255) NOT NULL,
+  `notitie` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `staff` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `ticketdeletequeue` (
+  `id` int NOT NULL,
+  `channelid` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `tickets` (
+  `id` int NOT NULL,
+  `channel` varchar(255) NOT NULL,
+  `button` varchar(255) NOT NULL,
+  `user` varchar(255) DEFAULT NULL,
+  `open` varchar(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `warns` (
+  `id` int NOT NULL,
+  `UserID` varchar(255) NOT NULL,
+  `datetime` varchar(255) NOT NULL,
+  `notitie` text NOT NULL,
+  `staff` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ALTER TABLE `appeals`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `appealsticketdeletequeue`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `bdays`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `haldesroems`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `mc`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `notities`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `ticketdeletequeue`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `tickets`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `warns`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `appeals`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `appealsticketdeletequeue`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `bdays`
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `haldesroems`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `mc`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `messages`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `notities`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `ticketdeletequeue`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `tickets`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `warns`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+COMMIT;
+
 ```
 
 ## bdaybot
