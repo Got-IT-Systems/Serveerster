@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 11.0.0"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 11.0.1"
                 },
                 "outputs": {
                     "text": [
@@ -1813,8 +1813,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 6000,
-                    "y": 280,
+                    "x": 6400,
+                    "y": 300,
                     "z": 0,
                     "width": 455,
                     "height": 358,
@@ -3078,8 +3078,8 @@
                     ]
                 },
                 "info": {
-                    "x": 6249,
-                    "y": 486,
+                    "x": 5800,
+                    "y": 670,
                     "z": 0,
                     "width": 209,
                     "height": 112,
@@ -15883,14 +15883,15 @@
                 "options": {},
                 "outputs": {
                     "action": [
-                        "qA0bkXaPFh"
+                        "z2zMvPk84D"
                     ],
                     "message": [
                         "OMArn4uOfb"
                     ],
                     "server": [
                         "C5rEDcsyH8",
-                        "YZJKgdmkBR"
+                        "YZJKgdmkBR",
+                        "i55j5v5DQ4"
                     ],
                     "channel": [],
                     "user": [],
@@ -16308,8 +16309,8 @@
                     ]
                 },
                 "info": {
-                    "x": 668,
-                    "y": 786,
+                    "x": 640,
+                    "y": 760,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -16360,6 +16361,105 @@
                     "z": 0,
                     "width": 276,
                     "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_server_info",
+                "inputs": {
+                    "action": "z2zMvPk84D",
+                    "server": "i55j5v5DQ4"
+                },
+                "options": {
+                    "server_info": "17"
+                },
+                "outputs": {
+                    "action": [
+                        "WKFi6UAvzA"
+                    ],
+                    "result": [
+                        "X2ZRlullmN"
+                    ]
+                },
+                "info": {
+                    "x": 370,
+                    "y": 360,
+                    "z": 0,
+                    "width": 631,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "WKFi6UAvzA",
+                    "file_path": "9N3O8G3JlK"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "5RZqPo1UMh"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "o0zpSyyaUm"
+                    ]
+                },
+                "info": {
+                    "x": 400,
+                    "y": 550,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/server.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "9N3O8G3JlK"
+                    ]
+                },
+                "info": {
+                    "x": 36,
+                    "y": 540,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "5RZqPo1UMh",
+                    "value1": "X2ZRlullmN",
+                    "value2": "o0zpSyyaUm"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": ""
+                },
+                "outputs": {
+                    "action1": [
+                        "qA0bkXaPFh"
+                    ],
+                    "action2": []
+                },
+                "info": {
+                    "x": 940,
+                    "y": 560,
+                    "z": 0,
+                    "width": 476,
+                    "height": 171,
                     "color": ""
                 }
             }
