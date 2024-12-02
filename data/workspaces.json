@@ -1813,8 +1813,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 5360,
-                    "y": 310,
+                    "x": 6000,
+                    "y": 280,
                     "z": 0,
                     "width": 455,
                     "height": 358,
@@ -2372,7 +2372,8 @@
                         "MMLxH9MC32"
                     ],
                     "result2": [
-                        "u5KlRMWZOA"
+                        "u5KlRMWZOA",
+                        "FoSCnpaDWW"
                     ],
                     "result3": [
                         "tKYTT5Gjo6"
@@ -2503,9 +2504,11 @@
                 },
                 "outputs": {
                     "action": [
-                        "08Dx5kTuVn"
+                        "MTOfLwBi1u"
                     ],
-                    "message": [],
+                    "message": [
+                        "oK7GQ0Oiq0"
+                    ],
                     "error": []
                 },
                 "info": {
@@ -2586,7 +2589,6 @@
                     ],
                     "erroraction": [],
                     "response": [
-                        "Me5yqmq4hz",
                         "yhe2jxfBW1",
                         "YtNvMQZsIR"
                     ],
@@ -3774,7 +3776,7 @@
                 },
                 "info": {
                     "x": 1430,
-                    "y": 6122.8909912109375,
+                    "y": 6123,
                     "z": 0,
                     "width": 289,
                     "height": 176,
@@ -3802,7 +3804,7 @@
                 },
                 "info": {
                     "x": 1000,
-                    "y": 6092.8909912109375,
+                    "y": 6093,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -3822,7 +3824,7 @@
                 },
                 "info": {
                     "x": 0,
-                    "y": 6082.8909912109375,
+                    "y": 6083,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -3848,7 +3850,7 @@
                 },
                 "info": {
                     "x": 980,
-                    "y": 5912.8909912109375,
+                    "y": 5913,
                     "z": 0,
                     "width": 719,
                     "height": 160,
@@ -3882,7 +3884,7 @@
                 },
                 "info": {
                     "x": 420,
-                    "y": 6062.8909912109375,
+                    "y": 6063,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -3914,7 +3916,7 @@
                 },
                 "info": {
                     "x": 2270,
-                    "y": 5282.8909912109375,
+                    "y": 5283,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -3939,7 +3941,7 @@
                 },
                 "info": {
                     "x": 1860,
-                    "y": 5322.8909912109375,
+                    "y": 5323,
                     "z": 0,
                     "width": 268,
                     "height": 138,
@@ -3968,7 +3970,7 @@
                 },
                 "info": {
                     "x": 1330,
-                    "y": 5622.8909912109375,
+                    "y": 5623,
                     "z": 0,
                     "width": 505,
                     "height": 225,
@@ -3996,7 +3998,7 @@
                 },
                 "info": {
                     "x": 1320,
-                    "y": 5232.8909912109375,
+                    "y": 5233,
                     "z": 0,
                     "width": 423,
                     "height": 171,
@@ -4023,7 +4025,7 @@
                 },
                 "info": {
                     "x": 1320,
-                    "y": 5432.8909912109375,
+                    "y": 5433,
                     "z": 0,
                     "width": 437,
                     "height": 171,
@@ -4050,7 +4052,7 @@
                 },
                 "info": {
                     "x": 800,
-                    "y": 5602.8909912109375,
+                    "y": 5603,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -4077,7 +4079,7 @@
                 },
                 "info": {
                     "x": 800,
-                    "y": 5432.8909912109375,
+                    "y": 5433,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -4104,7 +4106,7 @@
                 },
                 "info": {
                     "x": 800,
-                    "y": 5262.8909912109375,
+                    "y": 5263,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -4130,9 +4132,7 @@
                         "m7646lmBJs"
                     ],
                     "server": [
-                        "JdTwN6ddNp",
-                        "OJzxqORH1i",
-                        "vTeuM5oLO5"
+                        "JdTwN6ddNp"
                     ],
                     "channel": [
                         "yYbu8xqb6D",
@@ -4152,7 +4152,7 @@
                 },
                 "info": {
                     "x": 180,
-                    "y": 5282.8909912109375,
+                    "y": 5283,
                     "z": 0,
                     "width": 396,
                     "height": 396,
@@ -4179,7 +4179,7 @@
                 },
                 "info": {
                     "x": 1740,
-                    "y": 6152.8909912109375,
+                    "y": 6153,
                     "z": 0,
                     "width": 412,
                     "height": 150,
@@ -4201,14 +4201,12 @@
                         "nYnrplTlax"
                     ],
                     "user": [
-                        "zMpeojv9IN",
-                        "mmptzbUsbW",
-                        "FCkjXBqtoW"
+                        "zMpeojv9IN"
                     ]
                 },
                 "info": {
                     "x": 1470,
-                    "y": 6362.8909912109375,
+                    "y": 6363,
                     "z": 0,
                     "width": 522,
                     "height": 171,
@@ -4236,7 +4234,7 @@
                 },
                 "info": {
                     "x": 2170,
-                    "y": 6172.8909912109375,
+                    "y": 6173,
                     "z": 0,
                     "width": 365,
                     "height": 117,
@@ -4268,7 +4266,7 @@
                 },
                 "info": {
                     "x": 2370,
-                    "y": 6362.8909912109375,
+                    "y": 6363,
                     "z": 0,
                     "width": 567,
                     "height": 214,
@@ -4296,7 +4294,7 @@
                 },
                 "info": {
                     "x": 180,
-                    "y": 5712.8909912109375,
+                    "y": 5713,
                     "z": 0,
                     "width": 287,
                     "height": 247,
@@ -4344,7 +4342,7 @@
                 },
                 "info": {
                     "x": 3050,
-                    "y": 6052.8909912109375,
+                    "y": 6053,
                     "z": 0,
                     "width": 486,
                     "height": 808,
@@ -4379,7 +4377,7 @@
                 },
                 "info": {
                     "x": 3600,
-                    "y": 6512.8909912109375,
+                    "y": 6513,
                     "z": 0,
                     "width": 415,
                     "height": 372,
@@ -4399,7 +4397,7 @@
                 },
                 "info": {
                     "x": 1870,
-                    "y": 5182.8909912109375,
+                    "y": 5183,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -4459,15 +4457,13 @@
                     "text": "Beste <@${text1}>,\n\nJe ban beroep is afgewezen.\n\nDe reden staat hieronder:\n\n${text2}\n\nOver 6 maanden kan je opnieuw een beroep maken.\n\nMet vriendelijke groet,\n\nT-Huis Staff"
                 },
                 "outputs": {
-                    "action": [
-                        "kKysu9EkpU"
-                    ],
+                    "action": [],
                     "message": [],
                     "error": []
                 },
                 "info": {
-                    "x": 4099.091448102678,
-                    "y": 6522.950892857143,
+                    "x": 4099,
+                    "y": 6523,
                     "z": 0,
                     "width": 415,
                     "height": 372,
@@ -4500,6 +4496,59 @@
                     "z": 0,
                     "width": 469,
                     "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "thread_create_message",
+                "inputs": {
+                    "action": "ExoUVCKA8v",
+                    "message": "oK7GQ0Oiq0",
+                    "threadname": "kW7pUqYf5X",
+                    "reason": "zDm4q8wQCS",
+                    "autoarchivetime": "PRMgwI0nqp"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "08Dx5kTuVn"
+                    ],
+                    "threadsave": []
+                },
+                "info": {
+                    "x": 5620,
+                    "y": 420,
+                    "z": 0,
+                    "width": 319,
+                    "height": 202,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "MTOfLwBi1u",
+                    "text1": "FoSCnpaDWW",
+                    "text2": "48JGSvKOzB",
+                    "text3": "kaWVxQ224M"
+                },
+                "options": {
+                    "text": "ban appeal ${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "ExoUVCKA8v"
+                    ],
+                    "text": [
+                        "kW7pUqYf5X"
+                    ]
+                },
+                "info": {
+                    "x": 5220,
+                    "y": 490,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
                     "color": ""
                 }
             }
@@ -25624,9 +25673,7 @@
                     "text1": [
                         "DyLU4No1jU"
                     ],
-                    "text2": [
-                        "oPPDsvg4gk"
-                    ]
+                    "text2": []
                 },
                 "info": {
                     "x": 120,
@@ -27164,12 +27211,10 @@
                     "value1": [],
                     "value2": [
                         "CabyjzBL5n",
-                        "WCQTlu4iKn",
                         "o1MSQMBtPP"
                     ],
                     "value3": [
                         "ApkSn6RmDa",
-                        "7lVVdYYp1o",
                         "gjGieRBDvd",
                         "4bR58L6q1j"
                     ],
@@ -28407,8 +28452,7 @@
                 "outputs": {
                     "text": [
                         "jLrIJqAqUW",
-                        "1tBfR0SyEF",
-                        "sigjUcPxzk"
+                        "1tBfR0SyEF"
                     ]
                 },
                 "info": {
@@ -33189,8 +33233,7 @@
                     ],
                     "result": [
                         "g0kZw3YS32",
-                        "ot6SGMb3SD",
-                        "cRJRnQrwkW"
+                        "ot6SGMb3SD"
                     ]
                 },
                 "info": {
@@ -41699,7 +41742,6 @@
                         "6yJnvmBoCX"
                     ],
                     "button": [
-                        "UeRlmCE0Ox",
                         "eu7LhPIyjI"
                     ]
                 },
