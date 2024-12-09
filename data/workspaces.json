@@ -258,7 +258,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 11.0.1"
+                    "text": "ValkyriaBot™ version 7.0.0\nServeerster versie 11.0.2"
                 },
                 "outputs": {
                     "text": [
@@ -60318,7 +60318,7 @@
                     "text3": "DaNcFVxkBH"
                 },
                 "options": {
-                    "text": "Welkom ${text1}\n\nHier kan je je voorstellen aan de rest van de server. Je kan extra rollen (zoals kleur en toegang tot kanalen) krijgen in ${text2}"
+                    "text": "Welkom ${text1}\n\nHier kan je je voorstellen aan de rest van de server. Je kan extra rollen (zoals kleur en toegang tot kanalen) krijgen in ${text2}\nLees a.u.b. de <#${text3}> goed door."
                 },
                 "outputs": {
                     "action": [
@@ -60452,7 +60452,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "Deh64YWhDu"
+                        "urtykzytDN"
                     ],
                     "result": [
                         "QDrnJY3NOk"
@@ -62004,6 +62004,53 @@
                     "z": 0,
                     "width": 234,
                     "height": 112,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "urtykzytDN",
+                    "file_path": "1RMqR45Ce5"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "Deh64YWhDu"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "DaNcFVxkBH"
+                    ]
+                },
+                "info": {
+                    "x": 2800,
+                    "y": 4890,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/channels/rules.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "1RMqR45Ce5"
+                    ]
+                },
+                "info": {
+                    "x": 2370,
+                    "y": 4890,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
                     "color": ""
                 }
             }
