@@ -755,7 +755,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "webhooktester",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "none",
                     "command_slowmode_restriction": "none"
@@ -1625,7 +1625,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "createappealbutton",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "administrator",
                     "command_slowmode_restriction": "none"
@@ -9644,7 +9644,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "setupmain",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "administrator",
                     "command_slowmode_restriction": "none"
@@ -12554,7 +12554,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "statssetup",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "administrator",
                     "command_slowmode_restriction": "none"
@@ -13502,7 +13502,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "reloadstats",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "none",
                     "command_slowmode_restriction": "none"
@@ -32771,7 +32771,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "geefmemijnrechtenterug",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "kick_members",
                     "command_slowmode_restriction": "none"
@@ -35788,7 +35788,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "ticketfix",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "kick_members",
                     "command_slowmode_restriction": "none"
@@ -45843,7 +45843,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "selfroles",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "kick_members",
                     "command_slowmode_restriction": "none"
@@ -51901,7 +51901,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "checkbday",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "none",
                     "command_slowmode_restriction": "none"
@@ -53611,7 +53611,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "inactivesetup",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "administrator",
                     "command_slowmode_restriction": "none"
@@ -57164,7 +57164,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "inactivemaker",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "none",
                     "command_slowmode_restriction": "none"
@@ -74759,7 +74759,7 @@
                 "inputs": {},
                 "options": {
                     "command_name": "watislizzy",
-                    "custom_prefix": "",
+                    "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "none",
                     "command_slowmode_restriction": "none"
