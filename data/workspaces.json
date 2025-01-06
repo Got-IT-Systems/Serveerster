@@ -259,7 +259,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0Pre2"
+                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0Pre3"
                 },
                 "outputs": {
                     "text": [
@@ -32145,7 +32145,7 @@
                 },
                 "options": {
                     "find_role_by": "id",
-                    "search_value": "984070266609094727"
+                    "search_value": ""
                 },
                 "outputs": {
                     "action": [
@@ -32156,8 +32156,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1890,
-                    "y": 6970,
+                    "x": 620,
+                    "y": 6480,
                     "z": 0,
                     "width": 423,
                     "height": 171,
@@ -32213,8 +32213,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3650,
-                    "y": 6410,
+                    "x": 1450,
+                    "y": 6250,
                     "z": 0,
                     "width": 951,
                     "height": 1702,
@@ -32233,8 +32233,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4220,
-                    "y": 6210,
+                    "x": 2090,
+                    "y": 6110,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -32253,7 +32253,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "g1gBxXK1OC"
+                        "hxlbV7XE3e"
                     ],
                     "user": [],
                     "member": [],
@@ -32310,8 +32310,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 4710,
-                    "y": 6480,
+                    "x": 2550,
+                    "y": 6490,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -32319,29 +32319,49 @@
                 }
             },
             {
-                "name": "get_text_channel_info",
+                "name": "read_file",
                 "inputs": {
-                    "action": "g1gBxXK1OC",
-                    "text_channel": "ScK4Vhwb7o"
+                    "action": "hxlbV7XE3e",
+                    "file_path": "jAaMqIl2YM"
                 },
                 "options": {
-                    "text_channel_info": "13"
+                    "conversion_type": "text"
                 },
                 "outputs": {
                     "action": [
                         "llIQGRqFoD"
                     ],
-                    "result": [
-                        "xuEu0eCfl6",
+                    "action2": [],
+                    "content": [
                         "stRMuhTG0q"
                     ]
                 },
                 "info": {
-                    "x": 480,
-                    "y": 5920,
+                    "x": 490,
+                    "y": 6220,
                     "z": 0,
-                    "width": 715,
-                    "height": 160,
+                    "width": 425,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/hulpjes.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "jAaMqIl2YM"
+                    ]
+                },
+                "info": {
+                    "x": 490,
+                    "y": 6090,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
                     "color": ""
                 }
             }
@@ -58969,7 +58989,7 @@
                     "required": "NhOaO8Hryc"
                 },
                 "options": {
-                    "style": "short",
+                    "style": "paragraph",
                     "id": "messagecontent",
                     "label": "Inhoud bericht",
                     "maxlength": "",
