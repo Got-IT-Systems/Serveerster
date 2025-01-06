@@ -259,7 +259,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.0.5"
+                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0Pre1"
                 },
                 "outputs": {
                     "text": [
@@ -30317,8 +30317,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3200,
-                    "y": 1100,
+                    "x": 3070,
+                    "y": 1130,
                     "z": 0,
                     "width": 426,
                     "height": 355,
@@ -30512,15 +30512,15 @@
                 },
                 "outputs": {
                     "action": [
-                        "mmIFiZOZ2L"
+                        "FZfd8in1T4"
                     ],
                     "button": [
                         "HlOYrpqYkQ"
                     ]
                 },
                 "info": {
-                    "x": 4100,
-                    "y": 1110,
+                    "x": 3560,
+                    "y": 1140,
                     "z": 0,
                     "width": 426,
                     "height": 355,
@@ -30693,8 +30693,8 @@
                     "message": []
                 },
                 "info": {
-                    "x": 4890,
-                    "y": 1740,
+                    "x": 4710,
+                    "y": 4060,
                     "z": 0,
                     "width": 444,
                     "height": 320,
@@ -30738,8 +30738,8 @@
                     "subcommandgroup": []
                 },
                 "info": {
-                    "x": 260,
-                    "y": 1660,
+                    "x": 10,
+                    "y": 3770,
                     "z": 0,
                     "width": 396,
                     "height": 396,
@@ -30764,8 +30764,8 @@
                     ]
                 },
                 "info": {
-                    "x": 750,
-                    "y": 1740,
+                    "x": 480,
+                    "y": 3500,
                     "z": 0,
                     "width": 715,
                     "height": 160,
@@ -30793,8 +30793,8 @@
                     ]
                 },
                 "info": {
-                    "x": 980,
-                    "y": 2010,
+                    "x": 840,
+                    "y": 3730,
                     "z": 0,
                     "width": 345,
                     "height": 164,
@@ -30817,8 +30817,8 @@
                     ]
                 },
                 "info": {
-                    "x": 280,
-                    "y": 2090,
+                    "x": 40,
+                    "y": 4230,
                     "z": 0,
                     "width": 287,
                     "height": 182,
@@ -30845,8 +30845,8 @@
                     ]
                 },
                 "info": {
-                    "x": 940,
-                    "y": 2290,
+                    "x": 840,
+                    "y": 3930,
                     "z": 0,
                     "width": 364,
                     "height": 164,
@@ -30872,8 +30872,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1510,
-                    "y": 2290,
+                    "x": 1380,
+                    "y": 4170,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -30900,8 +30900,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2020,
-                    "y": 2290,
+                    "x": 1880,
+                    "y": 4310,
                     "z": 0,
                     "width": 461,
                     "height": 171,
@@ -30930,7 +30930,7 @@
                 },
                 "info": {
                     "x": 920,
-                    "y": 2500,
+                    "y": 4140,
                     "z": 0,
                     "width": 258,
                     "height": 384,
@@ -30986,8 +30986,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2600,
-                    "y": 1790,
+                    "x": 2480,
+                    "y": 4010,
                     "z": 0,
                     "width": 951,
                     "height": 1702,
@@ -31006,8 +31006,8 @@
                     ]
                 },
                 "info": {
-                    "x": 4950,
-                    "y": 1600,
+                    "x": 4220,
+                    "y": 3790,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -31120,8 +31120,8 @@
                     ]
                 },
                 "info": {
-                    "x": 3790,
-                    "y": 1740,
+                    "x": 3650,
+                    "y": 3990,
                     "z": 0,
                     "width": 951,
                     "height": 1702,
@@ -31148,8 +31148,8 @@
                     ]
                 },
                 "info": {
-                    "x": 2020,
-                    "y": 2610,
+                    "x": 1890,
+                    "y": 4550,
                     "z": 0,
                     "width": 423,
                     "height": 171,
@@ -31408,8 +31408,8 @@
                     "subcommandgroup": []
                 },
                 "info": {
-                    "x": 110,
-                    "y": 3140,
+                    "x": 6450,
+                    "y": 3300,
                     "z": 0,
                     "width": 396,
                     "height": 396,
@@ -31434,8 +31434,8 @@
                     ]
                 },
                 "info": {
-                    "x": 710,
-                    "y": 3180,
+                    "x": 7050,
+                    "y": 3340,
                     "z": 0,
                     "width": 719,
                     "height": 160,
@@ -31461,8 +31461,8 @@
                     ]
                 },
                 "info": {
-                    "x": 820,
-                    "y": 3370,
+                    "x": 7160,
+                    "y": 3530,
                     "z": 0,
                     "width": 451,
                     "height": 138,
@@ -31481,8 +31481,8 @@
                     ]
                 },
                 "info": {
-                    "x": 250,
-                    "y": 3560,
+                    "x": 6590,
+                    "y": 3720,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -31509,8 +31509,8 @@
                     ]
                 },
                 "info": {
-                    "x": 810,
-                    "y": 3540,
+                    "x": 7150,
+                    "y": 3700,
                     "z": 0,
                     "width": 476,
                     "height": 171,
@@ -31540,8 +31540,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 1530,
-                    "y": 3000,
+                    "x": 7870,
+                    "y": 3160,
                     "z": 0,
                     "width": 455,
                     "height": 358,
@@ -31571,8 +31571,8 @@
                     "action": []
                 },
                 "info": {
-                    "x": 1550,
-                    "y": 3580,
+                    "x": 7890,
+                    "y": 3740,
                     "z": 0,
                     "width": 455,
                     "height": 358,
@@ -31591,8 +31591,8 @@
                     ]
                 },
                 "info": {
-                    "x": 1570,
-                    "y": 3440,
+                    "x": 7910,
+                    "y": 3600,
                     "z": 0,
                     "width": 276,
                     "height": 117,
@@ -32099,6 +32099,249 @@
                     "z": 0,
                     "width": 276,
                     "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_button",
+                "inputs": {
+                    "action": "FZfd8in1T4",
+                    "styles": "cjcwH5NiXE",
+                    "label": "yT7D5YcgdW",
+                    "emoji": "IP0HikJ9aw",
+                    "id": "lKkdwYsOLB",
+                    "enable": "jG4rn0wJKc"
+                },
+                "options": {
+                    "styles": "primary",
+                    "label": "Hulpjestoegang",
+                    "emoji": "",
+                    "id": "hulpjestoegang",
+                    "enable": "enabled"
+                },
+                "outputs": {
+                    "action": [
+                        "mmIFiZOZ2L"
+                    ],
+                    "button": [
+                        "ZAg3ln5OAu"
+                    ]
+                },
+                "info": {
+                    "x": 4090,
+                    "y": 1160,
+                    "z": 0,
+                    "width": 426,
+                    "height": 351,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "llIQGRqFoD",
+                    "server": "40M4PeX34A",
+                    "search_value": "stRMuhTG0q"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": "984070266609094727"
+                },
+                "outputs": {
+                    "action": [
+                        "HZ1TxetpZz"
+                    ],
+                    "role": [
+                        "efbXHUBh9W"
+                    ]
+                },
+                "info": {
+                    "x": 1890,
+                    "y": 6970,
+                    "z": 0,
+                    "width": 423,
+                    "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "apply_permissions_with_create_permissions",
+                "inputs": {
+                    "action": "HZ1TxetpZz",
+                    "target1": "bQ9flBTWd0",
+                    "target2": "efbXHUBh9W",
+                    "reason": "Sd7FKhyoO2"
+                },
+                "options": {
+                    "application_type": "set",
+                    "target_type": "channel_target",
+                    "administrator": "none",
+                    "view_audit_log": "none",
+                    "view_guild_insights": "none",
+                    "manage_guild": "none",
+                    "manage_roles": "none",
+                    "manage_channels": "none",
+                    "kick_members": "none",
+                    "ban_members": "none",
+                    "create_instant_invite": "none",
+                    "change_nickname": "none",
+                    "manage_nicknames": "none",
+                    "manage_emojis_and_stickers": "none",
+                    "manage_webhooks": "none",
+                    "view_channel": "allow",
+                    "send_messages": "allow",
+                    "send_tts_messages": "none",
+                    "manage_messages": "none",
+                    "embed_links": "none",
+                    "attach_files": "deny",
+                    "read_message_history": "allow",
+                    "mention_everyone": "none",
+                    "use_external_emojis": "none",
+                    "add_reactions": "none",
+                    "connect": "none",
+                    "speak": "none",
+                    "stream": "none",
+                    "mute_members": "none",
+                    "deafen_members": "none",
+                    "move_members": "none",
+                    "use_vad": "none",
+                    "priority_speaker": "none"
+                },
+                "outputs": {
+                    "action": [
+                        "0o4AsBCnHn"
+                    ]
+                },
+                "info": {
+                    "x": 3650,
+                    "y": 6410,
+                    "z": 0,
+                    "width": 951,
+                    "height": 1702,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Ticket opengezet voor hulpjes!"
+                },
+                "outputs": {
+                    "text": [
+                        "GLOfjvivHd"
+                    ]
+                },
+                "info": {
+                    "x": 4220,
+                    "y": 6210,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "button",
+                    "id": "hulpjestoegang",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "g1gBxXK1OC"
+                    ],
+                    "user": [],
+                    "member": [],
+                    "server": [
+                        "AEPa3U4a3u",
+                        "40M4PeX34A"
+                    ],
+                    "channel": [
+                        "ScK4Vhwb7o",
+                        "Hy2S0ILb7u",
+                        "CkfgxtGFzs",
+                        "bQ9flBTWd0"
+                    ],
+                    "message": [],
+                    "interaction": [
+                        "1a1g7T9xKS"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 10,
+                    "y": 6190,
+                    "z": 0,
+                    "width": 396,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "0o4AsBCnHn",
+                    "interaction": "1a1g7T9xKS",
+                    "message": "GLOfjvivHd",
+                    "embeds": "qvJeFWbTgU",
+                    "row1": "B2d46afp6y",
+                    "row2": "GwkQMifNQZ",
+                    "row3": "FIu5kP0U7X",
+                    "row4": "rzJ2Y7uxRs",
+                    "row5": "RMNytcJTc3",
+                    "attachment": "mpIdY3PDUW"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 4710,
+                    "y": 6480,
+                    "z": 0,
+                    "width": 444,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_text_channel_info",
+                "inputs": {
+                    "action": "g1gBxXK1OC",
+                    "text_channel": "ScK4Vhwb7o"
+                },
+                "options": {
+                    "text_channel_info": "13"
+                },
+                "outputs": {
+                    "action": [
+                        "llIQGRqFoD"
+                    ],
+                    "result": [
+                        "xuEu0eCfl6",
+                        "stRMuhTG0q"
+                    ]
+                },
+                "info": {
+                    "x": 480,
+                    "y": 5920,
+                    "z": 0,
+                    "width": 715,
+                    "height": 160,
                     "color": ""
                 }
             }
