@@ -243,7 +243,7 @@
                 "name": "register_slash_commands",
                 "inputs": {},
                 "options": {
-                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"help\",\n  \"description\": \"Geef de link voor de help pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"modhelp\",\n  \"description\": \"Geef de link voor de modhelp pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"transcript\",\n  \"description\": \"Transcript het huidige ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"close\",\n  \"description\": \"Sluit een ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepgoedkeuren\",\n  \"description\": \"Keur het beroep van dit ticket goed.\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepafkeuren\",\n  \"description\": \"Keur het beroep van dit ticket af\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"reden\",\n      \"description\": \"De reden van afwijzing. Wordt naar gebruiker gestuurd door de bot\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"remove\",\n  \"description\": \"Verwijder persoon uit ticket\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit ticket wil verwijderen.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"bdayrole\",\n  \"description\": \"Geef een persoon tijdelijk de gefelicitaart role\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"user\",\n      \"description\": \"De persoon die je de role wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"fixticket\",\n  \"description\": \"Fix een ticket die stuk was\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"user\",\n      \"description\": \"UserID van de gebruiker.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"new\",\n  \"description\": \"Maak een nieuw Overig ticket voor een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon voor wie je een ticket wil maken\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"ticketpanel\",\n    \"description\": \"Stuur een nieuw ticket bericht\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n},\n{\n    \"name\": \"leeftijd\",\n    \"description\": \"leeftijd registreren voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je de leeftijd wil registreren\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"leeftijd\",\n            \"description\": \"De leeftijd die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maaknotitie\",\n    \"description\": \"Notite maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidnotitie\",\n    \"description\": \"Notite maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editnotitie\",\n    \"description\": \"Een notitie aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notities\",\n    \"description\": \"Haal notities op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de notities wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijdernotitie\",\n    \"description\": \"Verwijder een notitie\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idnotities\",\n    \"description\": \"Krijg notities van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"kick\",\n  \"description\": \"Kick een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te kicken\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Kickreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"ban\",\n  \"description\": \"Ban een pesoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"idban\",\n  \"description\": \"Ban een persoon op basis van id\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"account\",\n      \"description\": \"Het ID van de persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"maakwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editwaarschuwing\",\n    \"description\": \"Een waarschuwing aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"waarschuwingen\",\n    \"description\": \"Haal waarschuwingen op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de waarschuwingen wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijderwaarschuwing\",\n    \"description\": \"Verwijder een waarschuwing\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idwaarschuwingen\",\n    \"description\": \"Krijg waarschuwingen van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"mcwhitelist\",\n  \"description\": \"Whitelist jouw Minecraft account op onze server!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"mcuser\",\n      \"description\": \"De gebruikersnaam van het Minecraft account\",\n      \"required\": true\n    }\n  ]\n}"
+                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"berichtmaken\",\n  \"description\": \"Stuur een bericht vanuit Serveerster\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"help\",\n  \"description\": \"Geef de link voor de help pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"modhelp\",\n  \"description\": \"Geef de link voor de modhelp pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"transcript\",\n  \"description\": \"Transcript het huidige ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"close\",\n  \"description\": \"Sluit een ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepgoedkeuren\",\n  \"description\": \"Keur het beroep van dit ticket goed.\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepafkeuren\",\n  \"description\": \"Keur het beroep van dit ticket af\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"reden\",\n      \"description\": \"De reden van afwijzing. Wordt naar gebruiker gestuurd door de bot\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"remove\",\n  \"description\": \"Verwijder persoon uit ticket\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit ticket wil verwijderen.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"bdayrole\",\n  \"description\": \"Geef een persoon tijdelijk de gefelicitaart role\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"user\",\n      \"description\": \"De persoon die je de role wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"fixticket\",\n  \"description\": \"Fix een ticket die stuk was\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"user\",\n      \"description\": \"UserID van de gebruiker.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"new\",\n  \"description\": \"Maak een nieuw Overig ticket voor een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon voor wie je een ticket wil maken\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"ticketpanel\",\n    \"description\": \"Stuur een nieuw ticket bericht\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n},\n{\n    \"name\": \"leeftijd\",\n    \"description\": \"leeftijd registreren voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je de leeftijd wil registreren\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"leeftijd\",\n            \"description\": \"De leeftijd die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maaknotitie\",\n    \"description\": \"Notite maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidnotitie\",\n    \"description\": \"Notite maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editnotitie\",\n    \"description\": \"Een notitie aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notities\",\n    \"description\": \"Haal notities op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de notities wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijdernotitie\",\n    \"description\": \"Verwijder een notitie\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idnotities\",\n    \"description\": \"Krijg notities van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"kick\",\n  \"description\": \"Kick een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te kicken\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Kickreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"ban\",\n  \"description\": \"Ban een pesoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"idban\",\n  \"description\": \"Ban een persoon op basis van id\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"account\",\n      \"description\": \"Het ID van de persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"maakwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editwaarschuwing\",\n    \"description\": \"Een waarschuwing aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"waarschuwingen\",\n    \"description\": \"Haal waarschuwingen op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de waarschuwingen wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijderwaarschuwing\",\n    \"description\": \"Verwijder een waarschuwing\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idwaarschuwingen\",\n    \"description\": \"Krijg waarschuwingen van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"mcwhitelist\",\n  \"description\": \"Whitelist jouw Minecraft account op onze server!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"mcuser\",\n      \"description\": \"De gebruikersnaam van het Minecraft account\",\n      \"required\": true\n    }\n  ]\n}"
                 },
                 "outputs": {},
                 "info": {
@@ -259,7 +259,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0Pre1"
+                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0Pre2"
                 },
                 "outputs": {
                     "text": [
@@ -58564,6 +58564,744 @@
                     "z": 0,
                     "width": 289,
                     "height": 377,
+                    "color": ""
+                }
+            }
+        ],
+        "notes": []
+    },
+    {
+        "id": "DHG3b0iwt4",
+        "active": true,
+        "info": {
+            "title": "Message Manager",
+            "description": "",
+            "thumbnail": ""
+        },
+        "blocks": [
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "slash",
+                    "id": "berichtmaken",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "5Au2RTW9s1"
+                    ],
+                    "user": [],
+                    "member": [
+                        "eoT0nrqs3N"
+                    ],
+                    "server": [
+                        "nnmXPeBW0x"
+                    ],
+                    "channel": [],
+                    "message": [],
+                    "interaction": [
+                        "ndOwXSzzsf",
+                        "DlHKJH6pwt"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 124,
+                    "y": 132,
+                    "z": 0,
+                    "width": 366,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "AFFeRg2duW",
+                    "interaction": "ndOwXSzzsf",
+                    "message": "uoAp1LyCF4",
+                    "embeds": "OPUhwgmigV",
+                    "row1": "yNIs0RgiMf",
+                    "row2": "Yx1abMvm1t",
+                    "row3": "7CsqBDYIgP",
+                    "row4": "jA5IIbZoKp",
+                    "row5": "Ou9R6VJV70",
+                    "attachment": "69EA4oorX9"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 2210,
+                    "y": 100,
+                    "z": 0,
+                    "width": 420,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_button",
+                "inputs": {
+                    "action": "kZ58816MI0",
+                    "styles": "2ZHSKod8eI",
+                    "label": "S9vJP8UOcC",
+                    "emoji": "PDHnJQXvve",
+                    "id": "PSAuNhDax9",
+                    "enable": "pftYCo9h7i"
+                },
+                "options": {
+                    "styles": "primary",
+                    "label": "Inhoud aanpassen",
+                    "emoji": "",
+                    "id": "inhoudaanpassennieuw",
+                    "enable": "enabled"
+                },
+                "outputs": {
+                    "action": [
+                        "GzAtYtGYnr"
+                    ],
+                    "button": [
+                        "yNIs0RgiMf"
+                    ]
+                },
+                "info": {
+                    "x": 1260,
+                    "y": 100,
+                    "z": 0,
+                    "width": 426,
+                    "height": 351,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_button",
+                "inputs": {
+                    "action": "GzAtYtGYnr",
+                    "styles": "26O9sKmDhz",
+                    "label": "ISMzpr8cgR",
+                    "emoji": "YZJExanzBs",
+                    "id": "RqFlgyfxfS",
+                    "enable": "Wy5HZ9G420"
+                },
+                "options": {
+                    "styles": "primary",
+                    "label": "Versturen",
+                    "emoji": "",
+                    "id": "versturennieuw",
+                    "enable": "enabled"
+                },
+                "outputs": {
+                    "action": [
+                        "AFFeRg2duW"
+                    ],
+                    "button": [
+                        "Yx1abMvm1t"
+                    ]
+                },
+                "info": {
+                    "x": 1730,
+                    "y": 100,
+                    "z": 0,
+                    "width": 426,
+                    "height": 351,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "5Au2RTW9s1",
+                    "file_path": "MFpJQK3u9h"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "Xhs2gzHDPd"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "wudP1M8Ikv"
+                    ]
+                },
+                "info": {
+                    "x": 620,
+                    "y": 160,
+                    "z": 0,
+                    "width": 425,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_role",
+                "inputs": {
+                    "action": "Xhs2gzHDPd",
+                    "server": "nnmXPeBW0x",
+                    "search_value": "wudP1M8Ikv"
+                },
+                "options": {
+                    "find_role_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "xCHtIWXHP9"
+                    ],
+                    "role": [
+                        "FppTApFqcg"
+                    ]
+                },
+                "info": {
+                    "x": 630,
+                    "y": 320,
+                    "z": 0,
+                    "width": 408,
+                    "height": 169,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_if_member_has_role",
+                "inputs": {
+                    "action": "xCHtIWXHP9",
+                    "member": "eoT0nrqs3N",
+                    "role": "FppTApFqcg"
+                },
+                "options": {},
+                "outputs": {
+                    "action1": [
+                        "kZ58816MI0"
+                    ],
+                    "action2": [
+                        "ZNzo6Xem2j"
+                    ]
+                },
+                "info": {
+                    "x": 700,
+                    "y": 520,
+                    "z": 0,
+                    "width": 268,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "ZNzo6Xem2j",
+                    "interaction": "DlHKJH6pwt",
+                    "message": "1hqKNB72gd",
+                    "embeds": "Vs2mq6rLF1",
+                    "row1": "w5ExUQL84M",
+                    "row2": "DOiqh3UNex",
+                    "row3": "ysEqjyb8bb",
+                    "row4": "E2vTLEgDp2",
+                    "row5": "gOvH6W6wYV",
+                    "attachment": "JnNCo9xGh3"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 2220,
+                    "y": 480,
+                    "z": 0,
+                    "width": 420,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/staff.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "MFpJQK3u9h"
+                    ]
+                },
+                "info": {
+                    "x": 170,
+                    "y": 0,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text_2x",
+                "inputs": {},
+                "options": {
+                    "text1": "{geen inhoud}",
+                    "text2": "Je hebt geen toestemming om dit commando te gebruiken."
+                },
+                "outputs": {
+                    "text1": [
+                        "uoAp1LyCF4"
+                    ],
+                    "text2": [
+                        "1hqKNB72gd"
+                    ]
+                },
+                "info": {
+                    "x": 1720,
+                    "y": 530,
+                    "z": 0,
+                    "width": 287,
+                    "height": 182,
+                    "color": ""
+                }
+            },
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "button",
+                    "id": "inhoudaanpassennieuw",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "CQJ8PbBJyx"
+                    ],
+                    "user": [],
+                    "member": [],
+                    "server": [],
+                    "channel": [],
+                    "message": [
+                        "IJe0xHzMxU"
+                    ],
+                    "interaction": [
+                        "8FXIENTNbq"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 130,
+                    "y": 980,
+                    "z": 0,
+                    "width": 366,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "button",
+                    "id": "versturennieuw",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "ZU4Fbc6PLN"
+                    ],
+                    "user": [],
+                    "member": [],
+                    "server": [],
+                    "channel": [
+                        "TvpcYc9joN"
+                    ],
+                    "message": [
+                        "aTG4CkPm6x"
+                    ],
+                    "interaction": [],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 110,
+                    "y": 2150,
+                    "z": 0,
+                    "width": 366,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_modal_input",
+                "inputs": {
+                    "action": "wlhj2hOgVG",
+                    "style": "rdUpLOqHuk",
+                    "id": "adhpTeHXhv",
+                    "label": "jQEZjOiVLG",
+                    "maxlength": "NC1ZhLCAAv",
+                    "minlength": "Df5c8PUPAx",
+                    "placeholder": "ZOTQEgrXKf",
+                    "prefill": "at5y6hk1vX",
+                    "required": "NhOaO8Hryc"
+                },
+                "options": {
+                    "style": "short",
+                    "id": "messagecontent",
+                    "label": "Inhoud bericht",
+                    "maxlength": "",
+                    "minlength": "",
+                    "placeholder": "",
+                    "prefill": "",
+                    "required": "true"
+                },
+                "outputs": {
+                    "action": [
+                        "7p5di97UYF"
+                    ],
+                    "textfield": [
+                        "0XhP8tTGAJ"
+                    ]
+                },
+                "info": {
+                    "x": 940,
+                    "y": 1010,
+                    "z": 0,
+                    "width": 540,
+                    "height": 550,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_modal",
+                "inputs": {
+                    "action": "7p5di97UYF",
+                    "interaction": "8FXIENTNbq",
+                    "customid": "GyY7WZjcoK",
+                    "title": "HpEtHrNM1M",
+                    "textfield1": "0XhP8tTGAJ",
+                    "textfield2": "cOkuHpFrh2",
+                    "textfield3": "Rskyu5uCPR",
+                    "textfield4": "NDHfruXSh8",
+                    "textfield5": "2N63nqNM8L"
+                },
+                "options": {
+                    "customid": "inhoudaanpassennieuw2",
+                    "title": "Bericht inhoud bewerken"
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 1540,
+                    "y": 1020,
+                    "z": 0,
+                    "width": 402,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_message_info",
+                "inputs": {
+                    "action": "CQJ8PbBJyx",
+                    "message": "IJe0xHzMxU"
+                },
+                "options": {
+                    "message_info": "5"
+                },
+                "outputs": {
+                    "action": [
+                        "iWQ9BbhLNS"
+                    ],
+                    "result": [
+                        "QVoVfVfLy8"
+                    ]
+                },
+                "info": {
+                    "x": 530,
+                    "y": 1010,
+                    "z": 0,
+                    "width": 361,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "iWQ9BbhLNS",
+                    "text1": "QVoVfVfLy8",
+                    "text2": "nyO1uwAiK0",
+                    "text3": "pcSAVQITSi"
+                },
+                "options": {
+                    "text": "${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "wlhj2hOgVG"
+                    ],
+                    "text": [
+                        "at5y6hk1vX"
+                    ]
+                },
+                "info": {
+                    "x": 530,
+                    "y": 1180,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "modal",
+                    "id": "inhoudaanpassennieuw2",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "R76FBHaXSz"
+                    ],
+                    "user": [],
+                    "member": [],
+                    "server": [],
+                    "channel": [],
+                    "message": [
+                        "mvdsZ2Xapc"
+                    ],
+                    "interaction": [
+                        "g32zkxoO3e",
+                        "ufL9FzSRJT"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 103.64591471354169,
+                    "y": 1702.979207356771,
+                    "z": 0,
+                    "width": 366,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_modal_argument_by_name",
+                "inputs": {
+                    "action": "R76FBHaXSz",
+                    "interaction": "g32zkxoO3e",
+                    "customid": "SL5LRXnKPu"
+                },
+                "options": {
+                    "customid": "messagecontent"
+                },
+                "outputs": {
+                    "action": [
+                        "qsNT5Ylfz6"
+                    ],
+                    "value": [
+                        "Bm9sy03Tn6",
+                        "JY8o0j43bZ"
+                    ]
+                },
+                "info": {
+                    "x": 510,
+                    "y": 1710,
+                    "z": 0,
+                    "width": 390,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "qQoafchPh0",
+                    "interaction": "ufL9FzSRJT",
+                    "message": "JY8o0j43bZ",
+                    "embeds": "PJsd5uwniX",
+                    "row1": "iztWvgR71Z",
+                    "row2": "QQ0bwekq4K",
+                    "row3": "v8SHn2yii6",
+                    "row4": "T8ZFKUCsBr",
+                    "row5": "ISx7GjogUk",
+                    "attachment": "dmIBjRUehK"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 1950,
+                    "y": 1700,
+                    "z": 0,
+                    "width": 420,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_button",
+                "inputs": {
+                    "action": "qsNT5Ylfz6",
+                    "styles": "bnx0lLFQus",
+                    "label": "m9dZx2WqqN",
+                    "emoji": "CIpr24Jyoi",
+                    "id": "OF5L2trowp",
+                    "enable": "SGCkdfJNlY"
+                },
+                "options": {
+                    "styles": "primary",
+                    "label": "Inhoud aanpassen",
+                    "emoji": "",
+                    "id": "inhoudaanpassennieuw",
+                    "enable": "enabled"
+                },
+                "outputs": {
+                    "action": [
+                        "03wOIa0Ywe"
+                    ],
+                    "button": [
+                        "iztWvgR71Z"
+                    ]
+                },
+                "info": {
+                    "x": 950,
+                    "y": 1670,
+                    "z": 0,
+                    "width": 426,
+                    "height": 351,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_button",
+                "inputs": {
+                    "action": "03wOIa0Ywe",
+                    "styles": "yt6sG75mJ8",
+                    "label": "rWx6wX6sXq",
+                    "emoji": "pgUzQfSNn9",
+                    "id": "OoufjQpycf",
+                    "enable": "FSazq2CX6w"
+                },
+                "options": {
+                    "styles": "primary",
+                    "label": "Versturen",
+                    "emoji": "",
+                    "id": "versturennieuw",
+                    "enable": "enabled"
+                },
+                "outputs": {
+                    "action": [
+                        "qQoafchPh0"
+                    ],
+                    "button": [
+                        "QQ0bwekq4K"
+                    ]
+                },
+                "info": {
+                    "x": 1420,
+                    "y": 1680,
+                    "z": 0,
+                    "width": 426,
+                    "height": 351,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_message_info",
+                "inputs": {
+                    "action": "ZU4Fbc6PLN",
+                    "message": "aTG4CkPm6x"
+                },
+                "options": {
+                    "message_info": "5"
+                },
+                "outputs": {
+                    "action": [
+                        "3FkOG24WSc"
+                    ],
+                    "result": [
+                        "MCcqQgXgWA"
+                    ]
+                },
+                "info": {
+                    "x": 520,
+                    "y": 2160,
+                    "z": 0,
+                    "width": 361,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message_v14",
+                "inputs": {
+                    "action": "3FkOG24WSc",
+                    "channel": "TvpcYc9joN",
+                    "embed": "BwmUZl8FkQ",
+                    "attachment": "eonUYJk9HP",
+                    "text1": "MCcqQgXgWA",
+                    "text2": "J26oFQuPNm",
+                    "text3": "g8cN9Z55ly",
+                    "text4": "1iipkTfxMV",
+                    "text5": "slmkyWx0AF",
+                    "menu": "z1YiXgusaz",
+                    "button": "TvdZ3A2pZL",
+                    "button_row": "LktAhbe75i"
+                },
+                "options": {
+                    "text": "${text1}"
+                },
+                "outputs": {
+                    "action": [],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 920,
+                    "y": 2170,
+                    "z": 0,
+                    "width": 415,
+                    "height": 372,
                     "color": ""
                 }
             }
