@@ -1,10 +1,29 @@
-module.exports = {
+"use strict";
+// heavily inspired by date-fns/addMonths
+function addMonths(date, amount) {
+    const currentDay = date.getDate();
+    const endOfNewMonth = new Date(date);
+    // Add 1 more month than desired, but because dateValue is 0 date gets set
+    // to the last day of the desired month
+    endOfNewMonth.setMonth(date.getMonth() + amount + 1, 0);
+    if (currentDay >= endOfNewMonth.getDate()) {
+        // if current day of month is more than or equal to the new day of month
+        // return as we wanted end of month
+        return endOfNewMonth;
+    }
+    else {
+        // if not, we need to get the year/month from endOfNewMonth and
+        // set the new Date to use those with its current date
+        const newDate = new Date(date);
+        newDate.setFullYear(endOfNewMonth.getFullYear());
+        newDate.setMonth(endOfNewMonth.getMonth());
+        return newDate;
+    }
+}
+const block = {
     name: "Create Date",
-
     description: "Creates a date to use it in your blocks.",
-
     category: "Date Stuff",
-
     inputs: [
         {
             "id": "action",
@@ -61,7 +80,6 @@ module.exports = {
             "types": ["date", "unspecified"]
         }
     ],
-
     options: [
         {
             "id": "start_date",
@@ -75,7 +93,6 @@ module.exports = {
             }
         }
     ],
-
     outputs: [
         {
             "id": "action",
@@ -90,7 +107,6 @@ module.exports = {
             "types": ["date"]
         }
     ],
-
     code(cache) {
         const year = parseInt(this.GetInputValue("year", cache)) || 0;
         const month = parseInt(this.GetInputValue("month", cache));
@@ -101,28 +117,30 @@ module.exports = {
         const milliseconds = parseInt(this.GetInputValue("milliseconds", cache)) || 0;
         const custom_date = this.GetInputValue("custom_date", cache);
         const start_date = this.GetOptionValue("start_date", cache);
-
         function fixedDate(_year, _month, _day, _hours, _minutes, _seconds, _milliseconds) {
             const _b = new Date(0, _month, _day, _hours, _minutes, _seconds, _milliseconds);
             _b.setFullYear(_year);
             return _b;
         }
-        
         function addDate(custom_date) {
-            const Cy = custom_date.getFullYear() + year;
-            const Cmh = custom_date.getMonth() + (month || 0);
-            const Cd = custom_date.getDate() + day;
-            const Ch = custom_date.getHours() + hours;
-            const Cmi = custom_date.getMinutes() + minutes;
-            const Cs = custom_date.getSeconds() + seconds;
-            const Cml = custom_date.getMilliseconds() + milliseconds;
-            
-            return fixedDate(Cy, Cmh, Cd, Ch, Cmi, Cs, Cml);
+            let newDate = new Date(custom_date);
+            newDate.setFullYear(newDate.getFullYear() + year);
+            // NOTE: Even though we use 0-based month indexing, the month is only
+            //       used for adding/subtracting here and not to index, so we
+            //       don't need to subtract 1
+            newDate = addMonths(newDate, (month || 0));
+            newDate.setDate(newDate.getDate() + day);
+            newDate.setHours(newDate.getHours() + hours);
+            newDate.setMinutes(newDate.getMinutes() + minutes);
+            newDate.setSeconds(newDate.getSeconds() + seconds);
+            newDate.setMilliseconds(newDate.getMilliseconds() + milliseconds);
+            return newDate;
         }
-        
         let date;
-        switch(start_date) {
+        switch (start_date) {
             case "beginning":
+                // NOTE: months in javascript are 0 indexed, assume user uses
+                //       month 1-12 and deduct 1
                 date = fixedDate(year, month - 1 || 0, day, hours, minutes, seconds, milliseconds);
                 break;
             case "custom":
@@ -132,8 +150,8 @@ module.exports = {
                 date = addDate(new Date());
                 break;
         }
-
         this.StoreOutputValue(date, "date", cache);
         this.RunNextBlock("action", cache);
     }
-}
+};
+module.exports = block;
