@@ -259,7 +259,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0Pre3"
+                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0"
                 },
                 "outputs": {
                     "text": [
