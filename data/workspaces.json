@@ -259,7 +259,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.0.3"
+                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.0.5Pre1"
                 },
                 "outputs": {
                     "text": [
@@ -2882,7 +2882,7 @@
                     "x": 5380,
                     "y": 800,
                     "z": 0,
-                    "width": 301,
+                    "width": 312,
                     "height": 102,
                     "color": ""
                 }
@@ -3066,7 +3066,7 @@
                     "x": 7830,
                     "y": 1450,
                     "z": 0,
-                    "width": 365,
+                    "width": 376,
                     "height": 156,
                     "color": ""
                 }
@@ -4736,7 +4736,8 @@
                         "X9zsQInET0",
                         "EmfvzqdeDB",
                         "I0TDxkiAT8",
-                        "WpkMzlY2CC"
+                        "WpkMzlY2CC",
+                        "ao37WQTTJQ"
                     ]
                 },
                 "info": {
@@ -7029,7 +7030,9 @@
                     "action1": [
                         "PPiTj3DaTy"
                     ],
-                    "action2": []
+                    "action2": [
+                        "jIR76TVARa"
+                    ]
                 },
                 "info": {
                     "x": 250,
@@ -8196,6 +8199,354 @@
                     "y": 3440,
                     "z": 0,
                     "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "check_comparison",
+                "inputs": {
+                    "action": "jIR76TVARa",
+                    "value1": "ao37WQTTJQ",
+                    "value2": "RCUXd5jlVo"
+                },
+                "options": {
+                    "comparison_type": "equal",
+                    "value2": "unixtimestamp"
+                },
+                "outputs": {
+                    "action1": [
+                        "recCT1INYQ"
+                    ],
+                    "action2": []
+                },
+                "info": {
+                    "x": 220,
+                    "y": 7490,
+                    "z": 0,
+                    "width": 446,
+                    "height": 169,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_date",
+                "inputs": {
+                    "action": "recCT1INYQ",
+                    "year": "YysBZNI7t0",
+                    "month": "jK3ijHcRFI",
+                    "day": "WDVIZdjVGf",
+                    "hours": "TO5ZYkaNJ1",
+                    "minutes": "L1wd6pj7z4",
+                    "seconds": "kUO1xlJp8x",
+                    "milliseconds": "KYsM1SRZ2T",
+                    "custom_date": "vKWm59dkqH"
+                },
+                "options": {
+                    "start_date": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "3pwPPwLZ0U"
+                    ],
+                    "date": [
+                        "5UTB5QkWud",
+                        "xLaNjNeoIT"
+                    ]
+                },
+                "info": {
+                    "x": 830,
+                    "y": 7550,
+                    "z": 0,
+                    "width": 379,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_date_info",
+                "inputs": {
+                    "action": "0wYCM3UxU5",
+                    "date": "xLaNjNeoIT"
+                },
+                "options": {
+                    "date_info": "1",
+                    "time_type": "local"
+                },
+                "outputs": {
+                    "action": [
+                        "FLbAzaiExr"
+                    ],
+                    "result": [
+                        "TNrdDHvEjX",
+                        "WqZNwyPFRo",
+                        "gsj0cuoudk"
+                    ]
+                },
+                "info": {
+                    "x": 1420,
+                    "y": 7600,
+                    "z": 0,
+                    "width": 421,
+                    "height": 156,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "vmg6wFVozP",
+                    "value": "TNrdDHvEjX"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "hQ7d2OzaY1"
+                    ]
+                },
+                "info": {
+                    "x": 2950,
+                    "y": 7780,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "hQ7d2OzaY1",
+                    "value": "O9OI8r1jRk"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "N99yffznwg"
+                    ]
+                },
+                "info": {
+                    "x": 2960,
+                    "y": 7950,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "N99yffznwg",
+                    "value": "VtDKQO45uU"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 2960,
+                    "y": 8110,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "math_operations",
+                "inputs": {
+                    "action": "FLbAzaiExr",
+                    "number1": "WqZNwyPFRo",
+                    "number2": "p4NfOLnHaz"
+                },
+                "options": {
+                    "math_operation_type": "subtraction",
+                    "number2": 2592000
+                },
+                "outputs": {
+                    "action": [
+                        "HABK9zt8oB"
+                    ],
+                    "number": [
+                        "B6py2Flm34",
+                        "O9OI8r1jRk"
+                    ]
+                },
+                "info": {
+                    "x": 1961,
+                    "y": 7919,
+                    "z": 0,
+                    "width": 448,
+                    "height": 154,
+                    "color": ""
+                }
+            },
+            {
+                "name": "math_operations",
+                "inputs": {
+                    "action": "HABK9zt8oB",
+                    "number1": "gsj0cuoudk",
+                    "number2": "tuIt3EyDA2"
+                },
+                "options": {
+                    "math_operation_type": "subtraction",
+                    "number2": 7776000
+                },
+                "outputs": {
+                    "action": [
+                        "vmg6wFVozP"
+                    ],
+                    "number": [
+                        "Eqt6OhbXUV",
+                        "VtDKQO45uU"
+                    ]
+                },
+                "info": {
+                    "x": 1950.8281860351562,
+                    "y": 8096.671875,
+                    "z": 0,
+                    "width": 448,
+                    "height": 154,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_date",
+                "inputs": {
+                    "action": "3pwPPwLZ0U",
+                    "year": "Snfl5P76Sl",
+                    "month": "UO6UMoqEXW",
+                    "day": "7H2Ba4CbPu",
+                    "hours": "TL8xWvTl1W",
+                    "minutes": "NmJWlgnVy2",
+                    "seconds": "kbmElcrhRJ",
+                    "milliseconds": "Ypv4dhmQqb",
+                    "custom_date": "UlVNLtJtJb"
+                },
+                "options": {
+                    "start_date": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "Ft08BZkxco"
+                    ],
+                    "date": [
+                        "RpntH5j3Rc"
+                    ]
+                },
+                "info": {
+                    "x": 840,
+                    "y": 7870,
+                    "z": 0,
+                    "width": 379,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_date",
+                "inputs": {
+                    "action": "Ft08BZkxco",
+                    "year": "Zaln50u0uA",
+                    "month": "VnqTCSAD0D",
+                    "day": "LNvQwOwgzS",
+                    "hours": "w2zYQUdg24",
+                    "minutes": "kia7A1UjVZ",
+                    "seconds": "ZwWcPa7Yul",
+                    "milliseconds": "E8fHFJ1MPx",
+                    "custom_date": "tQa1velKRc"
+                },
+                "options": {
+                    "start_date": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "ScBJX1mIVj"
+                    ],
+                    "date": [
+                        "PN6vF7Gigq"
+                    ]
+                },
+                "info": {
+                    "x": 840,
+                    "y": 8170,
+                    "z": 0,
+                    "width": 379,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "number_2x",
+                "inputs": {},
+                "options": {
+                    "number1": -1,
+                    "number2": -3
+                },
+                "outputs": {
+                    "number1": [
+                        "UO6UMoqEXW"
+                    ],
+                    "number2": [
+                        "VnqTCSAD0D"
+                    ]
+                },
+                "info": {
+                    "x": 450,
+                    "y": 8000,
+                    "z": 0,
+                    "width": 323,
+                    "height": 152,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "ScBJX1mIVj",
+                    "value": "RpntH5j3Rc"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "NEOvErTDxC"
+                    ]
+                },
+                "info": {
+                    "x": 1330,
+                    "y": 8080,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "NEOvErTDxC",
+                    "value": "PN6vF7Gigq"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 1350,
+                    "y": 8290,
+                    "z": 0,
+                    "width": 364,
                     "height": 117,
                     "color": ""
                 }
@@ -26654,7 +27005,6 @@
                     "text": [
                         "ksgm8C2yE0",
                         "QEk4xGjeoo",
-                        "lHGqDhve2x",
                         "WNyAnDq7ym",
                         "MmyS1xqBO1"
                     ]
@@ -28642,8 +28992,6 @@
                         "TDve6QdHYY"
                     ],
                     "value": [
-                        "0czXhyzceW",
-                        "XOxN6G5Pjw",
                         "NOIQGKOhzp"
                     ]
                 },
@@ -33268,7 +33616,6 @@
                     "text": [
                         "ksgm8C2yE0",
                         "QEk4xGjeoo",
-                        "lHGqDhve2x",
                         "WNyAnDq7ym",
                         "MmyS1xqBO1"
                     ]
@@ -35257,8 +35604,6 @@
                         "TDve6QdHYY"
                     ],
                     "value": [
-                        "0czXhyzceW",
-                        "XOxN6G5Pjw",
                         "NOIQGKOhzp"
                     ]
                 },
@@ -54233,7 +54578,7 @@
     },
     {
         "id": "TDrVYpZZND",
-        "active": true,
+        "active": false,
         "info": {
             "title": "Inactive maker 2.0",
             "description": "",
@@ -54620,63 +54965,6 @@
                 }
             },
             {
-                "name": "create_date",
-                "inputs": {
-                    "action": "NF7RnxNn4K",
-                    "year": "DjDvNGIjOy",
-                    "month": "3ET7XiGFF4",
-                    "day": "KkzoxdFXZc",
-                    "hours": "zZMh0mJ6mB",
-                    "minutes": "QT7KSJ7nYn",
-                    "seconds": "Cn7PuXTuPU",
-                    "milliseconds": "JjFaKgiy3x",
-                    "custom_date": "rCzhHhvRj2"
-                },
-                "options": {
-                    "start_date": "current"
-                },
-                "outputs": {
-                    "action": [
-                        "1JKjql5hal"
-                    ],
-                    "date": [
-                        "KnI7nJHx1C"
-                    ]
-                },
-                "info": {
-                    "x": 6640,
-                    "y": 350,
-                    "z": 0,
-                    "width": 401,
-                    "height": 294,
-                    "color": ""
-                }
-            },
-            {
-                "name": "number_2x",
-                "inputs": {},
-                "options": {
-                    "number1": -3,
-                    "number2": -1
-                },
-                "outputs": {
-                    "number1": [
-                        "GgoNfgEAjO"
-                    ],
-                    "number2": [
-                        "3ET7XiGFF4"
-                    ]
-                },
-                "info": {
-                    "x": 5760,
-                    "y": 190,
-                    "z": 0,
-                    "width": 323,
-                    "height": 152,
-                    "color": ""
-                }
-            },
-            {
                 "name": "get_date_info",
                 "inputs": {
                     "action": "pavAsHdWGK",
@@ -54688,42 +54976,16 @@
                 },
                 "outputs": {
                     "action": [
-                        "NF7RnxNn4K"
+                        "MHUEgn6p5O"
                     ],
                     "result": [
-                        "e3ZydPyoTL"
+                        "i0JfXbaZD3",
+                        "6ckjpgtbpV"
                     ]
                 },
                 "info": {
-                    "x": 5860,
-                    "y": 420,
-                    "z": 0,
-                    "width": 459,
-                    "height": 160,
-                    "color": ""
-                }
-            },
-            {
-                "name": "get_date_info",
-                "inputs": {
-                    "action": "1JKjql5hal",
-                    "date": "KnI7nJHx1C"
-                },
-                "options": {
-                    "date_info": "1",
-                    "time_type": "local"
-                },
-                "outputs": {
-                    "action": [
-                        "tQiUkGgVBk"
-                    ],
-                    "result": [
-                        "QV0KZMHSJB"
-                    ]
-                },
-                "info": {
-                    "x": 7070,
-                    "y": 460,
+                    "x": 5620,
+                    "y": 80,
                     "z": 0,
                     "width": 459,
                     "height": 160,
@@ -56287,31 +56549,11 @@
                     ]
                 },
                 "info": {
-                    "x": 4730,
-                    "y": 4840,
+                    "x": 4530,
+                    "y": 4960,
                     "z": 0,
                     "width": 401,
                     "height": 294,
-                    "color": ""
-                }
-            },
-            {
-                "name": "number",
-                "inputs": {},
-                "options": {
-                    "number": -1
-                },
-                "outputs": {
-                    "number": [
-                        "2bxT0L2YlB"
-                    ]
-                },
-                "info": {
-                    "x": 4210,
-                    "y": 5000,
-                    "z": 0,
-                    "width": 312,
-                    "height": 102,
                     "color": ""
                 }
             },
@@ -56327,15 +56569,15 @@
                 },
                 "outputs": {
                     "action": [
-                        "aFJ3HjYS94"
+                        "toi0WetNby"
                     ],
                     "result": [
-                        "D4QrT5yiso"
+                        "5NO1UiRTX0"
                     ]
                 },
                 "info": {
-                    "x": 5170,
-                    "y": 4890,
+                    "x": 4980,
+                    "y": 4990,
                     "z": 0,
                     "width": 459,
                     "height": 160,
@@ -57735,6 +57977,90 @@
                     "z": 0,
                     "width": 287,
                     "height": 247,
+                    "color": ""
+                }
+            },
+            {
+                "name": "math_operations",
+                "inputs": {
+                    "action": "MHUEgn6p5O",
+                    "number1": "i0JfXbaZD3",
+                    "number2": "t1zCesAsSK"
+                },
+                "options": {
+                    "math_operation_type": "subtraction",
+                    "number2": 2592000
+                },
+                "outputs": {
+                    "action": [
+                        "616MrFrDv4"
+                    ],
+                    "number": [
+                        "e3ZydPyoTL"
+                    ]
+                },
+                "info": {
+                    "x": 6320,
+                    "y": 0,
+                    "z": 0,
+                    "width": 448,
+                    "height": 154,
+                    "color": ""
+                }
+            },
+            {
+                "name": "math_operations",
+                "inputs": {
+                    "action": "616MrFrDv4",
+                    "number1": "6ckjpgtbpV",
+                    "number2": "vOFfjEdamU"
+                },
+                "options": {
+                    "math_operation_type": "subtraction",
+                    "number2": 7776000
+                },
+                "outputs": {
+                    "action": [
+                        "tQiUkGgVBk"
+                    ],
+                    "number": [
+                        "QV0KZMHSJB"
+                    ]
+                },
+                "info": {
+                    "x": 6236.560128348215,
+                    "y": 203.41516985212053,
+                    "z": 0,
+                    "width": 448,
+                    "height": 154,
+                    "color": ""
+                }
+            },
+            {
+                "name": "math_operations",
+                "inputs": {
+                    "action": "toi0WetNby",
+                    "number1": "5NO1UiRTX0",
+                    "number2": "J0yFffhzo1"
+                },
+                "options": {
+                    "math_operation_type": "subtraction",
+                    "number2": 2592000
+                },
+                "outputs": {
+                    "action": [
+                        "aFJ3HjYS94"
+                    ],
+                    "number": [
+                        "D4QrT5yiso"
+                    ]
+                },
+                "info": {
+                    "x": 5530,
+                    "y": 5110,
+                    "z": 0,
+                    "width": 448,
+                    "height": 154,
                     "color": ""
                 }
             }
