@@ -243,7 +243,7 @@
                 "name": "register_slash_commands",
                 "inputs": {},
                 "options": {
-                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"berichtmaken\",\n  \"description\": \"Stuur een bericht vanuit Serveerster\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"help\",\n  \"description\": \"Geef de link voor de help pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"modhelp\",\n  \"description\": \"Geef de link voor de modhelp pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"transcript\",\n  \"description\": \"Transcript het huidige ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"close\",\n  \"description\": \"Sluit een ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepgoedkeuren\",\n  \"description\": \"Keur het beroep van dit ticket goed.\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepafkeuren\",\n  \"description\": \"Keur het beroep van dit ticket af\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"reden\",\n      \"description\": \"De reden van afwijzing. Wordt naar gebruiker gestuurd door de bot\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"remove\",\n  \"description\": \"Verwijder persoon uit ticket\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit ticket wil verwijderen.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"bdayrole\",\n  \"description\": \"Geef een persoon tijdelijk de gefelicitaart role\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"user\",\n      \"description\": \"De persoon die je de role wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"fixticket\",\n  \"description\": \"Fix een ticket die stuk was\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"user\",\n      \"description\": \"UserID van de gebruiker.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"new\",\n  \"description\": \"Maak een nieuw Overig ticket voor een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon voor wie je een ticket wil maken\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"ticketpanel\",\n    \"description\": \"Stuur een nieuw ticket bericht\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n},\n{\n    \"name\": \"leeftijd\",\n    \"description\": \"leeftijd registreren voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je de leeftijd wil registreren\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"leeftijd\",\n            \"description\": \"De leeftijd die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maaknotitie\",\n    \"description\": \"Notite maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidnotitie\",\n    \"description\": \"Notite maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editnotitie\",\n    \"description\": \"Een notitie aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notities\",\n    \"description\": \"Haal notities op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de notities wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijdernotitie\",\n    \"description\": \"Verwijder een notitie\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idnotities\",\n    \"description\": \"Krijg notities van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"kick\",\n  \"description\": \"Kick een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te kicken\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Kickreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"ban\",\n  \"description\": \"Ban een pesoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"idban\",\n  \"description\": \"Ban een persoon op basis van id\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"account\",\n      \"description\": \"Het ID van de persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"maakwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editwaarschuwing\",\n    \"description\": \"Een waarschuwing aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"waarschuwingen\",\n    \"description\": \"Haal waarschuwingen op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de waarschuwingen wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijderwaarschuwing\",\n    \"description\": \"Verwijder een waarschuwing\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idwaarschuwingen\",\n    \"description\": \"Krijg waarschuwingen van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"mcwhitelist\",\n  \"description\": \"Whitelist jouw Minecraft account op onze server!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"mcuser\",\n      \"description\": \"De gebruikersnaam van het Minecraft account\",\n      \"required\": true\n    }\n  ]\n}"
+                    "text": "{\n  \"name\": \"info\",\n  \"description\": \"Geef de informatie van de bot weer\",\n  \"options\": []\n},\n{\n  \"name\": \"berichtmaken\",\n  \"description\": \"Stuur een bericht vanuit Serveerster\",\n  \"options\": []\n},\n{\n  \"name\": \"stats\",\n  \"description\": \"Geef de stats van de server weer\",\n  \"options\": []\n},\n{\n  \"name\": \"help\",\n  \"description\": \"Geef de link voor de help pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"modhelp\",\n  \"description\": \"Geef de link voor de modhelp pagina\",\n  \"options\": []\n},\n{\n  \"name\": \"klacht\",\n  \"description\": \"Voor als je klachten hebt!\",\n  \"options\": []\n},\n{\n  \"name\": \"transcript\",\n  \"description\": \"Transcript het huidige ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"close\",\n  \"description\": \"Sluit een ticket\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepgoedkeuren\",\n  \"description\": \"Keur het beroep van dit ticket goed.\",\n  \"options\": []\n},\n{\n  \"name\": \"beroepafkeuren\",\n  \"description\": \"Keur het beroep van dit ticket af\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"reden\",\n      \"description\": \"De reden van afwijzing. Wordt naar gebruiker gestuurd door de bot\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirmations\",\n  \"description\": \"Geef de stats van de confirmatie weer\",\n  \"options\": []\n},\n{\n  \"name\": \"hoeveel\",\n  \"description\": \"Checkt hoeveel berichten iemand gestuurd heeft.\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"userid\",\n      \"description\": \"De UserID van de gebruiker\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"confirm\",\n  \"description\": \"Laat nieuw persoon toe in de server\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil toelaten\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"verify\",\n  \"description\": \"Verifieer een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je wil verifieren\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"remove\",\n  \"description\": \"Verwijder persoon uit ticket\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit ticket wil verwijderen.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"bdayrole\",\n  \"description\": \"Geef een persoon tijdelijk de gefelicitaart role\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"user\",\n      \"description\": \"De persoon die je de role wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setbday\",\n  \"description\": \"Stel je verjaardag in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"fixticket\",\n  \"description\": \"Fix een ticket die stuk was\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"user\",\n      \"description\": \"UserID van de gebruiker.\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"sethrt\",\n  \"description\": \"Stel je HRT jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"setsrs\",\n  \"description\": \"Stel je SRS jubileum in voor de gefelicitaart rol!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"datum\",\n      \"description\": \"Datum in dd-mm format\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"new\",\n  \"description\": \"Maak een nieuw Overig ticket voor een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon voor wie je een ticket wil maken\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"jail\",\n  \"description\": \"Geef een timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je een timeout wil geven\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"unjail\",\n  \"description\": \"Haal iemand uit timeout\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"persoon\",\n      \"description\": \"De persoon die je uit timeout wil halen\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"update\",\n    \"description\": \"Send a message showing added & removed features of your software\",\n    \"options\": []\n},\n{\n    \"name\": \"ticketpanel\",\n    \"description\": \"Stuur een nieuw ticket bericht\",\n    \"options\": []\n},\n{\n    \"name\": \"setconfig\",\n    \"description\": \"Value invoeren in de configs\",\n    \"options\": [\n        {\n            \"name\": \"config\",\n            \"description\": \"De configfile die je wil aanmaken in de map config\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"value\",\n            \"description\": \"De value die in de configfile moet komen\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"checkrolecounter\",\n    \"description\": \"Check hoeveel mensen een bepaalde role hebben\",\n    \"options\": [\n        {\n            \"name\": \"role\",\n            \"description\": \"De role die je wil checken\",\n            \"required\": true,\n            \"type\": 8\n        }\n    ]\n},\n{\n    \"name\": \"leeftijd\",\n    \"description\": \"leeftijd registreren voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je de leeftijd wil registreren\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"leeftijd\",\n            \"description\": \"De leeftijd die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maaknotitie\",\n    \"description\": \"Notite maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidnotitie\",\n    \"description\": \"Notite maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een notitie wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editnotitie\",\n    \"description\": \"Een notitie aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"notitie\",\n            \"description\": \"De notitie die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"notities\",\n    \"description\": \"Haal notities op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de notities wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijdernotitie\",\n    \"description\": \"Verwijder een notitie\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de notitie die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idnotities\",\n    \"description\": \"Krijg notities van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"kick\",\n  \"description\": \"Kick een persoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te kicken\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Kickreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"ban\",\n  \"description\": \"Ban een pesoon\",\n  \"options\": [\n    {\n      \"type\": 6,\n      \"name\": \"account\",\n      \"description\": \"De persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n  \"name\": \"idban\",\n  \"description\": \"Ban een persoon op basis van id\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"account\",\n      \"description\": \"Het ID van de persoon om te bannen\",\n      \"required\": true\n    },\n{\n      \"type\": 3,\n      \"name\": \"reason\",\n      \"description\": \"Banreden\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"maakwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 6\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"maakidwaarschuwing\",\n    \"description\": \"Waarschuwing maken voor een gebruiker op basis van ID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"De UserID van de gebruiker voor wie je een waarschuwing wil maken\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren\",\n            \"required\": true,\n            \"type\": 3\n        }\n    ]\n},\n{\n    \"name\": \"editwaarschuwing\",\n    \"description\": \"Een waarschuwing aanpassen\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"waarschuwing\",\n            \"description\": \"De waarschuwing die je wil invoeren (dit overschrijft de oude)\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"waarschuwingen\",\n    \"description\": \"Haal waarschuwingen op van een gebruiker\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"gebruiker\",\n            \"description\": \"Gebruiker van wie je de waarschuwingen wil zien\",\n            \"required\": true,\n            \"type\": 6\n        }\n        ]\n},\n{\n    \"name\": \"verwijderwaarschuwing\",\n    \"description\": \"Verwijder een waarschuwing\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"id\",\n            \"description\": \"ID van de waarschuwing die je wil verwijderen\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n    \"name\": \"idwaarschuwingen\",\n    \"description\": \"Krijg waarschuwingen van een gebruiker te zien op basis van UserID\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"userid\",\n            \"description\": \"De UserID van de gebruiker\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n},\n{\n  \"name\": \"mcwhitelist\",\n  \"description\": \"Whitelist jouw Minecraft account op onze server!\",\n  \"options\": [\n    {\n      \"type\": 3,\n      \"name\": \"mcuser\",\n      \"description\": \"De gebruikersnaam van het Minecraft account\",\n      \"required\": true\n    }\n  ]\n},\n{\n    \"name\": \"herinnering\",\n    \"description\": \"Een herinnering aanmaken\",\n    \"dm_permission\": false,\n    \"options\": [\n        {\n            \"name\": \"minuten\",\n            \"description\": \"Over hoeveel minuten wil je herinnerd worden? Alleen cijfers invullen!!!\",\n            \"required\": true,\n            \"type\": 3\n        },\n        {\n            \"name\": \"reden\",\n            \"description\": \"Waar wil je aan herinnerd worden? Max 255 tekens\",\n            \"required\": true,\n            \"type\": 3\n        }\n        ]\n}"
                 },
                 "outputs": {},
                 "info": {
@@ -259,7 +259,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.1.0"
+                    "text": "ValkyriaBot™ version 8.0.0\nServeerster versie 11.2.2"
                 },
                 "outputs": {
                     "text": [
@@ -14915,7 +14915,894 @@
             "description": "",
             "thumbnail": ""
         },
-        "blocks": [],
+        "blocks": [
+            {
+                "name": "interaction_event",
+                "inputs": {},
+                "options": {
+                    "type": "slash",
+                    "id": "herinnering",
+                    "sub": "",
+                    "group": "",
+                    "value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "BUwpyO2ZaE"
+                    ],
+                    "user": [
+                        "8cRJFD8Xx7"
+                    ],
+                    "member": [],
+                    "server": [],
+                    "channel": [],
+                    "message": [],
+                    "interaction": [
+                        "hWCCuRyMXR",
+                        "cQtXTo4LCW",
+                        "ov2Iuwupmk"
+                    ],
+                    "args": [],
+                    "name": [],
+                    "menuvalues": [],
+                    "subcommandname": [],
+                    "subcommandgroup": []
+                },
+                "info": {
+                    "x": 60,
+                    "y": 50,
+                    "z": 0,
+                    "width": 366,
+                    "height": 396,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_interaction_argument_by_name",
+                "inputs": {
+                    "action": "BUwpyO2ZaE",
+                    "interaction": "hWCCuRyMXR",
+                    "name": "NEG4ANBrth"
+                },
+                "options": {
+                    "name": "minuten",
+                    "get": "string"
+                },
+                "outputs": {
+                    "action": [
+                        "DKo95b0jFy"
+                    ],
+                    "output": [
+                        "VrLbYaDY1q"
+                    ]
+                },
+                "info": {
+                    "x": 510,
+                    "y": 40,
+                    "z": 0,
+                    "width": 434,
+                    "height": 169,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_interaction_argument_by_name",
+                "inputs": {
+                    "action": "DKo95b0jFy",
+                    "interaction": "cQtXTo4LCW",
+                    "name": "ArFBT0CiaY"
+                },
+                "options": {
+                    "name": "reden",
+                    "get": "string"
+                },
+                "outputs": {
+                    "action": [
+                        "KE6YP7tfGs"
+                    ],
+                    "output": [
+                        "i5zlbcw8pI"
+                    ]
+                },
+                "info": {
+                    "x": 510,
+                    "y": 260,
+                    "z": 0,
+                    "width": 434,
+                    "height": 169,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_user_info",
+                "inputs": {
+                    "action": "KE6YP7tfGs",
+                    "user": "8cRJFD8Xx7"
+                },
+                "options": {
+                    "user_info": "10"
+                },
+                "outputs": {
+                    "action": [
+                        "3tlQ7oivJt"
+                    ],
+                    "result": [
+                        "bUaxpLqTlc"
+                    ]
+                },
+                "info": {
+                    "x": 550,
+                    "y": 450,
+                    "z": 0,
+                    "width": 343,
+                    "height": 160,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_date",
+                "inputs": {
+                    "action": "3tlQ7oivJt",
+                    "year": "pkNF3Y16uZ",
+                    "month": "C8Ega7WocR",
+                    "day": "gbtnEnxvcF",
+                    "hours": "tIZp4bBdXt",
+                    "minutes": "VrLbYaDY1q",
+                    "seconds": "l7P9zBGITr",
+                    "milliseconds": "h69SsYZNUJ",
+                    "custom_date": "SsnJiL9GzN"
+                },
+                "options": {
+                    "start_date": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "Bbeihylxm9"
+                    ],
+                    "date": [
+                        "EHF9Ah7NAH"
+                    ]
+                },
+                "info": {
+                    "x": 1070,
+                    "y": 100,
+                    "z": 0,
+                    "width": 379,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_date_info",
+                "inputs": {
+                    "action": "Bbeihylxm9",
+                    "date": "EHF9Ah7NAH"
+                },
+                "options": {
+                    "date_info": "1",
+                    "time_type": "local"
+                },
+                "outputs": {
+                    "action": [
+                        "d3AG4HQbDu"
+                    ],
+                    "result": [
+                        "ztjhB2ZX1R"
+                    ]
+                },
+                "info": {
+                    "x": 1060,
+                    "y": 420,
+                    "z": 0,
+                    "width": 421,
+                    "height": 156,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "d3AG4HQbDu",
+                    "text1": "bUaxpLqTlc",
+                    "text2": "ztjhB2ZX1R",
+                    "text3": "i5zlbcw8pI"
+                },
+                "options": {
+                    "text": "INSERT INTO `reminders` (`id`, `userid`, `time`, `reason`) VALUES (NULL, '${text1}', '${text2}', '${text3}');"
+                },
+                "outputs": {
+                    "action": [
+                        "XQfyQPKhYr"
+                    ],
+                    "text": [
+                        "9D5HUWeN2H"
+                    ]
+                },
+                "info": {
+                    "x": 1010,
+                    "y": 610,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "XQfyQPKhYr",
+                    "query": "9D5HUWeN2H"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "01fSP2e3h7"
+                    ],
+                    "erroraction": [
+                        "8G6BEvGJV0"
+                    ],
+                    "response": [],
+                    "errormsg": [
+                        "O9hUdpFnTm"
+                    ]
+                },
+                "info": {
+                    "x": 1400,
+                    "y": 670,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "reply_interaction",
+                "inputs": {
+                    "action": "01fSP2e3h7",
+                    "interaction": "ov2Iuwupmk",
+                    "message": "TzrJZeEWwQ",
+                    "embeds": "RxjwAEAS9o",
+                    "row1": "mh24XEXElh",
+                    "row2": "DjPcB5Yq4E",
+                    "row3": "VnYSTzOBXK",
+                    "row4": "3gPDL3YXGk",
+                    "row5": "kbITG2TPuS",
+                    "attachment": "mgsqTD7SHH"
+                },
+                "options": {
+                    "response": "reply",
+                    "private": "true"
+                },
+                "outputs": {
+                    "action": [],
+                    "interaction": [],
+                    "message": []
+                },
+                "info": {
+                    "x": 1760,
+                    "y": 670,
+                    "z": 0,
+                    "width": 420,
+                    "height": 320,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "Reminder gezet!"
+                },
+                "outputs": {
+                    "text": [
+                        "TzrJZeEWwQ"
+                    ]
+                },
+                "info": {
+                    "x": 1400,
+                    "y": 870,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "cron_job_event",
+                "inputs": {
+                    "cronInfo": "LPGNUUeFlh"
+                },
+                "options": {
+                    "cronInfo": "0 * * * * *",
+                    "timezone": "Europe/Amsterdam"
+                },
+                "outputs": {
+                    "action": [
+                        "jlDIKfKjkQ"
+                    ]
+                },
+                "info": {
+                    "x": 20,
+                    "y": 1200,
+                    "z": 0,
+                    "width": 447,
+                    "height": 169,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_channel",
+                "inputs": {
+                    "action": "PhCXwc71Dn",
+                    "server": "ai3AwhVCLk",
+                    "search_value": "uip7SNu4yc"
+                },
+                "options": {
+                    "channel_type": "any",
+                    "find_channel_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "RNSz3JeRDF"
+                    ],
+                    "channel": [
+                        "85AInmlYao",
+                        "Is2MvFFNt2"
+                    ]
+                },
+                "info": {
+                    "x": 510,
+                    "y": 1720,
+                    "z": 0,
+                    "width": 469,
+                    "height": 221,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "jlDIKfKjkQ",
+                    "file_path": "VifdOGktq2"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "c3sKUpraXE"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "uip7SNu4yc"
+                    ]
+                },
+                "info": {
+                    "x": 550,
+                    "y": 1200,
+                    "z": 0,
+                    "width": 425,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/channels/botspam.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "VifdOGktq2"
+                    ]
+                },
+                "info": {
+                    "x": 20,
+                    "y": 1390,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "c3sKUpraXE",
+                    "file_path": "LOcIASEl4J"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "JqZQ3tPkgk"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "ZdBCKPAxBJ"
+                    ]
+                },
+                "info": {
+                    "x": 550,
+                    "y": 1350,
+                    "z": 0,
+                    "width": 425,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/server.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "LOcIASEl4J"
+                    ]
+                },
+                "info": {
+                    "x": 20,
+                    "y": 1510,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_server",
+                "inputs": {
+                    "action": "JqZQ3tPkgk",
+                    "search_value": "ZdBCKPAxBJ"
+                },
+                "options": {
+                    "find_server_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "PhCXwc71Dn"
+                    ],
+                    "server": [
+                        "ai3AwhVCLk"
+                    ]
+                },
+                "info": {
+                    "x": 530,
+                    "y": 1520,
+                    "z": 0,
+                    "width": 410,
+                    "height": 169,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_date",
+                "inputs": {
+                    "action": "RNSz3JeRDF",
+                    "year": "OOJlQHFA9L",
+                    "month": "6yyETP8Gx9",
+                    "day": "Q5LZgrjzd7",
+                    "hours": "amKtYfjGF6",
+                    "minutes": "aJyKZ5j84L",
+                    "seconds": "ePRBh8HmlJ",
+                    "milliseconds": "ZftR25UMWf",
+                    "custom_date": "Dg9EroxxEg"
+                },
+                "options": {
+                    "start_date": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "9S6ErTiAHp"
+                    ],
+                    "date": [
+                        "yeNK5cbRC6"
+                    ]
+                },
+                "info": {
+                    "x": 1140,
+                    "y": 1190,
+                    "z": 0,
+                    "width": 379,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_date_info",
+                "inputs": {
+                    "action": "9S6ErTiAHp",
+                    "date": "yeNK5cbRC6"
+                },
+                "options": {
+                    "date_info": "1",
+                    "time_type": "local"
+                },
+                "outputs": {
+                    "action": [
+                        "lyx4Q90HBb"
+                    ],
+                    "result": [
+                        "DXlvLpHPsY"
+                    ]
+                },
+                "info": {
+                    "x": 1080,
+                    "y": 1520,
+                    "z": 0,
+                    "width": 421,
+                    "height": 156,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "lyx4Q90HBb",
+                    "text1": "DXlvLpHPsY",
+                    "text2": "RL6mEaCso9",
+                    "text3": "gvZwXEoJdC"
+                },
+                "options": {
+                    "text": "SELECT * FROM `reminders` WHERE `time` < ${text1};"
+                },
+                "outputs": {
+                    "action": [
+                        "qNL1hvFwlr"
+                    ],
+                    "text": [
+                        "2iJpU0j7T4"
+                    ]
+                },
+                "info": {
+                    "x": 1110,
+                    "y": 1750,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "qNL1hvFwlr",
+                    "query": "2iJpU0j7T4"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "kUPpjE1PL2"
+                    ],
+                    "erroraction": [
+                        "RoXLppkPgL"
+                    ],
+                    "response": [
+                        "WzaAU6jW5h"
+                    ],
+                    "errormsg": [
+                        "srM3rXOi3U"
+                    ]
+                },
+                "info": {
+                    "x": 1520,
+                    "y": 1790,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_loop_list",
+                "inputs": {
+                    "action": "kUPpjE1PL2",
+                    "list": "WzaAU6jW5h",
+                    "delay": "0XhEdTMzso"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [
+                        "eCsac6uvcv"
+                    ],
+                    "action2": [],
+                    "index": [],
+                    "value": [
+                        "XndG3TNIUv",
+                        "2rCOWetaeY",
+                        "2m8O8anDf3"
+                    ]
+                },
+                "info": {
+                    "x": 1880,
+                    "y": 1840,
+                    "z": 0,
+                    "width": 319,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_property_from_object_option",
+                "inputs": {
+                    "action": "eCsac6uvcv",
+                    "object": "XndG3TNIUv"
+                },
+                "options": {
+                    "key": "userid"
+                },
+                "outputs": {
+                    "action": [
+                        "w2Zm5Xy4tt"
+                    ],
+                    "value": [
+                        "5pRUFKfoTj"
+                    ]
+                },
+                "info": {
+                    "x": 2370,
+                    "y": 1880,
+                    "z": 0,
+                    "width": 365,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_property_from_object_option",
+                "inputs": {
+                    "action": "w2Zm5Xy4tt",
+                    "object": "2rCOWetaeY"
+                },
+                "options": {
+                    "key": "reason"
+                },
+                "outputs": {
+                    "action": [
+                        "7uFQFnJBJI"
+                    ],
+                    "value": [
+                        "GqBSzpi6An"
+                    ]
+                },
+                "info": {
+                    "x": 2370,
+                    "y": 2010,
+                    "z": 0,
+                    "width": 365,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "HE1DMrh5pZ",
+                    "text1": "5pRUFKfoTj",
+                    "text2": "GqBSzpi6An",
+                    "text3": "ebLkR3HbsY"
+                },
+                "options": {
+                    "text": "<@${text1}>\nHerinnering:\n${text2}"
+                },
+                "outputs": {
+                    "action": [
+                        "FsUxy34Lt3"
+                    ],
+                    "text": [
+                        "5G2HKI9ykW",
+                        "qVKvSp2Q5q"
+                    ]
+                },
+                "info": {
+                    "x": 2800,
+                    "y": 1900,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_property_from_object_option",
+                "inputs": {
+                    "action": "7uFQFnJBJI",
+                    "object": "2m8O8anDf3"
+                },
+                "options": {
+                    "key": "id"
+                },
+                "outputs": {
+                    "action": [
+                        "HE1DMrh5pZ"
+                    ],
+                    "value": [
+                        "gvRVqpToJP"
+                    ]
+                },
+                "info": {
+                    "x": 2380,
+                    "y": 2150,
+                    "z": 0,
+                    "width": 365,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "1uty5wK0x0",
+                    "query": "SwMnfK4iYM"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [],
+                    "erroraction": [],
+                    "response": [],
+                    "errormsg": []
+                },
+                "info": {
+                    "x": 3210,
+                    "y": 2390,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "Yl2HK5xgom",
+                    "text1": "gvRVqpToJP",
+                    "text2": "u3SIcG6tLi",
+                    "text3": "osEm1cCK89"
+                },
+                "options": {
+                    "text": "DELETE FROM `reminders` WHERE `reminders`.`id` = ${text1};"
+                },
+                "outputs": {
+                    "action": [
+                        "1uty5wK0x0"
+                    ],
+                    "text": [
+                        "SwMnfK4iYM"
+                    ]
+                },
+                "info": {
+                    "x": 3140,
+                    "y": 2170,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "number",
+                "inputs": {},
+                "options": {
+                    "number": 1000
+                },
+                "outputs": {
+                    "number": [
+                        "0XhEdTMzso"
+                    ]
+                },
+                "info": {
+                    "x": 1730,
+                    "y": 2027,
+                    "z": 0,
+                    "width": 312,
+                    "height": 102,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "RoXLppkPgL",
+                    "value": "srM3rXOi3U"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 1250,
+                    "y": 1970,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "better_send_message_v14",
+                "inputs": {
+                    "action": "FsUxy34Lt3",
+                    "channel": "Is2MvFFNt2",
+                    "embed": "czEuLxDcNO",
+                    "attachment": "RHbZzVRhZ2",
+                    "text1": "qVKvSp2Q5q",
+                    "text2": "0mDlghBoIm",
+                    "text3": "HF1JGDrjVk",
+                    "text4": "LnPVDmc4A3",
+                    "text5": "ecHGyrxgph",
+                    "menu": "fSdWPsCeLe",
+                    "button": "MFux81iTII",
+                    "button_row": "E5HJfTQjv2"
+                },
+                "options": {
+                    "text": "${text1}"
+                },
+                "outputs": {
+                    "action": [
+                        "Yl2HK5xgom"
+                    ],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 3240,
+                    "y": 1740,
+                    "z": 0,
+                    "width": 415,
+                    "height": 372,
+                    "color": ""
+                }
+            },
+            {
+                "name": "number",
+                "inputs": {},
+                "options": {
+                    "number": 1
+                },
+                "outputs": {
+                    "number": [
+                        "ZftR25UMWf"
+                    ]
+                },
+                "info": {
+                    "x": 790,
+                    "y": 1040,
+                    "z": 0,
+                    "width": 312,
+                    "height": 102,
+                    "color": ""
+                }
+            },
+            {
+                "name": "console_log",
+                "inputs": {
+                    "action": "8G6BEvGJV0",
+                    "value": "O9hUdpFnTm"
+                },
+                "options": {
+                    "value": ""
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 1380,
+                    "y": 1000,
+                    "z": 0,
+                    "width": 364,
+                    "height": 117,
+                    "color": ""
+                }
+            }
+        ],
         "notes": []
     },
     {
@@ -32258,13 +33145,9 @@
                     "user": [],
                     "member": [],
                     "server": [
-                        "AEPa3U4a3u",
                         "40M4PeX34A"
                     ],
                     "channel": [
-                        "ScK4Vhwb7o",
-                        "Hy2S0ILb7u",
-                        "CkfgxtGFzs",
                         "bQ9flBTWd0"
                     ],
                     "message": [],
@@ -48335,191 +49218,6 @@
         },
         "blocks": [
             {
-                "name": "find_channel",
-                "inputs": {
-                    "action": "O95qFCt0O0",
-                    "server": "KfZBngW7qi",
-                    "search_value": "5xiZIS4D95"
-                },
-                "options": {
-                    "channel_type": "any",
-                    "find_channel_by": "id",
-                    "search_value": "831227311822340146"
-                },
-                "outputs": {
-                    "action": [
-                        "06jSQdaoZ3"
-                    ],
-                    "channel": [
-                        "5f16lQEFch"
-                    ]
-                },
-                "info": {
-                    "x": 2690,
-                    "y": 1130,
-                    "z": 0,
-                    "width": 505,
-                    "height": 225,
-                    "color": ""
-                }
-            },
-            {
-                "name": "better_send_message_v14",
-                "inputs": {
-                    "action": "06jSQdaoZ3",
-                    "channel": "5f16lQEFch",
-                    "embed": "PszJh068rE",
-                    "attachment": "CYpwGlKjXT",
-                    "text1": "AiAKGuIfeB",
-                    "text2": "kcIBfax1e2",
-                    "text3": "IE7RBswx3d",
-                    "text4": "8FpsGeJyQi",
-                    "text5": "AjyZyaMmAS",
-                    "menu": "1MAn1bwbCV",
-                    "button": "pH0ZVvGIfw",
-                    "button_row": "26QD3B3gqI"
-                },
-                "options": {
-                    "text": "Server mag weer gebumped worden!\nGebruik /bump om de server te bumpen.\n<@&1261838043745226844>"
-                },
-                "outputs": {
-                    "action": [],
-                    "message": [],
-                    "error": []
-                },
-                "info": {
-                    "x": 3600,
-                    "y": 1180,
-                    "z": 0,
-                    "width": 415,
-                    "height": 372,
-                    "color": ""
-                }
-            },
-            {
-                "name": "better_send_message_v14",
-                "inputs": {
-                    "action": "lz4ot2MzA4",
-                    "channel": "l8xboNepmz",
-                    "embed": "iyFtWk6zy8",
-                    "attachment": "bffqiiuFCb",
-                    "text1": "rNQ3Q9GiB7",
-                    "text2": "RZs4wQRQpF",
-                    "text3": "bij6pYjwZw",
-                    "text4": "FsHwcuRhek",
-                    "text5": "aQe3BVG97m",
-                    "menu": "860eCIDX56",
-                    "button": "Ltywy27ehb",
-                    "button_row": "RDeMGdkOzL"
-                },
-                "options": {
-                    "text": "Server can be bumped again"
-                },
-                "outputs": {
-                    "action": [
-                        "O95qFCt0O0"
-                    ],
-                    "message": [],
-                    "error": []
-                },
-                "info": {
-                    "x": 3770,
-                    "y": 690,
-                    "z": 0,
-                    "width": 415,
-                    "height": 372,
-                    "color": ""
-                }
-            },
-            {
-                "name": "better_send_message_v14",
-                "inputs": {
-                    "action": "AlGWOK1wYl",
-                    "channel": "wwNK8ki0cW",
-                    "embed": "sSTTJKZhgn",
-                    "attachment": "FhT64F559t",
-                    "text1": "VLCT6bmw7V",
-                    "text2": "ZVQbHSvFLe",
-                    "text3": "v6q3SWkFSh",
-                    "text4": "dyalEzcx1R",
-                    "text5": "Q7TDLHf0Sx",
-                    "menu": "c1VdGy1vY3",
-                    "button": "nP8bkYNDqu",
-                    "button_row": "bHj0lCq0CK"
-                },
-                "options": {
-                    "text": "Server has been bumped"
-                },
-                "outputs": {
-                    "action": [
-                        "4g6co7R5Ef"
-                    ],
-                    "message": [],
-                    "error": []
-                },
-                "info": {
-                    "x": 2680,
-                    "y": 650,
-                    "z": 0,
-                    "width": 415,
-                    "height": 372,
-                    "color": ""
-                }
-            },
-            {
-                "name": "wait_with_number",
-                "inputs": {
-                    "action": "4g6co7R5Ef"
-                },
-                "options": {
-                    "time_type": "hours",
-                    "time": 2
-                },
-                "outputs": {
-                    "action": [
-                        "lz4ot2MzA4"
-                    ]
-                },
-                "info": {
-                    "x": 3190,
-                    "y": 840,
-                    "z": 0,
-                    "width": 376,
-                    "height": 156,
-                    "color": ""
-                }
-            },
-            {
-                "name": "find_channel",
-                "inputs": {
-                    "action": "NXBP2BUV1l",
-                    "server": "uczjcQ3Z9r",
-                    "search_value": "g4tcs4aR33"
-                },
-                "options": {
-                    "channel_type": "any",
-                    "find_channel_by": "id",
-                    "search_value": "870926790854586398"
-                },
-                "outputs": {
-                    "action": [
-                        "AlGWOK1wYl"
-                    ],
-                    "channel": [
-                        "wwNK8ki0cW",
-                        "l8xboNepmz"
-                    ]
-                },
-                "info": {
-                    "x": 1800,
-                    "y": 660,
-                    "z": 0,
-                    "width": 505,
-                    "height": 225,
-                    "color": ""
-                }
-            },
-            {
                 "name": "check_comparison",
                 "inputs": {
                     "action": "x1R6wqeiWU",
@@ -48687,7 +49385,7 @@
                 },
                 "outputs": {
                     "action": [
-                        "NXBP2BUV1l"
+                        "W1JrtaYvgI"
                     ]
                 },
                 "info": {
@@ -48751,6 +49449,183 @@
                     "z": 0,
                     "width": 206,
                     "height": 216,
+                    "color": ""
+                }
+            },
+            {
+                "name": "create_date",
+                "inputs": {
+                    "action": "W1JrtaYvgI",
+                    "year": "955wU7toft",
+                    "month": "a90lu6pCY0",
+                    "day": "AEZEV0EXyQ",
+                    "hours": "HlGfOkrN0c",
+                    "minutes": "gccsZs1K8s",
+                    "seconds": "ipKKapk8FJ",
+                    "milliseconds": "XHqv3X1hzu",
+                    "custom_date": "00SPxfxwTH"
+                },
+                "options": {
+                    "start_date": "current"
+                },
+                "outputs": {
+                    "action": [
+                        "kOn1tYHDNa"
+                    ],
+                    "date": [
+                        "haWya7Vdjc"
+                    ]
+                },
+                "info": {
+                    "x": 2830,
+                    "y": 450,
+                    "z": 0,
+                    "width": 379,
+                    "height": 294,
+                    "color": ""
+                }
+            },
+            {
+                "name": "number",
+                "inputs": {},
+                "options": {
+                    "number": 120
+                },
+                "outputs": {
+                    "number": [
+                        "gccsZs1K8s"
+                    ]
+                },
+                "info": {
+                    "x": 2440,
+                    "y": 630,
+                    "z": 0,
+                    "width": 312,
+                    "height": 102,
+                    "color": ""
+                }
+            },
+            {
+                "name": "get_date_info",
+                "inputs": {
+                    "action": "kOn1tYHDNa",
+                    "date": "haWya7Vdjc"
+                },
+                "options": {
+                    "date_info": "1",
+                    "time_type": "local"
+                },
+                "outputs": {
+                    "action": [
+                        "ivB97QRBnE"
+                    ],
+                    "result": [
+                        "T35Rxpzugi"
+                    ]
+                },
+                "info": {
+                    "x": 2790,
+                    "y": 780,
+                    "z": 0,
+                    "width": 421,
+                    "height": 156,
+                    "color": ""
+                }
+            },
+            {
+                "name": "merge_texts_advanced",
+                "inputs": {
+                    "action": "rMm66ZZ99G",
+                    "text1": "T35Rxpzugi",
+                    "text2": "PpPnn3YEKh",
+                    "text3": "Tix3vdYJLF"
+                },
+                "options": {
+                    "text": "INSERT INTO `reminders` (`id`, `userid`, `time`, `reason`) VALUES (NULL, '&${text2}', '${text1}', 'Server kan weer gebumped worden. Doe /bump om de server te bumpen.');"
+                },
+                "outputs": {
+                    "action": [
+                        "2u9eRwzRa2"
+                    ],
+                    "text": [
+                        "petJdnBCkQ"
+                    ]
+                },
+                "info": {
+                    "x": 3350,
+                    "y": 800,
+                    "z": 0,
+                    "width": 364,
+                    "height": 164,
+                    "color": ""
+                }
+            },
+            {
+                "name": "database_query",
+                "inputs": {
+                    "action": "2u9eRwzRa2",
+                    "query": "petJdnBCkQ"
+                },
+                "options": {},
+                "outputs": {
+                    "action": [],
+                    "erroraction": [],
+                    "response": [],
+                    "errormsg": []
+                },
+                "info": {
+                    "x": 3770,
+                    "y": 900,
+                    "z": 0,
+                    "width": 289,
+                    "height": 176,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "ivB97QRBnE",
+                    "file_path": "W2lHleuKP4"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "rMm66ZZ99G"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "PpPnn3YEKh"
+                    ]
+                },
+                "info": {
+                    "x": 2810,
+                    "y": 1110,
+                    "z": 0,
+                    "width": 425,
+                    "height": 138,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/roles/bumpers.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "W2lHleuKP4"
+                    ]
+                },
+                "info": {
+                    "x": 2470,
+                    "y": 980,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
                     "color": ""
                 }
             }
@@ -55239,8 +56114,6 @@
                         "IiQI9qWUt3"
                     ],
                     "result": [
-                        "i0JfXbaZD3",
-                        "6ckjpgtbpV",
                         "e3ZydPyoTL"
                     ]
                 },
@@ -55513,7 +56386,7 @@
                 },
                 "options": {
                     "comparison_type": "less_than_or_equal",
-                    "value2": "5"
+                    "value2": "10"
                 },
                 "outputs": {
                     "action1": [
@@ -56833,7 +57706,6 @@
                         "aFJ3HjYS94"
                     ],
                     "result": [
-                        "5NO1UiRTX0",
                         "D4QrT5yiso"
                     ]
                 },
@@ -58307,7 +59179,7 @@
                 "inputs": {},
                 "options": {
                     "number1": -3,
-                    "number2": -1
+                    "number2": -2
                 },
                 "outputs": {
                     "number1": [
@@ -59116,9 +59988,7 @@
                     "member": [],
                     "server": [],
                     "channel": [],
-                    "message": [
-                        "mvdsZ2Xapc"
-                    ],
+                    "message": [],
                     "interaction": [
                         "g32zkxoO3e",
                         "ufL9FzSRJT"
@@ -59130,8 +60000,8 @@
                     "subcommandgroup": []
                 },
                 "info": {
-                    "x": 103.64591471354169,
-                    "y": 1702.979207356771,
+                    "x": 104,
+                    "y": 1703,
                     "z": 0,
                     "width": 366,
                     "height": 396,
@@ -59153,7 +60023,6 @@
                         "qsNT5Ylfz6"
                     ],
                     "value": [
-                        "Bm9sy03Tn6",
                         "JY8o0j43bZ"
                     ]
                 },
@@ -68727,7 +69596,8 @@
                         "rTp3Pows9t"
                     ],
                     "server": [
-                        "RgAQZzZ1Pj"
+                        "RgAQZzZ1Pj",
+                        "5OMKoMneuo"
                     ],
                     "channel": [],
                     "message": [],
@@ -69293,7 +70163,8 @@
                         "rkaiCkum6p"
                     ],
                     "message_embed": [
-                        "Ln6sVRMler"
+                        "Ln6sVRMler",
+                        "5q4JiUpqSK"
                     ]
                 },
                 "info": {
@@ -69601,7 +70472,9 @@
                     "private": "true"
                 },
                 "outputs": {
-                    "action": [],
+                    "action": [
+                        "GQlyJ8r6NN"
+                    ],
                     "interaction": [],
                     "message": []
                 },
@@ -73768,6 +74641,115 @@
                     "height": 160,
                     "color": ""
                 }
+            },
+            {
+                "name": "better_send_message_v14",
+                "inputs": {
+                    "action": "GklNj0dwyB",
+                    "channel": "UfUlR9BuEI",
+                    "embed": "5q4JiUpqSK",
+                    "attachment": "ljCCSbipmm",
+                    "text1": "248d9QKw8c",
+                    "text2": "sMskjOIzxw",
+                    "text3": "c11yc9NQuY",
+                    "text4": "SR7FHuzUmR",
+                    "text5": "JU4pmo5VSv",
+                    "menu": "S95FlFYFJe",
+                    "button": "QfwL4KrFdd",
+                    "button_row": "hSf3NSEl3q"
+                },
+                "options": {
+                    "text": "Notitie aangemaakt:"
+                },
+                "outputs": {
+                    "action": [],
+                    "message": [],
+                    "error": []
+                },
+                "info": {
+                    "x": 5920,
+                    "y": 1760,
+                    "z": 0,
+                    "width": 415,
+                    "height": 372,
+                    "color": ""
+                }
+            },
+            {
+                "name": "find_channel",
+                "inputs": {
+                    "action": "nPnVhUo609",
+                    "server": "5OMKoMneuo",
+                    "search_value": "swUVFWjuSp"
+                },
+                "options": {
+                    "channel_type": "any",
+                    "find_channel_by": "id",
+                    "search_value": ""
+                },
+                "outputs": {
+                    "action": [
+                        "GklNj0dwyB"
+                    ],
+                    "channel": [
+                        "UfUlR9BuEI"
+                    ]
+                },
+                "info": {
+                    "x": 5110,
+                    "y": 1660,
+                    "z": 0,
+                    "width": 505,
+                    "height": 225,
+                    "color": ""
+                }
+            },
+            {
+                "name": "text",
+                "inputs": {},
+                "options": {
+                    "text": "config/channels/notes.txt"
+                },
+                "outputs": {
+                    "text": [
+                        "GAwWgdwxVU"
+                    ]
+                },
+                "info": {
+                    "x": 4670,
+                    "y": 1470,
+                    "z": 0,
+                    "width": 276,
+                    "height": 117,
+                    "color": ""
+                }
+            },
+            {
+                "name": "read_file",
+                "inputs": {
+                    "action": "GQlyJ8r6NN",
+                    "file_path": "GAwWgdwxVU"
+                },
+                "options": {
+                    "conversion_type": "text"
+                },
+                "outputs": {
+                    "action": [
+                        "nPnVhUo609"
+                    ],
+                    "action2": [],
+                    "content": [
+                        "swUVFWjuSp"
+                    ]
+                },
+                "info": {
+                    "x": 5140,
+                    "y": 1430,
+                    "z": 0,
+                    "width": 451,
+                    "height": 138,
+                    "color": ""
+                }
             }
         ],
         "notes": [
@@ -75964,7 +76946,7 @@
                 "name": "command_event_with_text",
                 "inputs": {},
                 "options": {
-                    "command_name": "watislizzy",
+                    "command_name": "watisnaomi",
                     "custom_prefix": "t!",
                     "command_restriction": "none",
                     "required_member_permission": "none",
@@ -76130,7 +77112,7 @@
                     "text3": "7I93aIzBJb"
                 },
                 "options": {
-                    "text": "Lizzy is een dictator.\nLetterlijk erger dan ${text1}"
+                    "text": "Naomi is een dictator.\n${text1}"
                 },
                 "outputs": {
                     "action": [
