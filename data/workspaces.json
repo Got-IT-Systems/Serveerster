@@ -21437,7 +21437,8 @@
                         "EMxTanWizP",
                         "yZqPf8D8Kw",
                         "qTdFWK5F26",
-                        "v5TUmlJseS"
+                        "v5TUmlJseS",
+                        "p0IxuIEzsA"
                     ]
                 },
                 "info": {
@@ -23913,6 +23914,32 @@
                     "z": 0,
                     "width": 476,
                     "height": 171,
+                    "color": ""
+                }
+            },
+            {
+                "name": "emitter",
+                "inputs": {
+                    "action": "bjdH7zeRCs",
+                    "id": "p0IxuIEzsA",
+                    "search_value": "psQn2O6coE",
+                    "value1": "5xXnQRFFgY",
+                    "value2": "4EhtqcRucK",
+                    "value3": "HhuKNJbI3q"
+                },
+                "options": {
+                    "restriction_type": "current",
+                    "search_type": "number"
+                },
+                "outputs": {
+                    "action": []
+                },
+                "info": {
+                    "x": 6380,
+                    "y": 1940,
+                    "z": 0,
+                    "width": 423,
+                    "height": 228,
                     "color": ""
                 }
             }
