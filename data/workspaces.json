@@ -791,8 +791,8 @@
                 "name": "text_3x",
                 "inputs": {},
                 "options": {
-                    "text1": "Got IT Systems",
-                    "text2": "https://gotitsystems.nl/wp-content/uploads/2024/02/cropped-GotITSystems-1.png",
+                    "text1": "T-Huis",
+                    "text2": "https://t-huis.xyz/images/logo512p.png",
                     "text3": "Test"
                 },
                 "outputs": {
@@ -832,7 +832,7 @@
                     "button_row": "lIMHvnF6nw"
                 },
                 "options": {
-                    "text": "Hoi, ik ben Serveerster.\nDe bot van T-Huis.\n\nWe draaien op dit moment de volgende code:\n${text1}\n\nMede mogelijk gemaakt door Got IT Systems."
+                    "text": "Hoi, ik ben Serveerster.\nDe bot van T-Huis.\n\nWe draaien op dit moment de volgende code:\n${text1}"
                 },
                 "outputs": {
                     "action": [
@@ -9392,10 +9392,10 @@
                 },
                 "options": {
                     "color": "#f2a7ec",
-                    "thumbnail": "https://gotitsystems.nl/wp-content/uploads/2024/02/GotITSystems-1920x736.png",
+                    "thumbnail": "https://t-huis.xyz/images/logo512p.png",
                     "author_icon": "",
-                    "author_name": "Got IT Systems",
-                    "author_url": "https://gotitsystems.nl",
+                    "author_name": "T-Huis",
+                    "author_url": "https://t-huis.xyz",
                     "title": "",
                     "url": "",
                     "description": "",
@@ -9454,8 +9454,8 @@
                 "inputs": {},
                 "options": {
                     "text1": "gotitsystems",
-                    "text2": "Got IT Systems",
-                    "text3": "https://gotitsystems.nl/wp-content/uploads/2024/02/cropped-GotITSystems-1.png"
+                    "text2": "T-Huis",
+                    "text3": "https://t-huis.xyz/images/logo512p.png"
                 },
                 "outputs": {
                     "text1": [
@@ -12144,7 +12144,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "Sadly it is not possible to create ticket types through the bot itself.\nTo create new ticket types / panels / buttons, please contact Got IT Software.\nYou can reach us at support@gotitsystems.nl, through Discord on the account d6system, or through phone on +31 546-343-323"
+                    "text": "Een nieuw type staffticket maken moet via Discord Bot Builder. Stuur door naar ict-hulpjes of vraag Dobbel"
                 },
                 "outputs": {
                     "text": [
@@ -26198,7 +26198,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "You have created a new panel.\nThis panel won't work immediately.\nPlease contact Got IT Software to create the panel in the internal code of the bot."
+                    "text": "You have created a new panel.\nThis panel won't work immediately.\nPlease use DBB to create the new emitter"
                 },
                 "outputs": {
                     "text": [
@@ -53723,7 +53723,7 @@
                 "name": "text",
                 "inputs": {},
                 "options": {
-                    "text": "Config incompleet.\nNeem contact op met Got IT Systems."
+                    "text": "Config incompleet."
                 },
                 "outputs": {
                     "text": [
@@ -75183,7 +75183,7 @@
                     "description": "",
                     "image": "",
                     "footer_icon": "",
-                    "footer_text": "Serveerster - Got IT Systems",
+                    "footer_text": "Serveerster",
                     "timestamp_option": "true"
                 },
                 "outputs": {
@@ -75870,7 +75870,7 @@
                     "description": "",
                     "image": "",
                     "footer_icon": "",
-                    "footer_text": "Serveerster - Got IT Systems",
+                    "footer_text": "Serveerster",
                     "timestamp_option": "true"
                 },
                 "outputs": {
@@ -76411,7 +76411,7 @@
                     "description": "",
                     "image": "",
                     "footer_icon": "",
-                    "footer_text": "Serveerster - Got IT Systems",
+                    "footer_text": "Serveerster",
                     "timestamp_option": "true"
                 },
                 "outputs": {
