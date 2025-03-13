@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Converts Unix Time into a Date, by @XCraftTM",
 
-    category: "Date Stuff",
+    category: ".MOD",
 
     inputs: [
         {

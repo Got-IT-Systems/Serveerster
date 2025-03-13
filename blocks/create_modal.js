@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Creates and Shows a Modal on an Interaction(by @XCraftTM)",
 
-    category: "Interaction Stuff",
+    category: ".MOD",
 
     inputs: [
         {

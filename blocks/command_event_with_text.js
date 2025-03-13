@@ -74,6 +74,18 @@ module.exports = {
                 "manage_webhooks": "Manage Webhooks",
                 "manage_emojis": "Manage Emojis"
             }
+        },
+        {
+            "id": "command_slowmode_restriction",
+            "name": "Command Slowmode Restriction",
+            "description": "Description: The restriction that will affect the user slowmode at each location. Only use this option if you put a value in the \"Command Slowmode\" input.",
+            "type": "SELECT",
+            "options": {
+                "none": "None",
+                "channel": "Per Channel",
+                "server/dm": "Per Server/DM",
+                "everywhere": "Everywhere",
+            }
         }
     ],
 
@@ -134,6 +146,34 @@ module.exports = {
         }
     ],
 
+    init(DBB, fileName) {
+        const Data = DBB.Blocks.Data;
+        const slowmodeData = Data.getData("slowmode", fileName, "block");
+
+        if(slowmodeData && DBB.Core.typeof(slowmodeData) == "object") {
+            for (const commandName in slowmodeData) {
+                const userIDs = slowmodeData[commandName];
+
+                for (const userID in userIDs) {
+                    const discordIDs = userIDs[userID];
+
+                    for (const discordID in discordIDs) {
+                        const time = discordIDs[discordID];
+
+                        if(Date.now() >= (parseInt(time) || 0)) delete discordIDs[discordID];
+                    }
+
+                    if(!Object.values(discordIDs).length) delete userIDs[userID];
+                }
+
+                if(!Object.values(userIDs).length) delete slowmodeData[commandName];
+            }
+
+            if(Object.values(slowmodeData).length) Data.setData("slowmode", slowmodeData, fileName, "block");
+            else Data.deleteData("slowmode", fileName, "block");
+        } else Data.deleteData("slowmode", fileName, "block");
+    },
+
     code(cache, DBB) {
         const {PermissionFlagsBits, ChannelType} = require("discord.js");
 
@@ -174,10 +214,14 @@ module.exports = {
 
         let command_name = this.GetOptionValue("command_name", cache);
         const custom_prefix = this.GetInputValue("custom_prefix", cache, true);
+        let command_slowmode = this.GetInputValue("command_slowmode", cache);
         const command_restriction = this.GetOptionValue("command_restriction", cache) + "";
         const required_member_permission = permissions[this.GetOptionValue("required_member_permission", cache) + ""];
+        const command_slowmode_restriction = this.GetOptionValue("command_slowmode_restriction", cache) + "";
 
         command_name = typeof command_name == "string" ? command_name : "";
+
+        command_slowmode = Math.max(0, command_slowmode instanceof Date ? command_slowmode.getTime() : Date.now() + parseInt(command_slowmode));
 
         const {prefixes, owners} = DBB.Data.data.dbb;
 
@@ -207,6 +251,46 @@ module.exports = {
         }
 
 
+        function ExtraCheckSlowmode(userData, targetID, slowmodeData) {
+            if(userData[targetID] >= Date.now())
+                return false;
+            
+            userData[targetID] = command_slowmode;
+
+            this.setData("slowmode", slowmodeData, command_name, "block");
+
+            return true;
+        }
+        function CheckSlowmode(msg) {
+            let slowmodeData = this.getData("slowmode", command_name, "block");
+
+            if(!(slowmodeData && DBB.Core.typeof(slowmodeData) == "object"))
+                slowmodeData = {}
+
+            const userIDs = slowmodeData[command_name];
+
+            if(!(userIDs && DBB.Core.typeof(userIDs) == "object"))
+                slowmodeData[command_name] = {}
+
+            const authorId = msg.author.id
+            const userData = userIDs[authorId];
+
+            if(!(userData && DBB.Core.typeof(userData) == "object"))
+                userIDs[authorId] = {}
+
+            switch(command_slowmode_restriction) {
+                case "channel":
+                    return ExtraCheckSlowmode(userData, msg.channel.id, slowmodeData);
+                case "server/dm":
+                    return ExtraCheckSlowmode(userData, msg.guild ? msg.guild.id : msg.channel.id, slowmodeData);
+                case "everywhere":
+                    return ExtraCheckSlowmode(userData, "global");
+                default:
+                    return true;
+            }
+        }
+
+
         const EndBlock = (msg, reason, action) => {
             this.StoreOutputValue(msg, "message", cache);
             this.StoreOutputValue(msg.channel, "channel", cache);
@@ -231,6 +315,7 @@ module.exports = {
 
             if(!restriction[0]) EndBlock(msg, "Command Restriction");
             else if(!restriction[1]) EndBlock(msg, "Member Permission");
+            else if(command_slowmode && !CheckSlowmode(msg)) EndBlock(msg, "User Slowmode");
             else EndBlock(msg, "Nothing", true);
         });
     }
