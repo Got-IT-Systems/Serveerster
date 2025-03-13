@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Plays Music of Any Type (e.g. YouTube, Spotify, SoundCloud, Files, Radio Stations, ...)",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {
@@ -45,37 +45,30 @@ module.exports = {
             "id": "leaveonempty",
             "name": "Leave on Empty VC?",
             "description": "Description: Leave on Empty Queue?",
-            "type": "SELECT",
-            "options": {
-                false: "False/No",
-                true: "True/Yes"
-            }
+            "type": "CHECKBOX",
+            "defaultValue": false
         },
         {
             "id": "autoselfdeaf",
             "name": "Deaf Bot?",
             "description": "Description: Deaf Bot? (More Privacy)",
             "type": "SELECT",
-            "options": {
-                true: "True/Yes",
-                false: "False/No"
-            }
+            "type": "CHECKBOX",
+            "defaultValue": true
         },
         {
             "id": "leaveonened",
             "name": "Leave on End?",
             "description": "Description: Leave on End?",
-            "type": "SELECT",
-            "options": {
-                false: "False/No",
-                true: "True/Yes"
-            }
+            "type": "CHECKBOX",
+            "defaultValue": false
         },
         {
             "id": "initialvolume",
             "name": "Initial Volume",
-            "description": "Description: The Volume the bot should have!",
-            "type": "NUMBER"
+            "description": "Description: The Volume the bot should have! Default: 10",
+            "type": "NUMBER",
+            "defaultValue": 10
         },
         {
             "id": "source",
@@ -128,6 +121,7 @@ module.exports = {
     ],
 
     async code(cache) {
+        const { get } = require("axios")
         let song = this.GetInputValue("song", cache);
         const vc = this.GetInputValue("voicechannel", cache);
         const source = this.GetOptionValue("source", cache);
@@ -135,28 +129,11 @@ module.exports = {
         const emptycooldown = this.GetInputValue("emptycooldown", cache) || 0;
         const endcooldown = this.GetInputValue("endcooldown", cache) || 0;
 
-        var leaveonempty = this.GetOptionValue("leaveonempty", cache);
-        var autoselfdeaf = this.GetOptionValue("autoselfdeaf", cache);
-        var leaveonend = this.GetOptionValue("leaveonened", cache);
-        var initialvolume = parseInt(this.GetOptionValue("initialvolume", cache)) || 50;
+        const leaveonempty = this.GetOptionValue("leaveonempty", cache);
+        const autoselfdeaf = this.GetOptionValue("autoselfdeaf", cache);
+        const leaveonend = this.GetOptionValue("leaveonened", cache);
+        const initialvolume = parseInt(this.GetOptionValue("initialvolume", cache)) || 10;
 
-        if (leaveonempty == "true") {
-            leaveonempty = true;
-        } else {
-            leaveonempty = false;
-        }
-
-        if (autoselfdeaf == "true") {
-            autoselfdeaf = true;
-        } else {
-            autoselfdeaf = false;
-        }
-
-        if (leaveonend == "true") {
-            leaveonend = true;
-        } else {
-            leaveonend = false;
-        }
         const { useMainPlayer, QueryType, useQueue } = require("discord-player");
         const action = this.GetOptionValue("action", cache);
 
@@ -164,13 +141,10 @@ module.exports = {
         if (source == "radio") {
             querytype = undefined
             try {
-                await fetch(`http://de1.api.radio-browser.info/json/stations/search?&name=${song}`)
-                    .then(res => res.json())
-                    .then(json => {
-                        if (json.length > 0) {
-                            song = json[0].url
-                        } else throw new Error("Not able to find any Stations to use!")
-                    });
+                const { status, data } = await get(`http://de1.api.radio-browser.info/json/stations/search?&name=${song}`)
+                if (status === 200 && data.length > 0) {
+                    song = data[0].url
+                } else throw new Error("Not able to find any Stations to use!")
             } catch (err) {
                 // You can uncomment this for debugging incase of issues
                 //console.error(err);
@@ -179,22 +153,20 @@ module.exports = {
                 return;
             }
         } else if (source == "file") {
-            querytype = QueryType.FILE
+            querytype = QueryType.ARBITRARY
         } else {
-            querytype = QueryType.AUTO
+            querytype = undefined
         }
 
         const player = useMainPlayer();
         try {
             let queue = useQueue(vc.guild.id);
-            if (queue) if (source == "radio" && queue.isPlaying() && action !== "play") await queue.node.skip()
+            if (queue) if (source == "radio" && queue.isPlaying() && action !== "play") queue.node.skip()
             const res = await player.play(vc, song, {
                 searchEngine: querytype,
                 nodeOptions: {
-                    metadata: {
-                        channel: vc
-                    },
-                    autoSelfDeaf: autoselfdeaf,
+                    metadata: vc,
+                    selfDeaf: autoselfdeaf,
                     volume: initialvolume,
                     leaveOnEmpty: leaveonempty,
                     leaveOnEmptyCooldown: emptycooldown,
@@ -203,7 +175,7 @@ module.exports = {
                     connectionTimeout: 999999999
                 }
             })
-            if (action == "play") {
+            if (action === "play") {
                 if (res.queue.isPlaying()) {
                     res.queue.node.skipTo(res.track);
                 }

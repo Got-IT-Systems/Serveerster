@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Applies a Audio Filter to the Queue",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {

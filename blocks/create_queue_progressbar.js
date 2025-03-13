@@ -3,7 +3,7 @@ module.exports = {
 
     description: "This Block creates a Progressbar with Discord-Player Audio Blocks by @XCraftTM",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {

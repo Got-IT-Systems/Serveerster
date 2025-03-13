@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Registers Slash Commands for one specific Guild... Will override old Commands on that specific Guild. (by @XCraftTM)",
 
-    category: ".MOD",
+    category: "Interaction Stuff",
 
     inputs: [
         {

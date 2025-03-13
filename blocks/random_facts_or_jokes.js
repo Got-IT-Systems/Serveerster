@@ -2,7 +2,7 @@ module.exports = {
     name: "Random Facts/Jokes",
     description: "Generates random facts or jokes with an optional limit input.",
     
-    category: ".T45",
+    category: "Extras",
     
     inputs: [
         {

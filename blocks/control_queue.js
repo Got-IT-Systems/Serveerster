@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Control Queue with different Actions",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {
@@ -54,10 +54,14 @@ module.exports = {
         const { useQueue } = require("discord-player");
         const queue = useQueue(guild.id);
         const action = this.GetOptionValue("action", cache);
+        if(!queue) {
+            console.error("Queue not found! Please make sure you have initialized the Queue! Control Queue Block!");
+            this.RunNextBlock("action", cache);
+        }
 
         switch (action) {
             case "pause":
-                queue.node.pause();
+                queue.node.setPaused(!queue.node.isPaused());
                 break;
             case "resume":
                 queue.node.resume();
@@ -66,7 +70,7 @@ module.exports = {
                 queue.node.play();
                 break;
             case "skip":
-                await queue.node.skip();
+                queue.node.skip();
                 break;
             case "stop":
                 queue.node.stop();
@@ -78,7 +82,7 @@ module.exports = {
                 queue.tracks.clear();
                 break;
             case "back":
-                queue.history.back();
+                queue.history.previous();
                 break;
         }
         this.RunNextBlock("action", cache);

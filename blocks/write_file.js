@@ -37,6 +37,16 @@ module.exports = {
                 "text": "Text",
                 "json": "JSON (Object or List)"
             }
+        },
+        {
+            "id": "write_type",
+            "name": "Write Type",
+            "description": "Description: The type of conversion for the file.",
+            "type": "SELECT",
+            "options": {
+                "ow": "Overwrite",
+                "append": "Append"
+            }
         }
     ],
 
@@ -53,15 +63,22 @@ module.exports = {
         const file_path = this.GetInputValue("file_path", cache) + "";
         let content = this.GetInputValue("content", cache, false, "");
         const conversion_type = this.GetOptionValue("conversion_type", cache) + "";
+        const type = this.GetOptionValue("write_type", cache);
 
         const fs = require("fs");
         const path = require("path");
 
-        if(conversion_type == "json") content = JSON.stringify(content, null, 2);
+        if(conversion_type == "json") content = JSON.stringify(content, null, 4);
 
-        fs.mkdirSync(path.dirname(file_path), {recursive: true});
-
-        fs.writeFileSync(file_path, content);
+        if(type == "ow")
+        {
+            fs.mkdirSync(path.dirname(file_path), {recursive: true});
+            fs.writeFileSync(file_path, content);
+        }
+        else if(type == "append")
+        {
+            fs.appendFile(file_path, content, {encoding:'utf8'}, function(err) { if(err) { console.log(err); }}); 
+        }
 
         this.RunNextBlock("action", cache);
     }

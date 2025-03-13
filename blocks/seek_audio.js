@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Seek current Song to a specific time.",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {

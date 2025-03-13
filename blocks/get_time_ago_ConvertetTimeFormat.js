@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Gets the time ago, by comparing two times, Converted in milliseconds, seconds, minutes, hour, days",
 
-    category: ".MOD",
+    category: "Date Stuff",
 
     inputs: [
         {

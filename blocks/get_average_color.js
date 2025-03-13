@@ -1,9 +1,9 @@
 module.exports = {
     name: "Get Average Color From Image",
 
-    description: "Extracts the average color from an image. By Domin0221#0001",
+    description: "Extracts the average color from an image. By Domin0221",
 
-    category: ".MOD",
+    category: "Extras",
 
     inputs: [
         {
@@ -51,10 +51,18 @@ module.exports = {
     ],
 
     async code(cache) {
-        await this.require("sharp");
+
+      const fs = require('fs');
+
+      const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+      const dependencies = packageJson.dependencies || {};
+      if (!dependencies.hasOwnProperty('got')) await this.require("got");
+
+      
+      const sharp = await this.require("sharp");
+
       async function getAverageColorFromImage(imageUrl) {
         const { default: got } = await import('got');
-        const sharp = require('sharp');
       
         const response = await got(imageUrl, { responseType: 'buffer' });
         const image = sharp(response.body);

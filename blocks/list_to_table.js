@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Create a Table with Lists",
 
-    category: ".MOD",
+    category: "List Stuff",
 
     inputs: [
         {

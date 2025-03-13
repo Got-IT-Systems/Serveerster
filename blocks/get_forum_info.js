@@ -4,7 +4,7 @@ module.exports = {
 
     description: "This Blocks gets Infos about a Forum Channel",
 
-    category: ".MOD",
+    category: "Channel Stuff",
 
     inputs: [
         {

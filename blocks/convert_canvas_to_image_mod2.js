@@ -3,7 +3,7 @@ module.exports = {
 
   description: "Converts Canvas To Image Which You Can Send As An Attachment",
 
-  category: ".MOD",
+  category: "Canvas Stuff",
 
   inputs: [
     {

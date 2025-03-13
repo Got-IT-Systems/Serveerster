@@ -1,7 +1,7 @@
 module.exports = {
-    name: "CreateChart",
+    name: "Create Chart",
     description: "Generates a customizable chart using Chart.js",
-    category: ".Daily's",
+    category: "Extras",
     inputs: [
         {
             id: "action",

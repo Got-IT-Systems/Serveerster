@@ -13,13 +13,13 @@ module.exports = {
             id: "inputvalue",
             name: "Input Value",
             description: "The value to check for in the list.",
-            types: ["text", "unspecified"]
+            types: ["text", "object", "unspecified"]
         },
         {
             id: "list",
             name: "List",
             description: "The list to search for the input value.",
-            type: "list"
+            types: ["list", "unspecified"]
         }
     ],
     options: [
@@ -42,6 +42,18 @@ module.exports = {
             name: "Action if false",
             description: "You must be stupid if you don't know this already",
             types: ["action"]
+        },
+        {
+            id: "item",
+            name: "Item/value",
+            description: "The item or value you checked for. ONLY WORKS IF ITEM EXIST!",
+            type: ["unspecified"]
+        },
+        {
+            id: "pos",
+            name: "Position Number",
+            description: "The position of the item in the list.",
+            types: ["number"]
         }
     ],
     code(cache) {
@@ -64,11 +76,17 @@ module.exports = {
             return list.includes(inputValue);
         }
 
-        // Check if the item exists in the list
+        // Check if the item exists in the list and get its position
         const exists = itemExists(inputValue, list);
+        const pos = list.indexOf(inputValue);
+
+        // Store the position in the "pos" output
+        this.StoreOutputValue(pos, "pos", cache);
 
         // Determine which action to trigger based on existence
         if (exists) {
+            const item = list[pos];
+            this.StoreOutputValue(item, "item", cache)
             this.RunNextBlock("action", cache);
         } else {
             this.RunNextBlock("action2", cache);

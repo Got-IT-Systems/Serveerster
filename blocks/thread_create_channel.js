@@ -1,5 +1,3 @@
-
-
 module.exports = {
     name: "Create Channel Thread",
 
@@ -58,13 +56,9 @@ module.exports = {
     options: [
         {
             "id": "threadtype",
-            "name": "Thread Type",
-            "description": "Type of thread, public or private",
-            "type": "SELECT",
-            "options": {
-                "public": "Public Thread",
-                "private": "Private Thread",
-            }
+            "name": "Private Thread?",
+            "description": "Type of thread, public or private? (Off is public)",
+            "type": "CHECKBOX"
         }
     ],
 
@@ -91,21 +85,20 @@ module.exports = {
         let reason = this.GetInputValue("reason", cache);
         let autoarchivetime = this.GetInputValue("autoarchivetime", cache);
         let threadtype = this.GetOptionValue("threadtype", cache);
-        let type;
 
-        if (!(autoarchivetime)) autoarchivetime = 1440;
-        if (!(reason)) reason = "None";
-        if (threadtype === "channel") {type = ChannelType.PublicThread} else if (threadtype === "private") {type = ChannelType.PrivateThread};
-
+        if (!autoarchivetime) autoarchivetime = 1440;
+        if (!reason) reason = "None";
+        
+        threadtype ? threadtype = ChannelType.PrivateThread : threadtype = ChannelType.PublicThread;
 
         const thread = await channel.threads.create({
             name: threadname,
             autoArchiveDuration: autoarchivetime,
-            type: type,
+            type: threadtype,
             reason: reason
         });
-        if (threadtype === 12 && (member)) {thread.members.add(member.id)} 
-
+        
+        if (threadtype === 12 && member) await thread.members.add(member.id)
 
         this.StoreOutputValue(thread, "threadsave", cache);
         this.RunNextBlock("action", cache);

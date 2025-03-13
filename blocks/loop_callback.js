@@ -28,7 +28,7 @@ module.exports = {
         const block = this.GetInputValue("loopblockdata", cache);
 
         try {
-            if (block.name in DBB.Blocks.cache) {
+            if (DBB.Blocks.cache.has(block.name)) {
                 await require("./" + block.name + ".js").callbackloop(block, DBB)
             } else {
                 DBB.Core.end({

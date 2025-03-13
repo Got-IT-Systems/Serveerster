@@ -1,9 +1,9 @@
 module.exports = {
     name: "Queue (Exists?)",
 
-    description: "This Block Finds a Queue of a Server by linelab.dev",
+    description: "Check if a Queue exists in the Server",
 
-    category: ".MJ",
+    category: "Music V2",
 
     inputs: [
         {
@@ -18,24 +18,10 @@ module.exports = {
             "description": "Acceptable Types: Object, Unspecified\n\nDescription: The Server Object",
             "types": ["object", "unspecified"],
             "required": true
-        },
-        {
-            "id": "channel",
-            "name": "Text Channel",
-            "description": "Acceptable Types: Object, Unspecified\n\nDescription: The text channel to send no queue messsage to",
-            "types": ["object", "unspecified"],
-            "required": true
         }
     ],
 
-    options: [
-        {
-            "id": "message",
-            "name": "No queue message",
-            "description": "Description: Sends message, when no queue",
-            "type": "TEXT"
-        }
-    ],
+    options: [],
 
     outputs: [
         {
@@ -49,23 +35,34 @@ module.exports = {
             "name": "No queue",
             "description": "Type: Action\n\nDescription: Executes the following blocks when this block finishes its task.",
             "types": ["action"]
+        },
+        {
+            "id": "queue",
+            "name": "Queue",
+            "description": "Type: Object, Unspecified\n\nDescription: The Queue Object",
+            "types": ["object", "list", "unspecified"]
+        },
+        {
+            "id": "boolean",
+            "name": "True/False",
+            "description": "Type: Boolean\n\nDescription: Boolean Return Value if Queue Exists Or Not",
+            "types": ["boolean"]
         }
     ],
 
-    async code(cache) {
+    code(cache) {
         const { useQueue } = require('discord-player');
-        const message = this.GetOptionValue("message", cache);
-        const guild = await this.GetInputValue("guild", cache);
-        const channel = await this.GetInputValue("channel", cache);
+        const guild = this.GetInputValue("guild", cache);
 
-        const queue = await useQueue(guild);
+        const queue = useQueue(guild);
 
         if (queue) {
+            this.StoreOutputValue(queue, "queue", cache);
+            this.StoreOutputValue(true, "boolean", cache);
             this.RunNextBlock("action", cache);
         } else {
-            if (message) {        
-                channel.send(message);
-            }
+            this.StoreOutputValue(null, "queue", cache);
+            this.StoreOutputValue(false, "boolean", cache);
             this.RunNextBlock("noqueue", cache);
         }
     }

@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Gets the content from a website.\nBetter Block can return Text or JSON (Object or List)",
 
-    category: ".artemsnite",
+    category: "Extras",
 
     inputs: [
         {

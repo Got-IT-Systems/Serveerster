@@ -63,7 +63,10 @@ module.exports = {
                 31: "Member Mention [Text]",
                 34: "Member Boosted Server At [Date]",
                 35: "Is Member Using \"Go Live\"? [Boolean]",
-                36: "Is Member In Voice Channel? [Boolean]"                
+                36: "Is Member In Voice Channel? [Boolean]",
+                691: "Is Member In Timeout? [Boolean]",
+                692: "Member Timeout Until? [Timestamp]",
+                693: "Member Timeout Until? [Date]"
             }
         }
     ],
@@ -83,7 +86,7 @@ module.exports = {
         }
     ],
 
-    code(cache) {
+    async code(cache) {
         const member = this.GetInputValue("member", cache);
         const member_info = parseInt(this.GetOptionValue("member_info", cache));
 
@@ -220,7 +223,16 @@ module.exports = {
                 break;
             case 36:
                 result = Boolean(member.voice.channelId);
-                break;            
+                break;
+                case 691:
+                result = member.isCommunicationDisabled();
+                break;
+            case 692:
+                result = member.communicationDisabledUntilTimestamp;
+                break;
+            case 693:
+                result = member.communicationDisabledUntil;
+                break;
         }
 
         this.StoreOutputValue(result, "result", cache);

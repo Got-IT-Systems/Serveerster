@@ -2,7 +2,7 @@ module.exports = {
     name: "Captcha V3",
     description: "Makes a cool captcha thingy.",
     
-    category: ".T45",
+    category: "Extras",
     
     inputs: [
         {
@@ -153,7 +153,7 @@ module.exports = {
         
         const axios = require('axios');
         const capCreate = async () => {
-            const response = await axios.get('https://apiv3.spapi.ga/image/captcha', {
+            const response = await axios.get('https://apiv3.spapi.online/image/captcha', {
             params: {
                 text: text,
                 color: color,

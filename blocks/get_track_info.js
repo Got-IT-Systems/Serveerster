@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Get Infos about a specific Track",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {
@@ -21,7 +21,41 @@ module.exports = {
         }
     ],
 
-    options: [],
+    options: [
+        {
+            "id": "info-type",
+            "name": "Info Type",
+            "description": "Description: The Type of Info you want to get",
+            "type": "SELECT",
+            "options": [
+                {
+                    type: "GROUP",
+                    name: "Normal Infos",
+                    options: [
+                        ["title", "Title <Text>"],
+                        ["description", "Description <Text>"],
+                        ["author", "Author <Text>"],
+                        ["url", "URL <Text(URL)>"],
+                        ["thumbnail", "Thumbnail <Text(URL)>"],
+                        ["duration", "Duration <Number>"],
+                        ["views", "Views <Number>"]
+                    ]
+                },
+                {
+                    type: "GROUP",
+                    name: "Advanced Infos",
+                    options: [
+                        ["cleantTitle", "Clean Title <Text>"],
+                        ["isLive", "Is Live <Boolean>"],
+                        ["playlist", "Playlist <Object<Playlist>>"],
+                        ["queue", "Queue <Object<Queue>>"],
+                        ["hasMetadata", "Has Metadata? <Boolean>"],
+                        ["metadata", "Metadata <Object>"],
+                    ]
+                }
+            ]
+        }
+    ],
 
     outputs: [
         {
@@ -31,34 +65,10 @@ module.exports = {
             "types": ["action"]
         },
         {
-            "id": "title",
-            "name": "Title",
-            "description": "Acceptable Types: Text, Unspecified\n\nDescription: The Title of the Track",
-            "types": ["text", "unspecified"]
-        },
-        {
-            "id": "author",
-            "name": "Author",
-            "description": "Acceptable Types: Text, Unspecified\n\nDescription: The Title of the Track",
-            "types": ["text", "unspecified"]
-        },
-        {
-            "id": "url",
-            "name": "URL",
-            "description": "Acceptable Types: Text, Unspecified\n\nDescription: The Title of the Track",
-            "types": ["text", "unspecified"]
-        },
-        {
-            "id": "thumbnail",
-            "name": "Thumbnail",
-            "description": "Acceptable Types: Text, Unspecified\n\nDescription: The Title of the Track",
-            "types": ["text", "unspecified"]
-        },
-        {
-            "id": "duration",
-            "name": "Duration",
-            "description": "Acceptable Types: Text, Unspecified\n\nDescription: The Title of the Track",
-            "types": ["text", "unspecified"]
+            "id": "info",
+            "name": "Track Info",
+            "description": "Acceptable Types: Text, List, Object, Unspecified\n\nDescription: The Requested Track Info",
+            "types": ["text", "list", "object", "unspecified"]
         }
     ],
 
@@ -66,19 +76,59 @@ module.exports = {
         const track = this.GetInputValue("track", cache);
 
         if (track) {
-            if (track.hasOwnProperty("title")) {
-                this.StoreOutputValue(track.title, "title", cache)
-                this.StoreOutputValue(track.author, "author", cache)
-                this.StoreOutputValue(track.url, "url", cache)
-                this.StoreOutputValue(track.thumbnail, "thumbnail", cache)
-                this.StoreOutputValue(track.duration, "duration", cache)
+            const infoType = this.GetOptionValue("info-type", cache);
 
-                this.RunNextBlock("action", cache);
-            } else {
-                throw new Error("Input is not a Track")
+            let info;
+
+            switch (infoType) {
+                case "title":
+                    info = track.title;
+                    break;
+                case "description":
+                    info = track.description;
+                    break;
+                case "author":
+                    info = track.author;
+                    break;
+                case "url":
+                    info = track.url;
+                    break;
+                case "thumbnail":
+                    info = track.thumbnail;
+                    break;
+                case "duration":
+                    info = track.duration;
+                    break;
+                case "cleantTitle":
+                    info = track.cleanTitle;
+                    break;
+                case "isLive":
+                    info = track.live;
+                    break;
+                case "playlist":
+                    info = track.playlist;
+                    break;
+                case "queue":
+                    info = track.queue;
+                    break;
+                case "hasMetadata":
+                    info = track.hasMetadata;
+                    break;
+                case "metadata":
+                    info = track.metadata;
+                    break;
+                case "views":
+                    info = track.views;
+                    break;
+                default:
+                    info = null;
+                    break;
             }
+
+            this.StoreOutputValue(info, "info", cache);
+            this.RunNextBlock("action", cache);
         } else {
-            throw new Error("Input is not a Track")
+            console.log("Input is not a Track")
         }
 
     }

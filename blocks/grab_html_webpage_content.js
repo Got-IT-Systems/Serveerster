@@ -3,7 +3,7 @@ module.exports = {
 
     description: "grabs the html contents of a page and gives it to you",
 
-    category: ".MOD",
+    category: "Internet Stuff",
 
     inputs: [
         {

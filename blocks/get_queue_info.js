@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Gets Informations about a Queue",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {
@@ -95,7 +95,7 @@ module.exports = {
         let result;
         switch (queue_info) {
             case 1:
-                result = queue.tracks ? Array.isArray(queue.tracks) ? queue.tracks : [queue.tracks] : [];
+                result = queue.tracks.data;
                 break;
             case 2:
                 result = queue.node.isPlaying();

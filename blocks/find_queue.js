@@ -3,7 +3,7 @@ module.exports = {
 
     description: "This Block Finds a Queue of a Server by @XCraftTM",
 
-    category: ".Audio V2",
+    category: "Music V2",
 
     inputs: [
         {
@@ -41,11 +41,11 @@ module.exports = {
     async code(cache) {
         const { useQueue } = require('discord-player');
 
-        const guild = await this.GetInputValue("guild", cache);
+        const guild = this.GetInputValue("guild", cache);
         
-        const queue = await useQueue(guild);
+        const queue = useQueue(guild);
 		
-		this.StoreOutputValue(queue, "queue", cache);
+		this.StoreOutputValue(queue || null, "queue", cache);
         this.RunNextBlock("action", cache);
     }
 }

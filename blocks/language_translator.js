@@ -3,7 +3,7 @@
 
     description: "Translate any language to any language",
 
-    category: "extra",
+    category: "Extras",
 
     inputs: [
         {

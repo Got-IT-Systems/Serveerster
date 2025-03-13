@@ -16,7 +16,8 @@ module.exports = {
             "id": "value",
             "name": "Value",
             "description": "Acceptable Types: Unspecified, Undefined, Null, Object, Boolean, Date, Number, Text, List\n\nDescription: The value to send to your console.",
-            "types": ["unspecified", "undefined", "null", "object", "boolean", "date", "number", "text", "list"]
+            "types": ["unspecified", "undefined", "null", "text", "object", "boolean", "date", "number", "list"],
+            "multiInput": true
         }
     ],
 
@@ -39,13 +40,14 @@ module.exports = {
     ],
 
     code(cache) {
-        var content = this.GetInputValue("value", cache);
-
-        if (content == undefined) {
-            content = this.GetOptionValue("value", cache);
+        var value = this.GetInputValue("value", cache);
+        if (value[0] == undefined) {
+            value = [this.GetOptionValue("value", cache)];
         }
 
-        console.log(content);
+        for(let i = 0; i < value.length; i++){
+            console.log(value[i]);
+          }
 
         this.RunNextBlock("action", cache);
     }

@@ -24,6 +24,12 @@ module.exports = {
             "name": "Filename",
             "description": "Acceptable Types: Text, Unspecified\n\nDescription: A Filename if you want a custom one... WITHOUT .png",
             "types": ["text", "unspecified"],
+        },
+        {
+            "id": "delay",
+            "name": "Delay",
+            "description": "Acceptable Types: Number, Unspecified\n\nDescription: The delay before the screenshot is taken. Default: 0",
+            "types": ["number", "unspecified"]
         }
     ],
 
@@ -35,35 +41,33 @@ module.exports = {
             "type": "TEXT",
         },
         {
+            "id": "delay",
+            "name": "Delay",
+            "description": "Description: The delay before the screenshot is taken. Default: 0",
+            "type": "NUMBER",
+            "defaultValue": 100
+        },
+        {
             "id": "fullpage",
             "name": "Full Page?",
             "description": "Description: Do you want to screenshot the Entire Page? WILL DISABLE HEIGHT AND WIDTH!",
-            "type": "SELECT",
-            "options": {
-                "": "False/No",
-                "true": "True/Yes"
-
-            }
+            "type": "CHECKBOX",
+            "defaultValue": false
         },
         {
             "id": "blockads",
             "name": "Block Ads?",
             "description": "Description: Do you want to Block Ads?",
-            "type": "SELECT",
-            "options": {
-                "true": "True/Yes",
-                "": "False/No"
-            }
+            "type": "CHECKBOX",
+            "type": "CHECKBOX",
+            "defaultValue": true
         },
         {
             "id": "darkmode",
             "name": "Dark Mode?",
             "description": "Description: Should the Website use DarkMode if possible?",
-            "type": "SELECT",
-            "options": {
-                "true": "True/Yes",
-                "": "False/No"
-            }
+            "type": "CHECKBOX",
+            "defaultValue": true
         },
         {
             "id": "removeElements",
@@ -87,12 +91,8 @@ module.exports = {
             "id": "havingerrors",
             "name": "Did you get an Error?",
             "description": "Description: If you have an error, please Toggle this to True!",
-            "type": "SELECT",
-            "options": {
-                "": "False/No",
-                "true": "True/Yes"
-
-            }
+            "type": "CHECKBOX",
+            "defaultValue": false
         }
     ],
 
@@ -115,6 +115,7 @@ module.exports = {
         const captureWebsite = await import("capture-website");
         let input = this.GetInputValue("input", cache);
         const filename = this.GetInputValue("filename", cache) || this.GetOptionValue("filename", cache) === "" ? "website" : this.GetOptionValue("filename", cache);
+        const delay = this.GetInputValue("delay", cache) || parseInt(this.GetOptionValue("delay", cache)) || 100;
 
         const darkMode = Boolean(this.GetOptionValue("darkmode", cache))
         const blockAds = Boolean(this.GetOptionValue("blockads", cache))
@@ -127,6 +128,7 @@ module.exports = {
 
         const options = {
             inputType: Buffer.isBuffer(input) ? "html" : input.startsWith("<") ? "html" : "url",
+            delay: delay,
             darkMode: darkMode,
             blockAds: blockAds,
             fullPage: fullPage,

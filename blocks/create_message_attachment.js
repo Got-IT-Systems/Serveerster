@@ -56,7 +56,6 @@ module.exports = {
                 "json": ".json",
                 "png": ".png",
                 "jpg": ".jpg",
-                "html": ".html",
                 "gif": ".gif",
                 "custom": "Custom Extension"
             }
@@ -103,9 +102,6 @@ module.exports = {
             case "gif":
                 extension = ".gif"
                 break;
-            case "html":
-                extension = ".html"
-                break;
             case "custom": {
                 const custom = this.GetInputValue("custom_file_extension", cache) + "";
                 extension = custom[0] == "." ? custom : "." + custom;
@@ -116,10 +112,12 @@ module.exports = {
                 break;*/
         }
 
-        this.StoreOutputValue(new AttachmentBuilder(attachment_content, {
-            name: attachment_name + extension,
-            description: attachment_description
-        }), "message_attachment", cache);
+        const attachment = new AttachmentBuilder()
+            .setName(attachment_name + extension)
+            .setDescription(attachment_description)
+            .setFile(attachment_content);
+
+        this.StoreOutputValue(attachment, "message_attachment", cache);
         this.RunNextBlock("action", cache);
     }
 }

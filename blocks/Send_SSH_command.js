@@ -3,7 +3,7 @@ module.exports = {
 
     description: "Send a SSH Command to Linux Server",
 
-    category: ".MOD",
+    category: "Internet Stuff",
 
     inputs: [
         {

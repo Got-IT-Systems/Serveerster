@@ -3,7 +3,7 @@ module.exports = {
 
   description: "Draw text on canvas MOD",
 
-  category: ".MOD",
+  category: "Canvas Stuff",
 
   inputs: [
     {

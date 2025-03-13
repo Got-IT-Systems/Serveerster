@@ -22,20 +22,41 @@ module.exports = {
             "id": "message_reaction",
             "name": "Message Reaction",
             "description": "Type: Object\n\nDescription: The message reaction the user was added.",
-            "types": ["object"]
+            "types": ["object", "unspecified"]
+        },
+        {
+            "id": "member",
+            "name": "Member",
+            "description": "Type: Object\n\nDescription: The member who added the reaction to the message.",
+            "types": ["object", "unspecified"]
         },
         {
             "id": "user",
             "name": "User",
             "description": "Type: Object\n\nDescription: The user who added the reaction to the message.",
-            "types": ["object"]
-        }
+            "types": ["object", "unspecified"]
+        },
+        {
+            "id": "server",
+            "name": "Server",
+            "description": "Type: Object\n\nDescription: The server in which the reaction occured.",
+            "types": ["object", "unspecified"]
+        },
+        {
+            "id": "message",
+            "name": "Message",
+            "description": "Type: Object\n\nDescription: The message that the reaction was added to.",
+            "types": ["object", "unspecified"]
+        },
     ],
 
-    code(cache) {
-        this.events.on("messageReactionAdd", (message_reaction, user) => {
+    async code(cache) {
+        this.events.on("messageReactionAdd", async (message_reaction, user) => {
             this.StoreOutputValue(message_reaction, "message_reaction", cache);
-			this.StoreOutputValue(user, "user", cache);
+            this.StoreOutputValue((await (await this.client.guilds.fetch(message_reaction.message.guild)).members.fetch(user.id)), "member", cache);
+            this.StoreOutputValue(user, "user", cache);
+            this.StoreOutputValue(message_reaction.message.guild, "server", cache);
+            this.StoreOutputValue(message_reaction.message, "message", cache);
             this.RunNextBlock("action", cache);
         });
     }

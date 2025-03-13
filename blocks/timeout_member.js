@@ -1,9 +1,9 @@
 module.exports = {
-    name: "Timeout Member v1.0",
+    name: "Timeout Member",
 
-    description: "times out a member of that guild",
+    description: "Timeouts a member for a certain amount of time with a reason for the Audit Log.",
 
-    category: ".MOD",
+    category: "Server Stuff",
 
     inputs: [
         {
@@ -46,6 +46,7 @@ module.exports = {
                 "minute": "Minutes",
                 "hour": "Hours",
                 "miliseconds": "Miliseconds",
+                "removetimeout": "Remove Timeout"
             }
         }
     ],
@@ -58,31 +59,32 @@ module.exports = {
             "types": ["action"]
         },
         {
-            "id": "result",
-            "name": "Html Code",
-            "description": "Type: Action\n\nDescription: this is where the websites html code is listed!",
-            "types": ["unspecified"]
+            "id": "member",
+            "name": "Member",
+            "description": "Type: Object, Unspecified\n\nDescription: The Member which was timeouted!",
+            "types": ["object", "unspecified"]
         }
     ],
 
     async code(cache) {
         const member = this.GetInputValue("member", cache);
         const time = this.GetInputValue("time", cache);
-        const reason = this.GetInputValue("reason", cache)
+        const reason = this.GetInputValue("reason", cache);
+        const unit = this.GetOptionValue("number", cache);
+
+        let timeOut = 0;
+        if(unit === "removetimeout") timeOut = null;
         
-        const option = this.GetOptionValue("number", cache);
-        
-        if(option == "miliseconds") {
-            member.timeout(time, reason);
-            this.RunNextBlock("action", cache)
-        } else if (option == "minute") {
-            let minutes = time * 60000;
-            member.timeout(minutes, reason);
-            this.RunNextBlock("action", cache)
-        } else if (option == "hour") {
-            let hours = time * 3600000;
-            member.timeout(hours, reason);
-            this.RunNextBlock("action", cache)
-        }
+        if(unit === "minute") timeOut = time * 60000;
+        if(unit === "hour") timeOut = time * 3600000;
+        if(unit === "miliseconds") timeOut = time;
+
+        member.timeout(timeOut, reason).then((nmember) => {
+            this.StoreOutputValue(nmember, "member", cache);
+            this.RunNextBlock("action", cache);
+        }).catch((err) => {
+            console.log(err);
+            this.RunNextBlock("action", cache);
+        });
     }
 }

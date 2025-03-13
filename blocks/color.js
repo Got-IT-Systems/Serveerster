@@ -9,25 +9,37 @@ module.exports = {
 
     inputs: [],
 
-    options: [
-        {
-            "id": "color",
-            "name": "Color",
-            "description": "Description: The color to set.",
-            "type": "COLOR"
-        }
-    ],
+    options(data) {
+        let options = [];
+
+        Array.apply(null, Array(data?.outputs?.color?.length)).forEach((_, i) => {
+            options.push({
+                id: `color${i + 1}`,
+                name: `Color ${i + 1}`,
+                description: "The color.",
+                type: "color",
+            });
+        });
+        return options;
+    },
 
     outputs: [
         {
-            "id": "color",
-            "name": "Color",
-            "description": "Type: Text\n\nDescription: The color.",
-            "types": ["text"]
-        }
+            id: "color",
+            name: "Color",
+            description: "The color created.",
+            types: ["color"],
+            multiOutput: true,
+        },
     ],
 
     code(cache) {
-        this.StoreOutputValue(this.GetOptionValue("color", cache), "color", cache, "inputBlock");
-    }
+        this.StoreOutputValue(
+            Object.keys(cache.options).map((option, index) => {
+                return this.GetOptionValue(option, cache);
+            }),
+            "color",
+            cache
+        );
+    },
 }

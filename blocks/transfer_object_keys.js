@@ -3,7 +3,7 @@ module.exports = {
     
     description: "Copies the keys of the first object and adds them to the second object.",
     
-    category: ".T45",
+    category: "Object Stuff",
     
     inputs: [
         {

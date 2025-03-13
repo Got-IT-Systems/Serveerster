@@ -9,29 +9,37 @@ module.exports = {
 
     inputs: [],
 
-    options: [
-        {
-            "id": "boolean_type",
-            "name": "Boolean Type",
-            "description": "Description: The type of boolean to set.",
-            "type": "SELECT",
-            "options": {
-                "true": "True/Yes",
-                "false": "False/No"
-            }
-        }
-    ],
+    options(data) {
+        let options = [];
+
+        Array.apply(null, Array(data?.outputs?.boolean?.length)).forEach((_, i) => {
+            options.push({
+                id: `boolean${i + 1}`,
+                name: `Boolean #${i + 1}`,
+                description: "Description: The Boolean.",
+                type: "CHECKBOX",
+            });
+        });
+        return options;
+    },
 
     outputs: [
         {
             "id": "boolean",
             "name": "Boolean",
             "description": "Type: Boolean\n\nDescription: The boolean.",
-            "types": ["boolean"]
+            "types": ["boolean"],
+            "multiOutput": true
         }
     ],
 
     code(cache) {
-        this.StoreOutputValue(this.GetOptionValue("boolean_type", cache) == "true", "boolean", cache, "inputBlock");
+        this.StoreOutputValue(
+            Object.keys(cache.options).map((option, index) => {
+                return Boolean(this.GetOptionValue(option, cache));
+            }),
+            "boolean",
+            cache
+        );
     }
 }
