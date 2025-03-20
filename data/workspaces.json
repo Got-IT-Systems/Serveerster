@@ -3,7 +3,7 @@
         "id": "WeWdcxRYUs",
         "info": {
             "title": "Basic Bot Stuff",
-            "collapsed": true
+            "collapsed": false
         },
         "workspaces": [
             {
@@ -273,7 +273,7 @@
                         "name": "text",
                         "inputs": {},
                         "options": {
-                            "text": "ValkyriaBot™ version 9.0.0\nServeerster versie 11.2.2"
+                            "text": "ValkyriaBot™ version 9.0.0\nServeerster versie 12.0.0"
                         },
                         "outputs": {
                             "text": [
