@@ -178,26 +178,3 @@ COMMIT;
 
 ```
 
-## bdaybot
-1. Maak een bestand aan /temp/querymagic.sh
-2. Voer de volgende code in:
-
-```
-checkdate=$(date +%d-%m)
-rm /var/lib/mysql-files/thuisbday.txt
-rm /map/naar/serveerster/bday.txt
-mysql -u root serveerster -e "SELECT GROUP_CONCAT(UserID) FROM bdays WHERE bday LIKE '$checkdate' INTO OUTFILE '/var/lib/mysq>mv /var/lib/mysql-files/thuisbday.txt /map/naar/serveerster/bday.txt
-chown user:user /map/naar/serveerster/bday.txt
-```
-3. Vervang /map/naar/serveerster met het juiste pad
-4. Vervang user:user met de juiste gebruiker en groep waaronder Serveerster draait
-5. Voer de volgende opdracht uit:
-
-```
-chown +Xx /temp/querymagic.sh
-```
-6. Pas /etc/crontab aan en voer het volgende in:
-
-```
-0 0 * * * root /temp/querymagic.sh
-```
