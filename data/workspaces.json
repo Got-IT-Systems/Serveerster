@@ -273,7 +273,7 @@
                         "name": "text",
                         "inputs": {},
                         "options": {
-                            "text": "ValkyriaBot™ version 9.0.0\nServeerster versie 12.1.1"
+                            "text": "ValkyriaBot™ version 9.0.0\nServeerster versie 12.2.0"
                         },
                         "outputs": {
                             "text": [
@@ -64138,8 +64138,8 @@
                         "x": 672,
                         "y": 137,
                         "z": 0,
-                        "width": 2073,
-                        "height": 995,
+                        "width": 2080,
+                        "height": 1000,
                         "lock": false,
                         "title": "Calculate number and create ticket",
                         "description": ""
@@ -64149,8 +64149,8 @@
                         "x": 2829,
                         "y": 127,
                         "z": 0,
-                        "width": 2548,
-                        "height": 1902,
+                        "width": 2550,
+                        "height": 1910,
                         "lock": false,
                         "title": "Set permissions for staff and user",
                         "description": ""
@@ -64160,8 +64160,8 @@
                         "x": 582,
                         "y": 1135,
                         "z": 0,
-                        "width": 2235,
-                        "height": 1219,
+                        "width": 2240,
+                        "height": 1220,
                         "lock": false,
                         "title": "Get form submission and create embed with fields",
                         "description": ""
