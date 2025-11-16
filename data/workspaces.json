@@ -63097,8 +63097,6 @@
                             ],
                             "text_channel": [
                                 "9jUnZQiP9r",
-                                "bUxHN9qsx0",
-                                "piVtQ3VVds",
                                 "jon2bndTBA",
                                 "vLpwFjRIIw",
                                 "ZkBlGhRElm",
@@ -63609,13 +63607,11 @@
                                 "8fvVvrNHjd"
                             ],
                             "value1": [
-                                "3TKdki6GAQ",
                                 "RRLICvQC1r",
                                 "wbyfwcU68b",
                                 "XaHkDR0gxu"
                             ],
                             "value2": [
-                                "jI9gK5WKkS",
                                 "dAc7RMks4X",
                                 "sAXsOBRrIO"
                             ],
@@ -63718,9 +63714,7 @@
                             "action2": [
                                 "WxvAn0wqjc"
                             ],
-                            "content": [
-                                "mShDSEMBRt"
-                            ]
+                            "content": []
                         },
                         "active": true
                     },
@@ -63996,9 +63990,7 @@
                             "action1": [
                                 "dJYVGb1X3x"
                             ],
-                            "action2": [
-                                "l2RfXNMcQa"
-                            ]
+                            "action2": []
                         },
                         "active": true
                     },
@@ -68907,7 +68899,7 @@
                         "name": "interaction_event",
                         "inputs": {},
                         "options": {
-                            "type": "context",
+                            "type": "button",
                             "id": "owner01",
                             "sub": "",
                             "group": "",
