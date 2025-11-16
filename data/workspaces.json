@@ -63010,7 +63010,7 @@
                         },
                         "outputs": {
                             "action": [
-                                "PoP8QDgOcJ"
+                                "dJYVGb1X3x"
                             ]
                         },
                         "active": true
@@ -63965,32 +63965,6 @@
                             "result": [
                                 "cfuKa2Muhg"
                             ]
-                        },
-                        "active": true
-                    },
-                    {
-                        "color": "",
-                        "x": 5730,
-                        "y": 2010,
-                        "z": 0,
-                        "width": 480,
-                        "height": 180,
-                        "lock": false,
-                        "name": "check_comparison",
-                        "inputs": {
-                            "action": "PoP8QDgOcJ",
-                            "value1": "uOojuq4kFO",
-                            "value2": "U4bIZfIxAK"
-                        },
-                        "options": {
-                            "comparison_type": "equal",
-                            "value2": "confirm01"
-                        },
-                        "outputs": {
-                            "action1": [
-                                "dJYVGb1X3x"
-                            ],
-                            "action2": []
                         },
                         "active": true
                     },
